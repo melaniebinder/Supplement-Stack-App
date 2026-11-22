@@ -5,7 +5,7 @@ synonyms: [curcumin, Curcuma longa, curcuminoids, turmeric extract]
 forms: [turmeric root powder, standardized curcumin extracts, curcumin with piperine (black pepper extract)]
 reference_intakes: null
 food_sources: [turmeric used as a cooking spice (not associated with the safety signals below)]
-effect_groups: [bleeding-risk, hepatotoxicity-reports]
+effect_groups: [hepatotoxicity-reports, botanical-warfarin]
 recommendable: false
 recommendable_note: Evidence is limited, and there are case reports of liver injury with concentrated supplements.
 timing:

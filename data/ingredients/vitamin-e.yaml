@@ -37,7 +37,7 @@ claims:
     direction: no_effect
     evidence_grade: A
     summary: Multiple large randomized trials found no reduction in cardiovascular events from vitamin E supplements.
-    sources: [ods-vitamin-e]
+    sources: [trial-hope-2000, trial-phs2-2008]
 safety_notes:
   - level: caution
     text: High-dose vitamin E may increase bleeding risk, especially with blood thinners.

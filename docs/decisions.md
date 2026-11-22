@@ -99,6 +99,22 @@ Short entries: what we chose, what we didn't, and why. Newest at the bottom. Sta
 **Chose** to show a habit swap only when the habit's grade is *higher* than the supplement's best benefit grade for the user's stated goal, **over** always suggesting habits.
 **Why:** It keeps "you probably don't need this" honest. Creatine for workouts isn't swapped (A-grade benefit, and training *complements* it). Melatonin for chronic insomnia is (CBT-I is graded A). Where a deficiency is plausible (iron or B12 for tiredness), the app says "get checked" instead.
 
+### D-023 · Store the evidence as verbatim, machine-checked quotes ✅
+**Chose** to store, for every source, its retrieval date, a fingerprint of the retrieved text, and verbatim quotes linked to the records they support, with the validator checking that every quote appears in the source, **over** citation lists alone.
+**Why:** "Anchored on scientific data" has to be checkable. A citation shows where to look, while a stored, verified quote shows what the source actually says, and it's re-checked automatically. Public-domain text is stored in full, while copyrighted abstracts and labels are stored as short quotes and re-verified online.
+
+### D-024 · Replace NIH ODS citations with primary sources ✅
+**Chose** to re-source every ODS-cited claim to the trials, Cochrane reviews, guidelines and FDA labels ODS itself relies on, **over** keeping ODS as the main citation.
+**Why:** ODS blocks automated retrieval (Cloudflare), so its pages can't be verified or monitored by our tooling. Primary sources are stronger evidence anyway. ODS remains a useful human reference.
+
+### D-025 · No verified source → the record is removed or downgraded ✅
+**Chose** to remove INT-032 (probiotics and antibiotics "2 hours apart"), drop fish oil and turmeric from the bleeding-risk group, and downgrade 7 records whose sources were weaker than assumed, **over** keeping plausible but unsupported content.
+**Why:** It's the "no source, no claim" rule applied for real. Verification also added three interactions found in the sources (INT-037 to INT-039) and a botanical + warfarin group based on the warfarin label.
+
+### D-026 · Expand network access only to source hosts ✅
+**Chose** a dedicated environment allowing exactly 20 source hosts (NIH, PubMed, DailyMed, FDA, USPSTF, and others) **over** unrestricted network access.
+**Why:** It's the least access that allows verification, and it records which hosts the project depends on.
+
 ---
 
 _Template for new entries:_

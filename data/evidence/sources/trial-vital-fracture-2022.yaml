@@ -1,0 +1,20 @@
+source_id: trial-vital-fracture-2022
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '35939577'
+excerpts:
+- supports:
+  - CLM-VITD-02
+  quote: Vitamin D 3 supplementation did not result in a significantly lower risk of fractures than placebo among generally
+    healthy midlife and older adults who were not selected for vitamin D deficiency, low bone mass, or osteoporosis.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/35939577/
+  sha256: bd97229548e260171f57ad6f303b3af31290df55089a52d939c40cfabc9fb225
+  title: Supplemental Vitamin D and Incident Fractures in Midlife and Older Adults.
+  journal: The New England journal of medicine
+  year: '2022'
+  doi: 10.1056/NEJMoa2202106
+  pmid: '35939577'

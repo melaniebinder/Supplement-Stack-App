@@ -1,0 +1,25 @@
+source_id: trial-caret-1996
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '8602180'
+excerpts:
+- supports:
+  - CLM-VITA-01
+  quote: The active-treatment group had a relative risk of lung cancer of 1.28 (95 percent confidence interval, 1.04 to 1.57;
+    P=0.02), as compared with the placebo group.
+  locator: Abstract, Results
+- supports:
+  - CLM-VITA-01
+  quote: the combination of beta carotene and vitamin A had no benefit and may have had an adverse effect on the incidence
+    of lung cancer
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/8602180/
+  sha256: 931754915c7575297442f86b6abaab0c84883f4adb69482d41f37647fc25f2ef
+  title: Effects of a combination of beta carotene and vitamin A on lung cancer and cardiovascular disease.
+  journal: The New England journal of medicine
+  year: '1996'
+  doi: 10.1056/NEJM199605023341802
+  pmid: '8602180'

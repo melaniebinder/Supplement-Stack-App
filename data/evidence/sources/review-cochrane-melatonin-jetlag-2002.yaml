@@ -1,0 +1,29 @@
+source_id: review-cochrane-melatonin-jetlag-2002
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '12076414'
+excerpts:
+- supports:
+  - CLM-MEL-01
+  quote: Nine of the ten trials found that melatonin, taken close to the target bedtime at the destination (10pm to midnight),
+    decreased jet-lag from flights crossing five or more time zones.
+  locator: Abstract, Main results
+- supports:
+  - TIMING:melatonin
+  quote: if it is taken at the wrong time, early in the day, it is liable to cause sleepiness and delay adaptation to local
+    time.
+  locator: Abstract, Main results
+- supports:
+  - INT-037
+  quote: Case reports suggest that people with epilepsy, and patients taking warfarin may come to harm from melatonin.
+  locator: Abstract, Main results
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/12076414/
+  sha256: dac5744d05096bd2964477058cecf8ae837372a756620852a889da93413fda69
+  title: Melatonin for the prevention and treatment of jet lag.
+  journal: The Cochrane database of systematic reviews
+  year: '2002'
+  doi: 10.1002/14651858.CD001520
+  pmid: '12076414'

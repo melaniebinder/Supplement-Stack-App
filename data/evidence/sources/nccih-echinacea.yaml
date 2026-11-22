@@ -1,0 +1,24 @@
+source_id: nccih-echinacea
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/echinacea
+excerpts:
+- supports:
+  - CLM-ECH-01
+  quote: Taking echinacea may slightly reduce your chances of catching a cold. It’s still unclear whether echinacea can shorten
+    the length of a cold.
+  locator: Effectiveness
+- supports:
+  - SAFETY:echinacea
+  quote: some people have allergic reactions to echinacea, which may be severe.
+  locator: Safety
+- supports:
+  - INT-034
+  quote: there are theoretical reasons to suspect that echinacea might interact with immunosuppressants or caffeine.
+  locator: Safety
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/echinacea
+  sha256: 61c37f5ffc4cd1e80a0be89240189ff39d2ac7650c55203a43fc18a78917170c
+  title: National Center for Complementary and Integrative Health

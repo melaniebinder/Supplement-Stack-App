@@ -1,0 +1,21 @@
+source_id: review-zinc-iron-absorption-2024
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '38640745'
+excerpts:
+- supports:
+  - INT-002
+  quote: the studies so far indicate that the competition between these trace elements for uptake already starts at the intestinal
+    mucus layer, yet further research is required to completely understand this interaction.
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/38640745/
+  sha256: fc321c5919de193f21c488c3a12b2fcd624375fbdff55051e7c12efa714b10b3
+  title: Interaction and competition for intestinal absorption by zinc, iron, copper, and manganese at the intestinal mucus
+    layer.
+  journal: 'Journal of trace elements in medicine and biology : organ of the Society for Minerals and Trace Elements (GMS)'
+  year: '2024'
+  doi: 10.1016/j.jtemb.2024.127459
+  pmid: '38640745'

@@ -1,0 +1,25 @@
+source_id: trial-phs2-2008
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '18997197'
+excerpts:
+- supports:
+  - CLM-VITE-02
+  quote: neither vitamin E nor vitamin C supplementation reduced the risk of major cardiovascular events.
+  locator: Abstract, Conclusions
+- supports:
+  - SAFETY:vitamin-e
+  - GROUP:bleeding-risk
+  quote: vitamin E was associated with an increased risk of hemorrhagic stroke (HR, 1.74 [95% CI, 1.04-2.91]; P = .04).
+  locator: Abstract, Results
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/18997197/
+  sha256: 5c9b21cbdd406314e7346d8599c1145d1c8d5f78508c774ef5cdc8e77e4a6ce2
+  title: 'Vitamins E and C in the prevention of cardiovascular disease in men: the Physicians'' Health Study II randomized
+    controlled trial.'
+  journal: JAMA
+  year: '2008'
+  doi: 10.1001/jama.2008.600
+  pmid: '18997197'

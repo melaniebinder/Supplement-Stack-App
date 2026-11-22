@@ -1,0 +1,25 @@
+source_id: review-cochrane-iron-women-2016
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '27087396'
+excerpts:
+- supports:
+  - CLM-IRON-01
+  quote: Daily iron supplementation effectively reduces the prevalence of anaemia and iron deficiency, raises haemoglobin
+    and iron stores, improves exercise performance and reduces symptomatic fatigue.
+  locator: Abstract, Authors' conclusions
+- supports:
+  - CLM-IRON-01
+  - SAFETY:iron
+  quote: These benefits come at the expense of increased gastrointestinal symptomatic side effects.
+  locator: Abstract, Authors' conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/27087396/
+  sha256: 6b43cc73c725ae925f02cfb248c288460a99b05dc35332f18aaf36792bd5d15c
+  title: Daily iron supplementation for improving anaemia, iron status and health in menstruating women.
+  journal: The Cochrane database of systematic reviews
+  year: '2016'
+  doi: 10.1002/14651858.CD009747.pub2
+  pmid: '27087396'

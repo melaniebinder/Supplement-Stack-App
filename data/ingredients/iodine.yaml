@@ -24,7 +24,7 @@ claims:
     direction: harm
     evidence_grade: C
     summary: Excess iodine, often from kelp or seaweed supplements, can cause thyroid dysfunction (both hyper- and hypothyroidism).
-    sources: [ods-iodine]
+    sources: [review-leung-iodine-2014]
 safety_notes:
   - level: caution
     text: Kelp and seaweed supplements can contain far more iodine than the label suggests.

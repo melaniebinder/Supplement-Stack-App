@@ -1,0 +1,20 @@
+source_id: review-allen-b12-2009
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '19116323'
+excerpts:
+- supports:
+  - CLM-B12-02
+  quote: In older persons, food-bound cobalamin malabsorption becomes the predominant cause of deficiency, at least in part
+    due to gastric atrophy, but it is likely that most elderly can absorb the vitamin from fortified food.
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/19116323/
+  sha256: 8f3810ffcc5ad64578c8349bf936acfb3643c5ceb5f65ccbfcce239574aa690c
+  title: How common is vitamin B-12 deficiency?
+  journal: The American journal of clinical nutrition
+  year: '2009'
+  doi: 10.3945/ajcn.2008.26947A
+  pmid: '19116323'

@@ -1,0 +1,20 @@
+source_id: review-pawlak-b12-veg-2013
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '23356638'
+excerpts:
+- supports:
+  - CLM-B12-01
+  quote: Vegetarians should thus take preventive measures to ensure adequate intake of this vitamin, including regular consumption
+    of supplements containing B12.
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/23356638/
+  sha256: 7957991e18f4900712d07b866805f3eec684e2479eb1a4cb2c221a9f44274a89
+  title: How prevalent is vitamin B(12) deficiency among vegetarians?
+  journal: Nutrition reviews
+  year: '2013'
+  doi: 10.1111/nure.12001
+  pmid: '23356638'

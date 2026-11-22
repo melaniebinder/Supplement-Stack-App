@@ -6,7 +6,7 @@
 effect_groups:
   - id: bleeding-risk
     name: May increase bleeding risk
-    description: These supplements have antiplatelet or anticoagulant-like effects, mostly from lab studies and case reports. Individually the effect is small, but it can add up.
+    description: Supplements with direct evidence of bleeding risk. High-dose vitamin E raised hemorrhagic stroke in two large trials, and NCCIH warns about bleeding with garlic and ginkgo. Fish oil and turmeric were removed after verification (VITAL found no excess bleeding at 1 g/day fish oil, and no verified source supports turmeric).
     rules:
       - when: {member_plus_drug_class: [warfarin, doacs, antiplatelets]}
         severity: moderate
@@ -16,7 +16,7 @@ effect_groups:
         severity: minor
         evidence_grade: D
         recommendation: Several supplements in your stack may each slightly affect clotting. Mention them all before surgery or procedures.
-    sources: [ods-vitamin-e, ods-omega-3, nccih-ginkgo, nccih-garlic, nccih-turmeric]
+    sources: [trial-phs2-2008, trial-atbc-1994, nccih-garlic, nccih-ginkgo]
     status: draft
     reviewed_by: null
 
@@ -32,7 +32,7 @@ effect_groups:
         severity: minor
         evidence_grade: D
         recommendation: More than one supplement in your stack may cause drowsiness.
-    sources: [nccih-melatonin, ods-ashwagandha]
+    sources: [nccih-melatonin, nccih-ashwagandha]
     status: draft
     reviewed_by: null
 
@@ -44,7 +44,7 @@ effect_groups:
         severity: moderate
         evidence_grade: D
         recommendation: More than one supplement in your stack has been linked to liver injury reports. Consider whether you need each one, and stop and seek care if you notice dark urine, yellowing skin or eyes, or abdominal pain.
-    sources: [livertox]
+    sources: [nccih-turmeric, nccih-green-tea, nccih-ashwagandha, livertox]
     status: draft
     reviewed_by: null
 
@@ -61,5 +61,19 @@ effect_groups:
           tetracycline-antibiotics: {type: separate, drug_before_hours: 2, drug_after_hours: 4, basis: draft_default, label_source: dailymed-doxycycline}
           bisphosphonates:          {type: separate, hours: 2, order: drug_first, basis: source, label_source: dailymed-alendronate}
     sources: [ods-calcium, ods-iron, ods-magnesium, ods-zinc, dailymed-ciprofloxacin, dailymed-doxycycline, dailymed-alendronate]
+    status: draft
+    reviewed_by: null
+
+  - id: botanical-warfarin
+    name: Herbal products and warfarin
+    description: The warfarin label calls for more frequent INR checks whenever a botanical (herbal) product is started or stopped, because many can change warfarin's effect.
+    rules:
+      - when: {member_plus_drug_class: [warfarin]}
+        severity: moderate
+        evidence_grade: B
+        recommendation: Tell your prescriber or pharmacist before starting or stopping this. The warfarin label recommends more frequent INR checks when you do.
+        management_by_drug_class:
+          warfarin: {type: monitor}
+    sources: [dailymed-warfarin]
     status: draft
     reviewed_by: null

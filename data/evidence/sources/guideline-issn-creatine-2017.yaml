@@ -1,0 +1,25 @@
+source_id: guideline-issn-creatine-2017
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '28615996'
+excerpts:
+- supports:
+  - CLM-CRE-01
+  quote: Studies have consistently shown that creatine supplementation increases intramuscular creatine concentrations which
+    may help explain the observed improvements in high intensity exercise performance leading to greater training adaptations.
+  locator: Abstract
+- supports:
+  - SAFETY:creatine
+  quote: short and long-term supplementation (up to 30 g/day for 5 years) is safe and well-tolerated in healthy individuals
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/28615996/
+  sha256: cf2805b89d01ab5fc41c6aa2dd1d7314d12ae4109ee15e5aaa070e092a74d278
+  title: 'International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise,
+    sport, and medicine.'
+  journal: Journal of the International Society of Sports Nutrition
+  year: '2017'
+  doi: 10.1186/s12970-017-0173-z
+  pmid: '28615996'

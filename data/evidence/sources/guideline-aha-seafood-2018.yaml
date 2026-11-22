@@ -1,0 +1,21 @@
+source_id: guideline-aha-seafood-2018
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '29773586'
+excerpts:
+- supports:
+  - HAB-HEART-01
+  quote: We conclude that 1 to 2 seafood meals per week be included to reduce the risk of congestive heart failure, coronary
+    heart disease, ischemic stroke, and sudden cardiac death
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/29773586/
+  sha256: 65d5b56259bf0650a2d2f905ea76db58d14db6f76c7d198dc4f9e9a1f520e41b
+  title: 'Seafood Long-Chain n-3 Polyunsaturated Fatty Acids and Cardiovascular Disease: A Science Advisory From the American
+    Heart Association.'
+  journal: Circulation
+  year: '2018'
+  doi: 10.1161/CIR.0000000000000574
+  pmid: '29773586'

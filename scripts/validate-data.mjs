@@ -298,6 +298,60 @@ if (fs.existsSync(fxFile)) {
   }
 }
 
+// ---------- Evidence store (data/evidence) ----------
+// A record counts as verified only if a stored excerpt from a retrieved source supports it, and the
+// source is one the record cites. Quotes are checked against stored text where it's in the repo
+// (public domain); scripts/evidence.mjs verify re-checks excerpt-only sources online.
+const norm = (t) => t.normalize("NFKC").replace(/[‘’ʼ′]/g, "'").replace(/[“”″]/g, '"').replace(/[‐‑‒–—−]/g, "-").replace(/\s+/g, " ").trim().toLowerCase();
+const EV_DIR = path.join(ROOT, "evidence", "sources");
+const supportedBy = new Map(); // record id -> Set(source ids)
+const verifiedSources = new Set();
+let excerptCount = 0;
+if (fs.existsSync(EV_DIR)) {
+  for (const f of fs.readdirSync(EV_DIR).filter((x) => x.endsWith(".yaml"))) {
+    const ev = yaml.load(fs.readFileSync(path.join(EV_DIR, f), "utf8"));
+    const where = `evidence ${ev.source_id}`;
+    if (`${ev.source_id}.yaml` !== f) err(where, "file name must match source_id");
+    if (!sources.has(ev.source_id)) err(where, "source_id not in sources.yaml");
+    if (!["public_domain", "excerpt_only"].includes(ev.license)) err(where, "license must be public_domain|excerpt_only");
+    if (!ev.retrieved?.sha256 || !ev.retrieved?.at) { err(where, "not retrieved yet (run scripts/evidence.mjs fetch)"); continue; }
+    const tp = path.join(ROOT, "evidence", "text", `${ev.source_id}.txt`);
+    const text = ev.license === "public_domain" && fs.existsSync(tp) ? norm(fs.readFileSync(tp, "utf8")) : null;
+    if (ev.license === "public_domain" && !text) err(where, "public-domain text missing from data/evidence/text/");
+    for (const [i, e] of (ev.excerpts ?? []).entries()) {
+      excerptCount++;
+      if (!e.quote || !e.supports?.length || !e.locator) err(`${where} excerpt ${i}`, "needs quote, supports, locator");
+      if (text && !text.includes(norm(e.quote))) err(`${where} excerpt ${i}`, `quote not found in stored text: "${e.quote.slice(0, 60)}…"`);
+      for (const rid of e.supports ?? []) {
+        if (!supportedBy.has(rid)) supportedBy.set(rid, new Set());
+        supportedBy.get(rid).add(ev.source_id);
+      }
+    }
+    if ((ev.excerpts ?? []).length) verifiedSources.add(ev.source_id);
+    if ((ev.excerpts ?? []).length && !sources.get(ev.source_id)?.verified) err(where, "has verified excerpts but sources.yaml says verified: false");
+  }
+}
+// Which records need evidence, and which sources each one cites.
+const needsEvidence = new Map();
+for (const ing of ingredients.values()) for (const c of ing.claims ?? []) needsEvidence.set(c.id, c.sources ?? []);
+for (const x of load("interactions.yaml").interactions) needsEvidence.set(x.id, x.sources ?? []);
+if (fs.existsSync(lsFile)) for (const g of yaml.load(fs.readFileSync(lsFile, "utf8")).goals ?? []) for (const h of g.habits ?? []) needsEvidence.set(h.id, h.sources ?? []);
+for (const g of groups.values()) needsEvidence.set(`GROUP:${g.id}`, g.sources ?? []);
+for (const s of sources.values()) if (s.verified && !verifiedSources.has(s.id)) err(`source ${s.id}`, "verified: true but no stored evidence excerpts");
+const unsupported = [];
+for (const [rid, cited] of needsEvidence) {
+  const by = [...(supportedBy.get(rid) ?? [])];
+  if (!by.length) { unsupported.push(rid); continue; }
+  const uncited = by.filter((sid) => !cited.includes(sid));
+  if (uncited.length === by.length) err(`record ${rid}`, `evidence comes from ${uncited.join(", ")}, which the record doesn't cite`);
+}
+for (const rid of supportedBy.keys())
+  if (/^(CLM|INT|HAB)-/.test(rid) && !needsEvidence.has(rid)) err(`evidence`, `excerpt supports unknown record "${rid}"`);
+if (unsupported.length) {
+  const msg = `${unsupported.length}/${needsEvidence.size} claims, interactions, habits and effect groups have no verified evidence yet: ${unsupported.join(", ")}`;
+  if (STRICT || process.env.REQUIRE_EVIDENCE) err("evidence", msg); else warnings.push(msg);
+}
+
 // ---------- Report ----------
 const unverified = [...sources.values()].filter((s) => !s.verified).length;
 const unused = [...sources.keys()].filter((id) => !usedSources.has(id));
@@ -317,6 +371,7 @@ console.log(`  effect groups: ${groups.size}`);
 console.log(`  drug classes:  ${drugClasses.size}`);
 console.log(`  sources:       ${sources.size}`);
 console.log(`  fixtures:      ${fixtureCount}`);
+console.log(`  evidence:      ${excerptCount} verified quotes from ${verifiedSources.size} sources → ${needsEvidence.size - unsupported.length}/${needsEvidence.size} claims, interactions, habits and effect groups supported`);
 console.log(`  food swaps:    ${foodSwapCount} food servings`);
 console.log(`  habits:        ${habitCount}  → habit swaps trigger for ${swapPreview.length} goal/supplement pairs`);
 if (process.env.SHOW_SWAPS) console.log("  swaps:", swapPreview.join(" · "));

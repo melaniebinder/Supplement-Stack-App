@@ -1,0 +1,19 @@
+source_id: guideline-aha-triglycerides-2019
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '31422671'
+excerpts:
+- supports:
+  - CLM-O3-02
+  quote: In treatment of very high triglycerides with 4 g/d, EPA+DHA agents reduce triglycerides by ≥30%
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/31422671/
+  sha256: 0de738ffb32d0ffcba3dbeae5dd4936ce8d8337c1ad8778031dc3d777fda2752
+  title: 'Omega-3 Fatty Acids for the Management of Hypertriglyceridemia: A Science Advisory From the American Heart Association.'
+  journal: Circulation
+  year: '2019'
+  doi: 10.1161/CIR.0000000000000709
+  pmid: '31422671'

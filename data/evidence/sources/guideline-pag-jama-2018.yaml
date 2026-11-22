@@ -1,0 +1,30 @@
+source_id: guideline-pag-jama-2018
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '30418471'
+excerpts:
+- supports:
+  - HAB-HEART-04
+  quote: Adults should do at least 150 minutes to 300 minutes a week of moderate-intensity, or 75 minutes to 150 minutes a
+    week of vigorous-intensity aerobic physical activity
+  locator: Abstract, Recommendations
+- supports:
+  - HAB-BONE-02
+  - HAB-WORK-01
+  quote: They should also do muscle-strengthening activities on 2 or more days a week.
+  locator: Abstract, Recommendations
+- supports:
+  - HAB-HEART-04
+  - HAB-ENERGY-01
+  quote: Evidence graded as strong or moderate was the basis of the key guidelines.
+  locator: Abstract, Process
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/30418471/
+  sha256: c32d5cfae36259b267ea647a3fb588fecf73ed248c94c003988200c085fb71c5
+  title: The Physical Activity Guidelines for Americans.
+  journal: JAMA
+  year: '2018'
+  doi: 10.1001/jama.2018.14854
+  pmid: '30418471'

@@ -1,0 +1,24 @@
+source_id: review-jovanovski-psyllium-2018
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '30239559'
+excerpts:
+- supports:
+  - CLM-PSY-01
+  quote: Supplementation of a median dose of ∼10.2 g psyllium significantly reduced LDL cholesterol
+  locator: Abstract, Results
+- supports:
+  - CLM-PSY-01
+  quote: Effect estimates for LDL cholesterol and non-HDL cholesterol were graded as moderate quality
+  locator: Abstract, Results
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/30239559/
+  sha256: 2b6a7f68036a5fb71057ead2fce7fd8bde8a394ab5c51010cac19d236403a233
+  title: 'Effect of psyllium (Plantago ovata) fiber on LDL cholesterol and alternative lipid targets, non-HDL cholesterol
+    and apolipoprotein B: a systematic review and meta-analysis of randomized controlled trials.'
+  journal: The American journal of clinical nutrition
+  year: '2018'
+  doi: 10.1093/ajcn/nqy115
+  pmid: '30239559'

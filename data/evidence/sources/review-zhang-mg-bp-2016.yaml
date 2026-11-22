@@ -1,0 +1,25 @@
+source_id: review-zhang-mg-bp-2016
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '27402922'
+excerpts:
+- supports:
+  - CLM-MAG-02
+  quote: Mg supplementation at a median dose of 368 mg/d for a median duration of 3 months significantly reduced systolic
+    BP by 2.00 mm Hg
+  locator: Abstract
+- supports:
+  - CLM-MAG-02
+  quote: Our findings indicate a causal effect of Mg supplementation on lowering BPs in adults.
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/27402922/
+  sha256: 9ae599dcdb55522102de158621978c7eedc1725703b249255f1775083ab4a1a8
+  title: 'Effects of Magnesium Supplementation on Blood Pressure: A Meta-Analysis of Randomized Double-Blind Placebo-Controlled
+    Trials.'
+  journal: 'Hypertension (Dallas, Tex. : 1979)'
+  year: '2016'
+  doi: 10.1161/HYPERTENSIONAHA.116.07664
+  pmid: '27402922'

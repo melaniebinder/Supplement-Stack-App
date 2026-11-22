@@ -1,0 +1,26 @@
+source_id: review-cochrane-probiotics-aad-2019
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '31039287'
+excerpts:
+- supports:
+  - CLM-PRO-01
+  quote: The overall evidence suggests a moderate protective effect of probiotics for preventing AAD (NNTB 9, 95% CI 7 to
+    13).
+  locator: Abstract, Authors' conclusions
+- supports:
+  - INT-033
+  - SAFETY:probiotics
+  quote: observational studies not included in this review have reported serious adverse events in severely debilitated or
+    immuno-compromised children with underlying risk factors including central venous catheter use
+  locator: Abstract, Authors' conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/31039287/
+  sha256: c2c11f60e9f71d6aaacfbe72f76b42f15b84a40e269bd469d4685a782b488a1a
+  title: Probiotics for the prevention of pediatric antibiotic-associated diarrhea.
+  journal: The Cochrane database of systematic reviews
+  year: '2019'
+  doi: 10.1002/14651858.CD004827.pub5
+  pmid: '31039287'

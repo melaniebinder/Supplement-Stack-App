@@ -1,0 +1,26 @@
+source_id: review-leung-iodine-2014
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '24342882'
+excerpts:
+- supports:
+  - CLM-IOD-01
+  - INT-036
+  quote: in certain susceptible individuals, including those with pre-existing thyroid disease, the elderly, fetuses and neonates,
+    or patients with other risk factors, the risk of developing iodine-induced thyroid dysfunction might be increased.
+  locator: Abstract
+- supports:
+  - CLM-IOD-01
+  quote: Hypothyroidism or hyperthyroidism as a result of supraphysiologic iodine exposure might be either subclinical or
+    overt
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/24342882/
+  sha256: 6855b4e2809d73ae9cc13362a64926e0757c29326379983b2f1c27acc39fbf67
+  title: Consequences of excess iodine.
+  journal: Nature reviews. Endocrinology
+  year: '2014'
+  doi: 10.1038/nrendo.2013.251
+  pmid: '24342882'

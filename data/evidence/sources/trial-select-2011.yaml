@@ -1,0 +1,23 @@
+source_id: trial-select-2011
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '21990298'
+excerpts:
+- supports:
+  - CLM-VITE-01
+  quote: 620 men in the vitamin E group developed prostate cancer (hazard ratio [HR], 1.17; 99% CI, 1.004-1.36, P = .008)
+  locator: Abstract, Results
+- supports:
+  - CLM-VITE-01
+  quote: Dietary supplementation with vitamin E significantly increased the risk of prostate cancer among healthy men.
+  locator: Abstract, Conclusion
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/21990298/
+  sha256: adc06b14ae62fcd235630ab5a46741ce4ba7b56e92ae64d3dd4b311453fa8770
+  title: 'Vitamin E and the risk of prostate cancer: the Selenium and Vitamin E Cancer Prevention Trial (SELECT).'
+  journal: JAMA
+  year: '2011'
+  doi: 10.1001/jama.2011.1437
+  pmid: '21990298'

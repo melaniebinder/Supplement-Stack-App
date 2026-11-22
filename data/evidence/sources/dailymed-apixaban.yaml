@@ -1,0 +1,27 @@
+source_id: dailymed-apixaban
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: e9481622-7cc6-418a-acb6-c5450daae9b0
+excerpts:
+- supports:
+  - INT-012
+  quote: St. John’s wort) because such drugs will decrease exposure to apixaban
+  locator: 7 Drug Interactions (combined P-gp and strong CYP3A4 inducers)
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9481622-7cc6-418a-acb6-c5450daae9b0
+  sha256: 31d0a3902c1f6c83bc3c682b8c17e8338d6505443fe957b1f5ed3e5591c1a731
+  title: 'These highlights do not include all the information needed to use ELIQUIS safely and effectively. See full prescribing
+    information for ELIQUIS.
+
+    ELIQUIS® (apixaban) tablets, for oral use
+
+    ELIQUIS® (apixaban) tablets for oral suspension
+
+    ELIQUIS® SPRINKLE (apixaban) for oral suspension
+
+    Initial U.S. Approval: 2012'
+  setid: e9481622-7cc6-418a-acb6-c5450daae9b0
+  label_version: '39'
+  label_effective: '20260817'

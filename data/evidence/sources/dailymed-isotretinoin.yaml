@@ -1,0 +1,20 @@
+source_id: dailymed-isotretinoin
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: 9f1c8971-c6dc-4708-848b-5cee50b6c32a
+excerpts:
+- supports:
+  - INT-031
+  quote: 'Do not take the following medicines during treatment with isotretinoin capsules: vitamin A supplements'
+  locator: Medication Guide
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9f1c8971-c6dc-4708-848b-5cee50b6c32a
+  sha256: 6c354ba421271f4b4db3dc6a62a3de753df8ef6e1a3fd1f2408a7aa47f17e3d3
+  title: "These highlights do not include all the information needed to use ISOTRETINOIN CAPSULES safely and effectively.\
+    \ See full prescribing information for ISOTRETINOIN CAPSULES. \n\n ISOTRETINOIN capsules, for oral use \n\n Initial U.S.\
+    \ Approval: 1982"
+  setid: 9f1c8971-c6dc-4708-848b-5cee50b6c32a
+  label_version: '12'
+  label_effective: '20261104'

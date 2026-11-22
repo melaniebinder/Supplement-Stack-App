@@ -5,7 +5,7 @@ synonyms: [EGCG, epigallocatechin gallate, Camellia sinensis extract, green tea 
 forms: [concentrated catechin extracts (often in weight-loss products)]
 reference_intakes: null
 food_sources: [brewed green tea (not associated with the liver-injury signal)]
-effect_groups: [hepatotoxicity-reports]
+effect_groups: [hepatotoxicity-reports, botanical-warfarin]
 recommendable: false
 recommendable_note: There's no meaningful benefit for weight, and there are case reports of liver injury with concentrated extracts.
 timing:

@@ -5,7 +5,7 @@ synonyms: [Withania somnifera, Indian ginseng, winter cherry]
 forms: [root extract, root and leaf extract]
 reference_intakes: null
 food_sources: []
-effect_groups: [sedative, hepatotoxicity-reports]
+effect_groups: [sedative, hepatotoxicity-reports, botanical-warfarin]
 recommendable: false
 recommendable_note: Evidence comes from small, short trials, and long-term safety isn't established.
 timing:
@@ -20,14 +20,14 @@ claims:
     direction: benefit
     evidence_grade: C
     summary: Small trials, mostly 8 weeks or shorter, report reductions in self-rated stress. Many were small or industry-funded.
-    sources: [ods-ashwagandha]
+    sources: [nccih-ashwagandha]
   - id: CLM-ASH-02
     outcome: Sleep quality
     population: Adults
     direction: benefit
     evidence_grade: C
     summary: A few small trials suggest modest improvements in sleep measures.
-    sources: [ods-ashwagandha]
+    sources: [nccih-ashwagandha]
 safety_notes:
   - level: caution
     text: Liver injury has been reported. Safety beyond about 3 months is not well established.

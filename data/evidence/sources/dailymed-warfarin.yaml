@@ -1,0 +1,41 @@
+source_id: dailymed-warfarin
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: 73b8e5ab-86f8-44f8-b290-346acb81c9ae
+excerpts:
+- supports:
+  - INT-017
+  quote: its action may be affected by factors such as other drugs and dietary vitamin K.
+  locator: 2.4 Monitoring to Achieve Optimal Anticoagulation
+- supports:
+  - INT-017
+  quote: 'decreased INR response: increased vitamin K intake'
+  locator: Endogenous Factors Affecting INR
+- supports:
+  - GROUP:bleeding-risk
+  - INT-011
+  - INT-018
+  - INT-019
+  quote: More frequent INR monitoring should be performed when starting or stopping botanicals.
+  locator: 7.5 Botanical (Herbal) Products and Foods
+- supports:
+  - GROUP:botanical-warfarin
+  quote: Perform more frequent INR monitoring when starting or stopping other drugs, including botanicals, or when changing
+    dosages of other drugs
+  locator: 5 Warnings and Precautions
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=73b8e5ab-86f8-44f8-b290-346acb81c9ae
+  sha256: b347768d03bdb90c710cd71b7a22aa5b71d3a1e4b6d4e757cd84f49e70fca617
+  title: 'These highlights do not include all the information needed to use WARFARIN SODIUM TABLETS safely and effectively.
+    See full prescribing information for WARFARIN SODIUM TABLETS.
+
+
+    WARFARIN SODIUM tablets, for oral use
+
+
+    Initial U.S. Approval: 1954'
+  setid: 73b8e5ab-86f8-44f8-b290-346acb81c9ae
+  label_version: '3'
+  label_effective: '20261109'

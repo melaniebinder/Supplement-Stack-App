@@ -1,0 +1,46 @@
+source_id: review-ross-dri-2011
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '21118827'
+excerpts:
+- supports:
+  - CLM-VITD-01
+  - CLM-CAL-00
+  quote: The Committee concluded that available scientific evidence supports a key role of calcium and vitamin D in skeletal
+    health, consistent with a cause-and-effect relationship and providing a sound basis for determination of intake requirements.
+  locator: Abstract
+- supports:
+  - CLM-VITD-01
+  - RI:vitamin-d
+  quote: For vitamin D, RDAs of 600 IU/d for ages 1-70 yr and 800 IU/d for ages 71 yr and older
+  locator: Abstract
+- supports:
+  - CLM-VITD-01
+  quote: RDAs for vitamin D were derived based on conditions of minimal sun exposure
+  locator: Abstract
+- supports:
+  - CLM-VITD-01
+  quote: The Committee concluded that the prevalence of vitamin D inadequacy in North America has been overestimated.
+  locator: Abstract
+- supports:
+  - CLM-CAL-00
+  - RI:calcium
+  quote: Recommended Dietary Allowances (RDAs; covering requirements of ≥97.5% of the population) for calcium range from 700
+    to 1300 mg/d for life-stage groups at least 1 yr of age.
+  locator: Abstract
+- supports:
+  - CLM-VITD-03
+  quote: For extraskeletal outcomes, including cancer, cardiovascular disease, diabetes, and autoimmune disorders, the evidence
+    was inconsistent, inconclusive as to causality, and insufficient to inform nutritional requirements.
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/21118827/
+  sha256: 97795267808ba293f850f38f6eb648d2521922c267a82868ed3042516931bbee
+  title: 'The 2011 report on dietary reference intakes for calcium and vitamin D from the Institute of Medicine: what clinicians
+    need to know.'
+  journal: The Journal of clinical endocrinology and metabolism
+  year: '2011'
+  doi: 10.1210/jc.2010-2704
+  pmid: '21118827'

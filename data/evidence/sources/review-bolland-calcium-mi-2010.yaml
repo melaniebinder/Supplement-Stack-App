@@ -1,0 +1,20 @@
+source_id: review-bolland-calcium-mi-2010
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '20671013'
+excerpts:
+- supports:
+  - CLM-CAL-02
+  - HAB-BONE-01
+  quote: Calcium supplements (without coadministered vitamin D) are associated with an increased risk of myocardial infarction.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/20671013/
+  sha256: 3b8f0b92004f36c415be7a4b2c4f3359b0733385ecd3a86dc7a483c0825baa87
+  title: 'Effect of calcium supplements on risk of myocardial infarction and cardiovascular events: meta-analysis.'
+  journal: BMJ (Clinical research ed.)
+  year: '2010'
+  doi: 10.1136/bmj.c3691
+  pmid: '20671013'

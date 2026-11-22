@@ -1,0 +1,20 @@
+source_id: study-caffeine-sleep-2013
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '24235903'
+excerpts:
+- supports:
+  - HAB-SLEEP-02
+  quote: caffeine taken 6 hours before bedtime has important disruptive effects on sleep and provides empirical support for
+    sleep hygiene recommendations to refrain from substantial caffeine use for a minimum of 6 hours prior to bedtime.
+  locator: Abstract, Conclusion
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/24235903/
+  sha256: f7c37990cda68d3b1603fac83ba6ff802247bfe6ec845ab8cfadd2976332ea14
+  title: Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed.
+  journal: 'Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine'
+  year: '2013'
+  doi: 10.5664/jcsm.3170
+  pmid: '24235903'

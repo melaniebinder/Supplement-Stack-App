@@ -1,0 +1,30 @@
+source_id: dailymed-levothyroxine
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: 0db62c57-d020-4ddb-b24a-ecb349ce3850
+excerpts:
+- supports:
+  - INT-023
+  - INT-024
+  quote: calcium carbonate, ferrous sulfate, sevelamer, lanthanum)
+  locator: '7 Drug Interactions (table: drugs that may decrease absorption)'
+- supports:
+  - INT-023
+  - INT-024
+  quote: Administer levothyroxine sodium tablets at least 4 hours apart from these agents.
+  locator: 7 Drug Interactions
+- supports:
+  - TIMING:drug_class/levothyroxine
+  quote: Administer once daily, preferably on an empty stomach, one-half to one hour before breakfast.
+  locator: 2 Dosage and Administration
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0db62c57-d020-4ddb-b24a-ecb349ce3850
+  sha256: 51fcfab465dafb7ac15a3b192a9276314f6e95cdf578a81ec38282d02abb650e
+  title: "These highlights do not include all the information needed to use LEVOTHYROXINE SODIUM TABLETS safely and effectively.\
+    \ See full prescribing information for LEVOTHYROXINE SODIUM TABLETS. \n LEVOTHYROXINE SODIUM tablets, for oral use\n Initial\
+    \ U.S. Approval: 2002"
+  setid: 0db62c57-d020-4ddb-b24a-ecb349ce3850
+  label_version: '1'
+  label_effective: '20261112'

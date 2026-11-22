@@ -1,0 +1,20 @@
+source_id: study-sleep-colds-2015
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '26118561'
+excerpts:
+- supports:
+  - HAB-IMM-03
+  quote: Shorter sleep duration, measured behaviorally using actigraphy prior to viral exposure, was associated with increased
+    susceptibility to the common cold.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/26118561/
+  sha256: ad6dfcf43a5441c74a2640c9ad42312988f3dcf99bcfb3924069b0abd16ece0e
+  title: Behaviorally Assessed Sleep and Susceptibility to the Common Cold.
+  journal: Sleep
+  year: '2015'
+  doi: 10.5665/sleep.4968
+  pmid: '26118561'

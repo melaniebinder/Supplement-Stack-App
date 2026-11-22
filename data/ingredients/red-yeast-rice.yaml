@@ -5,7 +5,7 @@ synonyms: [Monascus purpureus, monacolin K, beni-koji, red yeast rice extract]
 forms: [fermented rice products with variable monacolin content]
 reference_intakes: null
 food_sources: []
-effect_groups: []
+effect_groups: [botanical-warfarin]
 recommendable: false
 recommendable_note: Monacolin K is chemically identical to the statin drug lovastatin, and content varies by product. Cholesterol lowering belongs with a clinician.
 timing:

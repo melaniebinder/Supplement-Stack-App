@@ -1,0 +1,25 @@
+source_id: dailymed-hydrochlorothiazide
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: c9c44c37-bb49-4364-9293-3c8fd51b759e
+excerpts:
+- supports:
+  - INT-025
+  - INT-026
+  quote: Thiazides may decrease urinary calcium excretion.
+  locator: Precautions
+- supports:
+  - INT-025
+  - INT-026
+  quote: Thiazides may cause intermittent and slight elevation of serum calcium in the absence of known disorders of calcium
+    metabolism.
+  locator: Precautions
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c9c44c37-bb49-4364-9293-3c8fd51b759e
+  sha256: a737e9f0f11958c2f1d2f3fc473229971c8dd33c570e5f2bbd1396d08c486b7b
+  title: "Hydrochlorothiazide Tablets, USP \n\n Rx only"
+  setid: c9c44c37-bb49-4364-9293-3c8fd51b759e
+  label_version: '8'
+  label_effective: '20261110'

@@ -28,21 +28,21 @@ claims:
     direction: benefit
     evidence_grade: B
     summary: Many US adults eat less magnesium than recommended. Supplements raise intake, but the health benefit of correcting a marginal shortfall is less established.
-    sources: [ods-magnesium]
+    sources: [review-rosanoff-mg-2012]
   - id: CLM-MAG-01
     outcome: Sleep quality and time to fall asleep
     population: Older adults with insomnia
     direction: mixed
     evidence_grade: C
-    summary: A meta-analysis of small trials found low-quality evidence of a possible small improvement in time to fall asleep.
+    summary: A meta-analysis of 3 small trials (151 older adults) found people fell asleep about 17 minutes faster, but the evidence was low to very low quality.
     sources: [review-magnesium-insomnia-2021]
   - id: CLM-MAG-02
     outcome: Blood pressure
     population: Adults
     direction: benefit
-    evidence_grade: C
-    summary: Meta-analyses suggest a small reduction in blood pressure, and results vary across studies.
-    sources: [ods-magnesium]
+    evidence_grade: B
+    summary: A meta-analysis of 34 double-blind trials found about 368 mg/day lowered blood pressure by about 2 mmHg. The effect is real but small.
+    sources: [review-zhang-mg-bp-2016]
 safety_notes:
   - level: info
     text: Supplemental magnesium above the UL commonly causes diarrhea, nausea, and cramping, especially citrate, oxide, and chloride forms.

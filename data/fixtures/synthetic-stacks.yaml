@@ -92,8 +92,8 @@ fixtures:
     expected:
       interactions: [INT-018]                         # CoQ10 + warfarin
       group_flags:
-        - {group: bleeding-risk, rule: member_plus_drug_class, members: [turmeric, omega-3], drug_class: warfarin, severity: moderate}
-        - {group: bleeding-risk, rule: min_members, members: [turmeric, omega-3], severity: minor}
+        - {group: botanical-warfarin, rule: member_plus_drug_class, members: [turmeric], drug_class: warfarin, severity: moderate}
+      # Fish oil + warfarin is deliberately NOT flagged: VITAL found no excess bleeding at 1 g/day (verified Nov 2026).
       ul_flags: []
       overlaps: []
       route_to_pharmacist: true

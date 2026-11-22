@@ -1,0 +1,21 @@
+source_id: case-glucosamine-warfarin-2008
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '18363538'
+excerpts:
+- supports:
+  - INT-019
+  quote: the reports from the FDA and WHO, the published case report, and our case report suggest that the use of warfarin
+    and glucosamine may lead to an increased INR.
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/18363538/
+  sha256: 3686588125afb739332a827b1ab725e3036d768d4c534b8105955b59634811cb
+  title: 'Potential glucosamine-warfarin interaction resulting in increased international normalized ratio: case report and
+    review of the literature and MedWatch database.'
+  journal: Pharmacotherapy
+  year: '2008'
+  doi: 10.1592/phco.28.4.540
+  pmid: '18363538'

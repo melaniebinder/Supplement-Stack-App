@@ -1,0 +1,24 @@
+source_id: dailymed-metformin
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: c72cfd1a-dce9-43a3-88e2-3cf1d9078b52
+excerpts:
+- supports:
+  - INT-027
+  quote: Metformin may lower vitamin B 12 levels.
+  locator: 5 Warnings and Precautions
+- supports:
+  - INT-027
+  quote: Measure hematological parameters annually and vitamin B 12 at 2 to 3 year intervals and manage any abnormalities.
+  locator: 5 Warnings and Precautions
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c72cfd1a-dce9-43a3-88e2-3cf1d9078b52
+  sha256: 4b463869e2aa5808f3c7c7f55fd89fe5b2d52aa1a489e9c9973c924db76d3d7f
+  title: "These highlights do not include all the information needed to use \n METFORMIN HYDROCHLORIDE TABLETS \n safely and\
+    \ effectively. See full prescribing information for \n METFORMIN HYDROCHLORIDE TABLETS \n . \n\n METFORMIN HYDROCHLORIDE\
+    \ \n tablets, for oral use \n\n Initial U.S. Approval: 1995"
+  setid: c72cfd1a-dce9-43a3-88e2-3cf1d9078b52
+  label_version: '19'
+  label_effective: '20261109'

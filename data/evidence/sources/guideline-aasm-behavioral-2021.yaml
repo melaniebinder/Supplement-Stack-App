@@ -1,0 +1,21 @@
+source_id: guideline-aasm-behavioral-2021
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '33164742'
+excerpts:
+- supports:
+  - HAB-SLEEP-01
+  quote: We recommend that clinicians use multicomponent cognitive behavioral therapy for insomnia for the treatment of chronic
+    insomnia disorder in adults. (STRONG).
+  locator: Abstract, Recommendation 1
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/33164742/
+  sha256: 119f7158e7d47910fa60cec435ffd604db10e1a619b8083e38d1d01f2490a6a2
+  title: 'Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine
+    clinical practice guideline.'
+  journal: 'Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine'
+  year: '2021'
+  doi: 10.5664/jcsm.8986
+  pmid: '33164742'

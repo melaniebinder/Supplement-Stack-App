@@ -25,14 +25,14 @@ claims:
     direction: benefit
     evidence_grade: A
     summary: B12 is found naturally almost only in animal foods. People eating vegan diets need fortified foods or supplements to meet needs.
-    sources: [ods-vitamin-b12]
+    sources: [review-pawlak-b12-veg-2013]
   - id: CLM-B12-02
     outcome: Maintaining adequate B12 status
     population: Adults 50+
     direction: benefit
-    evidence_grade: A
-    summary: Absorption of food-bound B12 often declines with age. Adults over 50 are advised to get most of their B12 from fortified foods or supplements.
-    sources: [ods-vitamin-b12]
+    evidence_grade: B
+    summary: In older adults, poor absorption of B12 bound in food becomes the main cause of deficiency, but most can absorb the B12 in fortified foods and supplements.
+    sources: [review-allen-b12-2009]
 safety_notes: []
 sources: [ods-vitamin-b12]
 status: draft

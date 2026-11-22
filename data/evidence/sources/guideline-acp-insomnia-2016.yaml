@@ -1,0 +1,20 @@
+source_id: guideline-acp-insomnia-2016
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '27136449'
+excerpts:
+- supports:
+  - HAB-SLEEP-01
+  quote: 'ACP recommends that all adult patients receive cognitive behavioral therapy for insomnia (CBT-I) as the initial
+    treatment for chronic insomnia disorder. (Grade: strong recommendation, moderate-quality evidence).'
+  locator: Abstract, Recommendation 1
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/27136449/
+  sha256: 3606406fe723a97fa3d32aad94a0a434c053cb0e84cdb1c164d75f6b3a9cce1f
+  title: 'Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline From the American College of Physicians.'
+  journal: Annals of internal medicine
+  year: '2016'
+  doi: 10.7326/M15-2175
+  pmid: '27136449'

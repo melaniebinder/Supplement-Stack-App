@@ -5,7 +5,7 @@ synonyms: [Echinacea purpurea, Echinacea angustifolia, Echinacea pallida, purple
 forms: [aerial-part extracts, root extracts]
 reference_intakes: null
 food_sources: []
-effect_groups: []
+effect_groups: [botanical-warfarin]
 recommendable: false
 recommendable_note: Evidence for colds is weak, and products vary widely.
 timing:
@@ -20,7 +20,7 @@ claims:
     direction: mixed
     evidence_grade: C
     summary: Some products may have a weak preventive effect. Treatment trials mostly show no benefit, and products differ widely.
-    sources: [review-cochrane-echinacea-2014, nccih-echinacea]
+    sources: [nccih-echinacea, review-cochrane-echinacea-2014]
 safety_notes:
   - level: caution
     text: Allergic reactions are possible, especially in people allergic to the daisy family (e.g. ragweed).

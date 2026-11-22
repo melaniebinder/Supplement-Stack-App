@@ -24,7 +24,7 @@ claims:
     population: Adults
     direction: mixed
     evidence_grade: C
-    summary: The 2024 Cochrane review found the evidence on zinc for preventing or treating colds uncertain, with results varying across studies.
+    summary: The 2024 Cochrane review found zinc may have little or no effect on preventing colds, and may shorten colds when taken as treatment (low-certainty evidence), with more non-serious side effects such as nausea and bad taste.
     sources: [review-cochrane-zinc-cold-2024]
 safety_notes:
   - level: caution

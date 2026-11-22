@@ -1,0 +1,31 @@
+source_id: nccih-green-tea
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/green-tea
+excerpts:
+- supports:
+  - INT-021
+  quote: Green tea at high doses has been shown to reduce blood levels and, therefore, the effectiveness of the drug nadolol,
+    a beta-blocker used for high blood pressure and heart problems.
+  locator: Safety
+- supports:
+  - INT-038
+  quote: Green tea extract can reduce blood levels of the cholesterol-lowering drug atorvastatin.
+  locator: Safety
+- supports:
+  - SAFETY:green-tea-extract
+  - GROUP:hepatotoxicity-reports
+  quote: liver injury has been reported in some people who used green tea products, primarily green tea extracts in tablet
+    or capsule form.
+  locator: Safety
+- supports:
+  - SAFETY:green-tea-extract
+  quote: No safety concerns have been reported for green tea consumed as a beverage by adults. However, green tea does contain
+    caffeine.
+  locator: Safety
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/green-tea
+  sha256: 36f01703a0172b1dcfe48cb24cfc573de4a859678d316d267e2865605fac663d
+  title: National Center for Complementary and Integrative Health

@@ -1,0 +1,25 @@
+source_id: review-cochrane-homocysteine-2017
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '28816346'
+excerpts:
+- supports:
+  - CLM-B6-01
+  quote: there were no differences in effects of homocysteine-lowering interventions in the form of supplements of vitamins
+    B6, B9 or B12 given alone or in combination comparing with placebo on myocardial infarction, death from any cause or adverse
+    events.
+  locator: Abstract, Authors' conclusions
+- supports:
+  - CLM-B6-01
+  quote: In terms of stroke, this review found a small difference in effect favouring to homocysteine-lowering interventions
+  locator: Abstract, Authors' conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/28816346/
+  sha256: 6d1a8002a0069c48b71fd2138c2685ba6c8fca4ded5ca06127165e9d3159dbf9
+  title: Homocysteine-lowering interventions for preventing cardiovascular events.
+  journal: The Cochrane database of systematic reviews
+  year: '2017'
+  doi: 10.1002/14651858.CD006612.pub5
+  pmid: '28816346'

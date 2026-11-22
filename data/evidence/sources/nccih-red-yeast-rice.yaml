@@ -1,0 +1,38 @@
+source_id: nccih-red-yeast-rice
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/red-yeast-rice
+excerpts:
+- supports:
+  - INT-020
+  - CLM-RYR-01
+  quote: Monacolin K is structurally identical to the medicine lovastatin.
+  locator: Background
+- supports:
+  - CLM-RYR-01
+  quote: Red yeast rice products that have considerable amounts of monacolin K may effectively lower blood cholesterol levels
+  locator: Effectiveness
+- supports:
+  - CLM-RYR-01
+  quote: the quantity ranged more than 60-fold, from 0.09 to 5.48 mg per 1,200 mg of red yeast rice.
+  locator: Background
+- supports:
+  - INT-020
+  - SAFETY:red-yeast-rice
+  quote: Red yeast rice products that contain significant amounts of monacolin K can have the same potential side effects
+    as statin drugs, including muscle, kidney, and liver damage.
+  locator: Safety
+- supports:
+  - INT-020
+  quote: Red yeast rice products can have the same types of drug interactions as statin drugs
+  locator: Safety
+- supports:
+  - SAFETY:red-yeast-rice
+  quote: Some red yeast rice products contain a contaminant called citrinin, which is toxic and can damage the kidneys.
+  locator: Safety
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/red-yeast-rice
+  sha256: b9bd75441806484ca8244975ae911f83419d6aa7817adb2f636c2d79d4e29b60
+  title: National Center for Complementary and Integrative Health

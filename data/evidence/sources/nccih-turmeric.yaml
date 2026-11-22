@@ -1,0 +1,24 @@
+source_id: nccih-turmeric
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/turmeric
+excerpts:
+- supports:
+  - CLM-TUR-01
+  quote: The initial evidence is positive; higher-quality evidence is needed to reach definitive conclusions
+  locator: Osteoarthritis
+- supports:
+  - SAFETY:turmeric
+  - GROUP:hepatotoxicity-reports
+  quote: liver damage has been reported in some people who have consumed these bioavailable formulations.
+  locator: Safety
+- supports:
+  - SAFETY:turmeric
+  quote: Combining curcumin with piperine is one way to improve the bioavailability of curcumin.
+  locator: Effectiveness
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/turmeric
+  sha256: 4df29f0ea0d86947df3ef9b7e512c55d1c64b415915273cd2727e523a333d265
+  title: National Center for Complementary and Integrative Health

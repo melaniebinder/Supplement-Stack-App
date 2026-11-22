@@ -1,0 +1,20 @@
+source_id: trial-hope-2000
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '10639540'
+excerpts:
+- supports:
+  - CLM-VITE-02
+  quote: In patients at high risk for cardiovascular events, treatment with vitamin E for a mean of 4.5 years had no apparent
+    effect on cardiovascular outcomes.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/10639540/
+  sha256: be307fb95a4d6b4d75cf7b194568e1461ef12891f6f0383423007e1f9171768d
+  title: Vitamin E supplementation and cardiovascular events in high-risk patients.
+  journal: The New England journal of medicine
+  year: '2000'
+  doi: 10.1056/NEJM200001203420302
+  pmid: '10639540'

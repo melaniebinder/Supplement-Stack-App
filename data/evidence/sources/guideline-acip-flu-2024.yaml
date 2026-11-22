@@ -1,0 +1,20 @@
+source_id: guideline-acip-flu-2024
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '39197095'
+excerpts:
+- supports:
+  - HAB-IMM-01
+  quote: Routine annual influenza vaccination is recommended for all persons aged ≥6 months who do not have contraindications.
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/39197095/
+  sha256: fd9fd2c1f7feee02c656d60332b01bbb6c5fd9b83fc099bcd793843b976e8403
+  title: 'Prevention and Control of Seasonal Influenza with Vaccines: Recommendations of the Advisory Committee on Immunization
+    Practices - United States, 2024-25 Influenza Season.'
+  journal: 'MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports'
+  year: '2024'
+  doi: 10.15585/mmwr.rr7305a1
+  pmid: '39197095'

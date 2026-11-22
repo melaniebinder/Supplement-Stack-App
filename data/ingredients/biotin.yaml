@@ -24,7 +24,7 @@ claims:
     direction: no_effect
     evidence_grade: D
     summary: Evidence of benefit is limited to case reports in people with deficiency or specific nail conditions. There's no good evidence in healthy people.
-    sources: [ods-biotin]
+    sources: [review-patel-biotin-2017]
 safety_notes:
   - level: warning
     text: High-dose biotin (common in hair, skin, and nail products) can cause falsely high or low results on some lab tests, including troponin (used to diagnose heart attack) and thyroid tests. Tell your clinician and the lab before blood tests.

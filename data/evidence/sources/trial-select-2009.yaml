@@ -1,0 +1,25 @@
+source_id: trial-select-2009
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '19066370'
+excerpts:
+- supports:
+  - CLM-SEL-01
+  quote: Selenium or vitamin E, alone or in combination at the doses and formulations used, did not prevent prostate cancer
+    in this population of relatively healthy men.
+  locator: Abstract, Conclusion
+- supports:
+  - SAFETY:selenium
+  quote: type 2 diabetes mellitus in the selenium group (relative risk, 1.07; 99% CI, 0.94-1.22; P = .16)
+  locator: Abstract, Results
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/19066370/
+  sha256: b1c7b8ca2a8ddb40c2833a8646a6f83c2b665df42d7a06ac922ee0e01520791b
+  title: 'Effect of selenium and vitamin E on risk of prostate cancer and other cancers: the Selenium and Vitamin E Cancer
+    Prevention Trial (SELECT).'
+  journal: JAMA
+  year: '2009'
+  doi: 10.1001/jama.2008.864
+  pmid: '19066370'

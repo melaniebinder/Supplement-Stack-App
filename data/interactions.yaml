@@ -18,7 +18,7 @@ interactions:
     recommendation: If you take both, take them at different times of day.
     evidence_grade: B
     management: {type: separate, hours: 2, basis: draft_default}
-    sources: [ods-iron, ods-calcium]
+    sources: [study-hallberg-calcium-iron-1991]
     status: draft
     reviewed_by: null
 
@@ -27,11 +27,11 @@ interactions:
     b: ingredient/iron
     severity: minor
     effect: reduces_absorption
-    mechanism: High-dose iron supplements taken without food may reduce zinc absorption.
+    mechanism: Zinc and iron may compete for absorption in the gut. Human data on how much this matters at supplement doses are limited.
     recommendation: If you take both, consider taking them at different times or with meals.
     evidence_grade: C
     management: {type: separate, hours: 2, basis: draft_default}
-    sources: [ods-zinc]
+    sources: [review-zinc-iron-absorption-2024]
     status: draft
     reviewed_by: null
 
@@ -40,11 +40,11 @@ interactions:
     b: ingredient/iron
     severity: info
     effect: enhances_absorption
-    mechanism: Vitamin C increases absorption of iron from plant foods and supplements.
+    mechanism: Vitamin C boosts iron absorption from a single meal. Across a whole diet the effect is much smaller.
     recommendation: Usually helpful. People with hemochromatosis should talk to their clinician.
     evidence_grade: B
     management: {type: prefer_together}
-    sources: [ods-iron]
+    sources: [study-cook-ascorbic-iron-2001, study-hallberg-ascorbic-phytate-1989]
     status: draft
     reviewed_by: null
 
@@ -57,7 +57,7 @@ interactions:
     recommendation: Avoid high-dose vitamin E unless a clinician recommends it, especially if you take a blood thinner.
     evidence_grade: C
     management: {type: limit_dose}
-    sources: [ods-vitamin-e, ods-vitamin-k]
+    sources: [trial-booth-vite-vitk-2004]
     status: draft
     reviewed_by: null
 
@@ -71,7 +71,7 @@ interactions:
     recommendation: Talk to your pharmacist or doctor before combining. You may need a different contraceptive method.
     evidence_grade: A
     management: {type: avoid}
-    sources: [nccih-st-johns-wort]
+    sources: [dailymed-ethinyl-estradiol]
     status: draft
     reviewed_by: null
 
@@ -84,7 +84,7 @@ interactions:
     recommendation: Do not combine without talking to your prescriber or pharmacist.
     evidence_grade: B
     management: {type: avoid}
-    sources: [nccih-st-johns-wort]
+    sources: [dailymed-warfarin, nccih-st-johns-wort]
     status: draft
     reviewed_by: null
 
@@ -97,7 +97,7 @@ interactions:
     recommendation: Do not combine without talking to your prescriber or pharmacist.
     evidence_grade: B
     management: {type: avoid}
-    sources: [nccih-st-johns-wort]
+    sources: [dailymed-apixaban]
     status: draft
     reviewed_by: null
 
@@ -162,7 +162,7 @@ interactions:
     recommendation: Don't start, stop, or change vitamin K supplements (including multivitamins that contain K) without talking to your prescriber. Keeping intake consistent is what matters.
     evidence_grade: A
     management: {type: keep_consistent}
-    sources: [ods-vitamin-k]
+    sources: [dailymed-warfarin]
     status: draft
     reviewed_by: null
 
@@ -175,7 +175,7 @@ interactions:
     recommendation: Talk to your prescriber or pharmacist before combining. INR monitoring may be needed.
     evidence_grade: C
     management: {type: consult}
-    sources: [nccih-coq10]
+    sources: [dailymed-warfarin, nccih-coq10]
     status: draft
     reviewed_by: null
 
@@ -188,7 +188,7 @@ interactions:
     recommendation: Talk to your prescriber or pharmacist before combining.
     evidence_grade: C
     management: {type: consult}
-    sources: [nccih-glucosamine]
+    sources: [case-glucosamine-warfarin-2008, dailymed-warfarin]
     status: draft
     reviewed_by: null
 
@@ -227,7 +227,7 @@ interactions:
     recommendation: Talk to your HIV care team or pharmacist before using garlic supplements.
     evidence_grade: B
     management: {type: consult}
-    sources: [nccih-garlic]
+    sources: [study-piscitelli-garlic-saquinavir-2002]
     status: draft
     reviewed_by: null
 
@@ -240,7 +240,7 @@ interactions:
     recommendation: Take them at least 4 hours apart, and confirm the timing with your pharmacist.
     evidence_grade: B
     management: {type: separate, hours: 4, order: drug_first, basis: label, label_source: dailymed-levothyroxine}
-    sources: [ods-iron]
+    sources: [dailymed-levothyroxine]
     status: draft
     reviewed_by: null
 
@@ -253,7 +253,7 @@ interactions:
     recommendation: Take them at least 4 hours apart, and confirm the timing with your pharmacist.
     evidence_grade: B
     management: {type: separate, hours: 4, order: drug_first, basis: label, label_source: dailymed-levothyroxine}
-    sources: [ods-calcium]
+    sources: [dailymed-levothyroxine]
     status: draft
     reviewed_by: null
 
@@ -266,7 +266,7 @@ interactions:
     recommendation: Talk to your prescriber about whether you need calcium supplements and how much.
     evidence_grade: C
     management: {type: consult}
-    sources: [ods-calcium]
+    sources: [dailymed-hydrochlorothiazide]
     status: draft
     reviewed_by: null
 
@@ -279,7 +279,7 @@ interactions:
     recommendation: Mention the combination to your prescriber.
     evidence_grade: C
     management: {type: monitor}
-    sources: [ods-vitamin-d]
+    sources: [dailymed-hydrochlorothiazide]
     status: draft
     reviewed_by: null
 
@@ -292,7 +292,7 @@ interactions:
     recommendation: Ask your clinician whether your B12 level should be checked. This is a reason to consider B12, not a reason to avoid it.
     evidence_grade: B
     management: {type: monitor}
-    sources: [ods-vitamin-b12]
+    sources: [dailymed-metformin]
     status: draft
     reviewed_by: null
 
@@ -305,7 +305,7 @@ interactions:
     recommendation: Ask your clinician whether your B12 level should be checked.
     evidence_grade: B
     management: {type: monitor}
-    sources: [ods-vitamin-b12]
+    sources: [dailymed-omeprazole]
     status: draft
     reviewed_by: null
 
@@ -318,7 +318,7 @@ interactions:
     recommendation: Ask your clinician whether your magnesium level should be checked.
     evidence_grade: B
     management: {type: monitor}
-    sources: [fda-ppi-magnesium-2011, ods-magnesium]
+    sources: [dailymed-omeprazole]
     status: draft
     reviewed_by: null
 
@@ -331,7 +331,7 @@ interactions:
     recommendation: Mention this to your clinician if you take iron for low iron levels.
     evidence_grade: C
     management: {type: monitor}
-    sources: [ods-iron]
+    sources: [dailymed-omeprazole]
     status: draft
     reviewed_by: null
 
@@ -344,20 +344,7 @@ interactions:
     recommendation: Avoid vitamin A supplements, including high-A multivitamins and cod liver oil, unless your prescriber approves.
     evidence_grade: B
     management: {type: avoid}
-    sources: [ods-vitamin-a]
-    status: draft
-    reviewed_by: null
-
-  - id: INT-032
-    a: ingredient/probiotics
-    b: drug_class/antibiotics-general
-    severity: minor
-    effect: reduces_effect
-    mechanism: Antibiotics can kill bacterial probiotic strains (yeast-based S. boulardii is not affected).
-    recommendation: Take bacterial probiotics at least 2 hours apart from the antibiotic.
-    evidence_grade: C
-    management: {type: separate, hours: 2, basis: draft_default}
-    sources: [ods-probiotics]
+    sources: [dailymed-isotretinoin]
     status: draft
     reviewed_by: null
 
@@ -370,7 +357,7 @@ interactions:
     recommendation: Talk to your care team before taking probiotics.
     evidence_grade: C
     management: {type: consult}
-    sources: [ods-probiotics]
+    sources: [review-cochrane-probiotics-aad-2019]
     status: draft
     reviewed_by: null
 
@@ -396,19 +383,58 @@ interactions:
     recommendation: Talk to your prescriber. Thyroid levels may need monitoring.
     evidence_grade: D
     management: {type: consult}
-    sources: [ods-ashwagandha]
+    sources: [nccih-ashwagandha]
     status: draft
     reviewed_by: null
 
   - id: INT-036
     a: ingredient/iodine
     b: drug_class/antithyroid-drugs
-    severity: moderate
+    severity: minor
     effect: increases_risk
-    mechanism: Extra iodine can change how these drugs affect thyroid function.
-    recommendation: Avoid iodine and kelp supplements unless your prescriber approves.
+    mechanism: People with existing thyroid disease are more prone to thyroid problems caused by excess iodine.
+    recommendation: Ask your prescriber before taking iodine or kelp supplements.
     evidence_grade: C
-    management: {type: avoid}
-    sources: [ods-iodine]
+    management: {type: consult}
+    sources: [review-leung-iodine-2014]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-037
+    a: ingredient/melatonin
+    b: drug_class/warfarin
+    severity: minor
+    effect: increases_risk
+    mechanism: Case reports describe people taking warfarin who may have been harmed by melatonin. The interaction hasn't been studied systematically.
+    recommendation: Mention melatonin to your prescriber or pharmacist if you take warfarin.
+    evidence_grade: D
+    management: {type: consult}
+    sources: [review-cochrane-melatonin-jetlag-2002]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-038
+    a: ingredient/green-tea-extract
+    b: drug_class/statins
+    severity: moderate
+    effect: reduces_effect
+    mechanism: Green tea extract can lower blood levels of atorvastatin.
+    recommendation: If you take a statin, talk to your pharmacist before using green tea extract.
+    evidence_grade: C
+    management: {type: consult}
+    sources: [nccih-green-tea]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-039
+    a: ingredient/ashwagandha
+    b: drug_class/immunosuppressants
+    severity: minor
+    effect: reduces_effect
+    mechanism: Ashwagandha may interact with medicines that suppress the immune system. Clinical data are limited.
+    recommendation: Talk to your care team before using ashwagandha.
+    evidence_grade: D
+    management: {type: consult}
+    sources: [nccih-ashwagandha]
     status: draft
     reviewed_by: null

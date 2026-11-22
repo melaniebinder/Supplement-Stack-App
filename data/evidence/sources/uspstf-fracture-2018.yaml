@@ -1,0 +1,28 @@
+source_id: uspstf-fracture-2018
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/vitamin-d-calcium-or-combined-supplementation-for-the-primary-prevention-of-fractures-in-adults-preventive-medication
+excerpts:
+- supports:
+  - CLM-CAL-01
+  quote: The USPSTF recommends against daily supplementation with 400 IU or less of vitamin D and 1000 mg or less of calcium
+    for the primary prevention of fractures in community-dwelling, postmenopausal women.
+  locator: Recommendation summary (Grade D)
+- supports:
+  - CLM-CAL-01
+  - CLM-VITD-02
+  quote: The USPSTF concludes that the current evidence is insufficient to assess the balance of the benefits and harms of
+    daily supplementation with doses greater than 400 IU of vitamin D and greater than 1000 mg of calcium for the primary
+    prevention of fractures in community-dwelling, postmenopausal women.
+  locator: Recommendation summary (I statement)
+- supports:
+  - CLM-CAL-01
+  quote: Final Evidence Review (April 17, 2018)
+  locator: Supporting documents list (latest final review is 2018)
+retrieved:
+  at: '2026-11-22'
+  url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/vitamin-d-calcium-or-combined-supplementation-for-the-primary-prevention-of-fractures-in-adults-preventive-medication
+  sha256: 4476e8a101bc65ea4d14e04d24ae32df2da08161f41ac59968347e94d376f2c0
+  title: 'Recommendation: Vitamin D, Calcium, or Combined Supplementation for the Primary Prevention of Fractures in Community-Dwelling
+    Adults: Preventive Medication | United States Preventive Services Taskforce'

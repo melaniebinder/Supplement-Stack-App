@@ -25,7 +25,7 @@ claims:
     direction: benefit
     evidence_grade: A
     summary: Soluble fiber from psyllium husk, as part of a diet low in saturated fat and cholesterol, lowers LDL cholesterol. FDA authorizes a health claim for it.
-    sources: [cfr-101-81]
+    sources: [review-jovanovski-psyllium-2018]
 safety_notes:
   - level: caution
     text: Take with plenty of water. Taken dry, it can swell and cause choking or blockage.

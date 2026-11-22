@@ -1,0 +1,24 @@
+source_id: review-brown-fiber-1999
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '9925120'
+excerpts:
+- supports:
+  - HAB-HEART-03
+  quote: Various soluble fibers reduce total and LDL cholesterol by similar amounts. The effect is small within the practical
+    range of intake.
+  locator: Abstract, Conclusions
+- supports:
+  - HAB-HEART-03
+  quote: The effects on plasma lipids of soluble fiber from oat, psyllium, or pectin were not significantly different.
+  locator: Abstract, Results
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/9925120/
+  sha256: b978acfdf84a38e2936d61c54f21c462f2d6549e879fb9c90ffcfa2dec1c2b56
+  title: 'Cholesterol-lowering effects of dietary fiber: a meta-analysis.'
+  journal: The American journal of clinical nutrition
+  year: '1999'
+  doi: 10.1093/ajcn/69.1.30
+  pmid: '9925120'

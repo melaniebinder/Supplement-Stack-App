@@ -1,0 +1,25 @@
+source_id: nccih-ginkgo
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/ginkgo
+excerpts:
+- supports:
+  - CLM-GIN-01
+  quote: There was no difference between the gingko and placebo groups in the rates at which participants developed dementia
+    of any type or Alzheimer’s disease.
+  locator: 'Effectiveness: dementia'
+- supports:
+  - GROUP:bleeding-risk
+  - SAFETY:ginkgo
+  quote: Ginkgo may increase the risk of bleeding in people who are taking anticoagulant drugs, such as warfarin.
+  locator: Safety
+- supports:
+  - SAFETY:ginkgo
+  quote: Fresh ginkgo seeds are toxic when consumed orally
+  locator: Safety
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/ginkgo
+  sha256: c43bd7ca6c9a7826a883afb5e92ed2bf804ad0aee267ac5901c652fd4aa35734
+  title: National Center for Complementary and Integrative Health

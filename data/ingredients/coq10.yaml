@@ -7,7 +7,7 @@ reference_intakes: null
 food_sources: [organ meats, beef, chicken, fatty fish, soybean oil, peanuts (small amounts)]
 effect_groups: []
 recommendable: false
-recommendable_note: Evidence for the most common reason people take it (statin muscle symptoms) is mixed.
+recommendable_note: The overall evidence doesn't support the most common reason people take it (statin muscle pain).
 timing:
   best_slot: with_meal
   take_with: food_with_fat
@@ -17,9 +17,9 @@ claims:
   - id: CLM-COQ-01
     outcome: Statin-associated muscle symptoms
     population: Adults taking statins
-    direction: mixed
+    direction: no_effect
     evidence_grade: C
-    summary: Studies disagree. Some meta-analyses found no benefit, while others suggest a possible reduction in muscle symptoms.
+    summary: Individual studies vary, but NCCIH concludes the overall evidence doesn't support CoQ10 for reducing statin-related muscle pain.
     sources: [nccih-coq10]
 safety_notes: []
 sources: [nccih-coq10]

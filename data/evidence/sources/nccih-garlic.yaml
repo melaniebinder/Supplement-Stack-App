@@ -1,0 +1,26 @@
+source_id: nccih-garlic
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/garlic
+excerpts:
+- supports:
+  - CLM-GAR-02
+  quote: Garlic supplements may reduce levels of total cholesterol and low-density lipoprotein (LDL) cholesterol to a small
+    extent in people who have high blood cholesterol levels.
+  locator: Effectiveness
+- supports:
+  - CLM-GAR-01
+  quote: Limited evidence suggests that garlic supplements may reduce blood pressure to a small extent in people who have
+    high blood pressure.
+  locator: Effectiveness
+- supports:
+  - GROUP:bleeding-risk
+  - SAFETY:garlic
+  quote: Taking garlic supplements may increase the risk of bleeding.
+  locator: Safety
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/garlic
+  sha256: b6fd7b89552c65a391febe69101d380d46ef0a439aeb58969afd48647be7f430
+  title: National Center for Complementary and Integrative Health

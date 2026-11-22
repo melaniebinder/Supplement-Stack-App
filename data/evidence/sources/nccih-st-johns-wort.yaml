@@ -1,0 +1,42 @@
+source_id: nccih-st-johns-wort
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/st-johns-wort
+excerpts:
+- supports:
+  - CLM-SJW-01
+  quote: St. John’s wort appears to be more effective than a placebo (an inactive substance) and as effective as standard
+    antidepressant medications for mild or moderate depression.
+  locator: What do we know about the effectiveness
+- supports:
+  - SAFETY:st-johns-wort
+  quote: It has been clearly shown that St. John’s wort can interact in dangerous, sometimes life-threatening ways with a
+    variety of medicines.
+  locator: Bottom line
+- supports:
+  - INT-013
+  quote: Cyclosporine, which prevents the body from rejecting transplanted organs
+  locator: 'Safety: medicines it can weaken'
+- supports:
+  - INT-016
+  quote: Some heart medications, including digoxin and ivabradine
+  locator: 'Safety: medicines it can weaken'
+- supports:
+  - INT-014
+  quote: Some HIV drugs, including indinavir and nevirapine
+  locator: 'Safety: medicines it can weaken'
+- supports:
+  - INT-011
+  quote: Warfarin, an anticoagulant (blood thinner)
+  locator: 'Safety: medicines it can weaken'
+- supports:
+  - INT-015
+  quote: taking St. John’s wort with certain antidepressants or other drugs that affect serotonin (a substance produced by
+    some nerve cells) may lead to increased serotonin-related side effects, which can be serious.
+  locator: Safety
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/st-johns-wort
+  sha256: f554dde56876eaea2a57e31831b6e1c58c21b95a99e61b3da0c1f9dbbfa8fd7e
+  title: National Center for Complementary and Integrative Health

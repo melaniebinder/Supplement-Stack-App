@@ -1,0 +1,19 @@
+source_id: dailymed-doxycycline
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: a569ba80-ffea-40b2-9fbe-a42810b1fccb
+excerpts:
+- supports:
+  - GROUP:mineral-chelators
+  quote: Absorption of tetracyclines is impaired by antacids containing aluminum, calcium, or magnesium, and iron-containing
+    preparations.
+  locator: 'Precautions: Drug Interactions'
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a569ba80-ffea-40b2-9fbe-a42810b1fccb
+  sha256: 7d16bd79dc4f3742379d32e49e8ff089683edaa36949e66fc07f35cd14546214
+  title: Doxycycline Hyclate Caps and Tabs A062031 A062421
+  setid: a569ba80-ffea-40b2-9fbe-a42810b1fccb
+  label_version: '34'
+  label_effective: '20250626'

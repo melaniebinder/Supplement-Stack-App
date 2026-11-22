@@ -1,0 +1,18 @@
+source_id: dailymed-ethinyl-estradiol
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: 638e4f36-1a27-4220-8ec9-3fa9d9b36c11
+excerpts:
+- supports:
+  - INT-010
+  quote: herbal preparations containing St. John's wort ( Hypericum perforatum ) may decrease oral contraceptive effectiveness.
+  locator: Drug Interactions
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=638e4f36-1a27-4220-8ec9-3fa9d9b36c11
+  sha256: ffaa6a632b32c33c6d6f61a70e508c3a47087bb3d2d472272a64558a416b3760
+  title: WERA TM (Norethindrone and Ethinyl Estradiol Tablets, USP) 0.5 mg/0.035 mg
+  setid: 638e4f36-1a27-4220-8ec9-3fa9d9b36c11
+  label_version: '14'
+  label_effective: '20260415'

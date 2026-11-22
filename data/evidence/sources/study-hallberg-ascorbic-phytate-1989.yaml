@@ -1,0 +1,19 @@
+source_id: study-hallberg-ascorbic-phytate-1989
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '2911999'
+excerpts:
+- supports:
+  - INT-003
+  quote: The addition of ascorbic acid significantly counteracted the inhibition
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/2911999/
+  sha256: 9ccdcbe1b11aa2e9d51989db488ffb201ac6388ec54fb5b649eb5225ea23b95a
+  title: 'Iron absorption in man: ascorbic acid and dose-dependent inhibition by phytate.'
+  journal: The American journal of clinical nutrition
+  year: '1989'
+  doi: 10.1093/ajcn/49.1.140
+  pmid: '2911999'

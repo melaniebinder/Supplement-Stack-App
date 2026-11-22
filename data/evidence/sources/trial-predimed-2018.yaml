@@ -1,0 +1,21 @@
+source_id: trial-predimed-2018
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '29897866'
+excerpts:
+- supports:
+  - HAB-HEART-02
+  quote: the incidence of major cardiovascular events was lower among those assigned to a Mediterranean diet supplemented
+    with extra-virgin olive oil or nuts than among those assigned to a reduced-fat diet.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/29897866/
+  sha256: 9b0de9039cb4ce72573b360650a8e741bf71a9db35b6b78558c325437e40c38a
+  title: Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or
+    Nuts.
+  journal: The New England journal of medicine
+  year: '2018'
+  doi: 10.1056/NEJMoa1800389
+  pmid: '29897866'

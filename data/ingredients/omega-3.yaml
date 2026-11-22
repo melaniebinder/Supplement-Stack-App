@@ -11,7 +11,7 @@ reference_intakes:
   ul: null
   notes: No UL. US and EU regulators have published guidance on maximum EPA+DHA from supplements. Confirm the current figure from the ODS fact sheet before showing it.
 food_sources: [salmon, sardines, mackerel, herring, trout, anchovies, "ALA: flaxseed, chia seeds, walnuts"]
-effect_groups: [bleeding-risk]
+effect_groups: []  # removed from bleeding-risk: VITAL found no excess bleeding at 1 g/day (see evidence)
 recommendable: false
 recommendable_note: For heart health, eating fatty fish about twice a week is the evidence-backed step. Supplement trials in the general population show no clear reduction in cardiovascular events.
 timing:
@@ -26,20 +26,20 @@ claims:
     direction: no_effect
     evidence_grade: A
     summary: The large VITAL and ASCEND trials found that about 1 g/day did not reduce major cardiovascular events.
-    sources: [trial-vital-omega3-2019, trial-ascend-2018]
+    sources: [trial-ascend-2018, trial-vital-omega3-2019]
   - id: CLM-O3-02
     outcome: Triglyceride levels
     population: Adults with elevated triglycerides, at prescription-level doses
     direction: benefit
     evidence_grade: A
     summary: High doses (about 2 to 4 g/day EPA+DHA) lower triglycerides. Doses this high are managed by a clinician.
-    sources: [ods-omega-3]
+    sources: [guideline-aha-triglycerides-2019]
   - id: CLM-O3-03
     outcome: Atrial fibrillation risk
     population: Adults in cardiovascular outcome trials
     direction: harm
     evidence_grade: B
-    summary: A meta-analysis of randomized trials found a higher risk of atrial fibrillation, mainly at doses above 1 g/day.
+    summary: A meta-analysis of 7 cardiovascular outcome trials (81,210 people) found a 25% higher risk of atrial fibrillation overall. The risk was larger in trials using more than 1 g/day, but also present at 1 g/day or less.
     sources: [review-omega3-af-2021]
 safety_notes:
   - level: info

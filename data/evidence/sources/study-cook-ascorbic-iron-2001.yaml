@@ -1,0 +1,20 @@
+source_id: study-cook-ascorbic-iron-2001
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '11124756'
+excerpts:
+- supports:
+  - INT-003
+  quote: The facilitating effect of vitamin C on iron absorption from a complete diet is far less pronounced than that from
+    single meals.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/11124756/
+  sha256: 4f4a0065434105df46a76d1980036e858a23213c04c860d893b5992fded4817f
+  title: Effect of ascorbic acid intake on nonheme-iron absorption from a complete diet.
+  journal: The American journal of clinical nutrition
+  year: '2001'
+  doi: 10.1093/ajcn/73.1.93
+  pmid: '11124756'

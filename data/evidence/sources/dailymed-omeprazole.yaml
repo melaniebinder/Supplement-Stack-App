@@ -1,0 +1,34 @@
+source_id: dailymed-omeprazole
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: c5e3a37a-f6e3-43d4-a8a9-54db6c271908
+excerpts:
+- supports:
+  - INT-029
+  quote: Hypomagnesemia, symptomatic and asymptomatic, has been reported rarely in patients treated with PPIs for at least
+    three months, in most cases after a year of therapy.
+  locator: '5 Warnings and Precautions: Hypomagnesemia'
+- supports:
+  - INT-028
+  quote: longer than 3 years) may lead to malabsorption or a deficiency of cyanocobalamin.
+  locator: '5 Warnings and Precautions: Vitamin B-12 deficiency'
+- supports:
+  - INT-030
+  quote: 'iron salts, erlotinib, dasatinib, nilotinib, mycophenolate mofetil, ketoconazole/itraconazole) Clinical Impact:
+    Omeprazole can reduce the absorption of other drugs due to its effect on reducing intragastric acidity.'
+  locator: 7 Drug Interactions (drugs dependent on gastric pH)
+- supports:
+  - TIMING:drug_class/ppis
+  quote: Take omeprazole delayed-release capsules before meals.
+  locator: 2 Dosage and Administration
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5e3a37a-f6e3-43d4-a8a9-54db6c271908
+  sha256: 798ea5ea0c41ec9f2dfd329d3fdac2d9c64b6eb91fcd3f5b7685c353640c2ec8
+  title: "These highlights do not include all the information needed to use OMEPRAZOLE DELAYED-RELEASE CAPSULES safely and\
+    \ effectively. See full prescribing information for OMEPRAZOLE DELAYED-RELEASE CAPSULES. \nOMEPRAZOLE  delayed-release\
+    \ capsules, for oral use \nINITIAL U.S. APPROVAL: 1989"
+  setid: c5e3a37a-f6e3-43d4-a8a9-54db6c271908
+  label_version: '2'
+  label_effective: '20261101'

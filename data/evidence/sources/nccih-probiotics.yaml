@@ -1,0 +1,19 @@
+source_id: nccih-probiotics
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/probiotics-usefulness-and-safety
+excerpts:
+- supports:
+  - SAFETY:probiotics
+  quote: Cases of severe or fatal infections have been reported in premature infants who were given probiotics
+  locator: Key points
+- supports:
+  - CLM-PRO-01
+  quote: Different types of probiotics may have different effects.
+  locator: What are probiotics
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/probiotics-usefulness-and-safety
+  sha256: 092c1f656a98031c0d09411a3e0ffdc3e2b7fe6ade24ab89dfa9608c8b2a64c8
+  title: National Center for Complementary and Integrative Health

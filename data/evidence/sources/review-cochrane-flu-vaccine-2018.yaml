@@ -1,0 +1,20 @@
+source_id: review-cochrane-flu-vaccine-2018
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '29388196'
+excerpts:
+- supports:
+  - HAB-IMM-01
+  quote: Healthy adults who receive inactivated parenteral influenza vaccine rather than no vaccine probably experience less
+    influenza, from just over 2% to just under 1% (moderate-certainty evidence).
+  locator: Abstract, Authors' conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/29388196/
+  sha256: f03d3b854545a2754885cefb9d1c50b3b03c1a0e62ef11059347264ce63dcce0
+  title: Vaccines for preventing influenza in healthy adults.
+  journal: The Cochrane database of systematic reviews
+  year: '2018'
+  doi: 10.1002/14651858.CD001269.pub6
+  pmid: '29388196'

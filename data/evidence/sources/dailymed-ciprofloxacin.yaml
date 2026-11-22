@@ -1,0 +1,22 @@
+source_id: dailymed-ciprofloxacin
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: 5723eaf9-8659-4730-b792-4e4c33690ccb
+excerpts:
+- supports:
+  - GROUP:mineral-chelators
+  quote: Administer ciprofloxacin at least 2 hours before or 6 hours after magnesium/aluminum antacids; polymeric phosphate
+    binders (for example, sevelamer, lanthanum carbonate) or sucralfate; Videx ® (didanosine) chewable/buffered tablets or
+    pediatric powder for oral solution; other highly buffered drugs; or other products containing calcium, iron or zinc.
+  locator: 2 Dosage and Administration
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5723eaf9-8659-4730-b792-4e4c33690ccb
+  sha256: 30568ef1b976bf3c5581b503dd7c3486e597a19fcc61264a128f37b132c526d6
+  title: "These highlights do not include all the information needed to use CIPROFLOXACIN TABLETS safely and effectively.\
+    \ See full prescribing information for CIPROFLOXACIN TABLETS. \n\n CIPROFLOXACIN tablets, for oral use.\n\nInitial U.S.\
+    \ Approval: 1987"
+  setid: 5723eaf9-8659-4730-b792-4e4c33690ccb
+  label_version: '28'
+  label_effective: '20261015'

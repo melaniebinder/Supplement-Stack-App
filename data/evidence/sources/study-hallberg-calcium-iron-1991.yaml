@@ -1,0 +1,23 @@
+source_id: study-hallberg-calcium-iron-1991
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '1984335'
+excerpts:
+- supports:
+  - INT-001
+  quote: Iron absorption was reduced by 50-60% at doses of 300-600 mg Ca.
+  locator: Abstract
+- supports:
+  - INT-001
+  quote: The same amount of calcium also significantly reduced heme-iron absorption
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/1984335/
+  sha256: 4a1656c6ea2012b699e5c8801c927e0c29068dff6a1c4fa08ebb5f93141d4786
+  title: 'Calcium: effect of different amounts on nonheme- and heme-iron absorption in humans.'
+  journal: The American journal of clinical nutrition
+  year: '1991'
+  doi: 10.1093/ajcn/53.1.112
+  pmid: '1984335'

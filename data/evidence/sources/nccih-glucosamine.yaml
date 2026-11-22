@@ -1,0 +1,20 @@
+source_id: nccih-glucosamine
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/glucosamine-and-chondroitin-for-osteoarthritis
+excerpts:
+- supports:
+  - CLM-GLU-01
+  quote: It’s still uncertain whether glucosamine and chondroitin are helpful for knee osteoarthritis symptoms.
+  locator: Knee osteoarthritis
+- supports:
+  - CLM-GLU-01
+  quote: strongly recommended against the use of glucosamine alone or in combination with chondroitin for knee osteoarthritis,
+    stating that the best data do not show any important benefits.
+  locator: 'Knee osteoarthritis: guidelines'
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/glucosamine-and-chondroitin-for-osteoarthritis
+  sha256: 90cf8fad47a4d48ac08be3047165ae0aad1bd82cf908976ad5983fb67bac5b76
+  title: National Center for Complementary and Integrative Health
