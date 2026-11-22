@@ -8,6 +8,11 @@ food_sources: [red meat, fish (small amounts; the body also makes creatine)]
 effect_groups: []
 recommendable: true
 recommend_only_if: The goal is strength or exercise recovery, the user does regular resistance training, and has no kidney disease.
+timing:
+  best_slot: any
+  take_with: either
+  note: "Timing matters little. Daily consistency is what counts."
+  sources: [guideline-issn-creatine-2017]
 claims:
   - id: CLM-CRE-01
     outcome: Muscle strength and lean mass

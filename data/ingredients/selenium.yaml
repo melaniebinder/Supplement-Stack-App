@@ -12,6 +12,11 @@ food_sources: [Brazil nuts (very high; amount varies by nut), tuna, sardines, sh
 effect_groups: []
 recommendable: false
 recommendable_note: Most US diets are adequate. A single Brazil nut can provide more than the RDA.
+timing:
+  best_slot: any
+  take_with: either
+  note: "No meaningful timing effect."
+  sources: [ods-selenium]
 claims:
   - id: CLM-SEL-01
     outcome: Prostate and other cancer prevention

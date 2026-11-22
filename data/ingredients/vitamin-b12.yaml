@@ -13,6 +13,11 @@ food_sources: [clams, beef liver, salmon, tuna, beef, milk, yogurt, eggs, fortif
 effect_groups: []
 recommendable: true
 recommend_only_if: The user follows a vegan diet, is 50 or older, or takes metformin or a long-term acid reducer, and fortified foods aren't covering it.
+timing:
+  best_slot: any
+  take_with: either
+  note: "No meaningful timing effect."
+  sources: [ods-vitamin-b12]
 claims:
   - id: CLM-B12-01
     outcome: Maintaining adequate B12 status

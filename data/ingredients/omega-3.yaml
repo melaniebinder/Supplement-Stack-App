@@ -14,6 +14,11 @@ food_sources: [salmon, sardines, mackerel, herring, trout, anchovies, "ALA: flax
 effect_groups: [bleeding-risk]
 recommendable: false
 recommendable_note: For heart health, eating fatty fish about twice a week is the evidence-backed step. Supplement trials in the general population show no clear reduction in cardiovascular events.
+timing:
+  best_slot: with_meal
+  take_with: food_with_fat
+  note: "Taking it with a meal reduces fishy burps and may improve absorption."
+  sources: [ods-omega-3]
 claims:
   - id: CLM-O3-01
     outcome: Major cardiovascular events (primary prevention)

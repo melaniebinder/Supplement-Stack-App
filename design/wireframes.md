@@ -101,12 +101,12 @@ Text wireframes for the v1 single-page flow. All data is synthetic. Values are i
 │  🌱 YOU PROBABLY DON'T NEED THIS  · save ~$14/mo │
 │  Zinc (standalone)                               │
 │   Your multi already covers your daily 8 mg.     │
-│   Food covers it too: 3 oz beef + a handful of   │
-│   pumpkin seeds.                                 │
+│   Food gets you most of the way too: 3 oz beef + │
+│   1 oz pumpkin seeds ≈ 6 mg.                     │
 │  Melatonin for sleep                             │
 │   It's not doing much for ongoing sleep problems │
-│   (weak evidence). Stronger: fixed wake time +   │
-│   morning daylight (strong evidence) ›           │
+│   (weak evidence). Stronger: CBT-I habits like a │
+│   fixed wake time (strong evidence) ›            │
 │                                                  │
 │  ✅ CHECKED, NO ISSUES                            │
 │  Vitamin D · 17 other multivitamin ingredients   │

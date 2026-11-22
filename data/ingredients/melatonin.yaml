@@ -8,6 +8,11 @@ food_sources: []
 effect_groups: [sedative]
 recommendable: true
 recommend_only_if: The goal is sleep timing (jet lag, shifted schedule), use is short-term, and sleep-habit steps have been tried first.
+timing:
+  best_slot: bedtime
+  take_with: either
+  note: "Take shortly before the target bedtime. For jet lag, use the destination's bedtime."
+  sources: [nccih-melatonin]
 claims:
   - id: CLM-MEL-01
     outcome: Jet lag symptoms

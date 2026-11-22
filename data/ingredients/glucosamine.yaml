@@ -8,6 +8,11 @@ food_sources: []
 effect_groups: []
 recommendable: false
 recommendable_note: Trials show no consistent benefit.
+timing:
+  best_slot: with_meal
+  take_with: food
+  note: "Take with food to reduce stomach upset."
+  sources: [nccih-glucosamine]
 claims:
   - id: CLM-GLU-01
     outcome: Knee osteoarthritis pain

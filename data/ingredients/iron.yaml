@@ -15,6 +15,11 @@ food_tips: [Pair plant (nonheme) iron with a vitamin C source to boost absorptio
 effect_groups: [mineral-chelators]
 recommendable: false
 recommendable_note: Iron should be supplemented only after testing confirms low iron. Excess iron is harmful, and some people have iron overload (hemochromatosis).
+timing:
+  best_slot: any
+  take_with: empty_stomach_preferred
+  note: "Absorbed best on an empty stomach. Take with a little food if it upsets your stomach. Avoid taking it with tea, coffee, or calcium."
+  sources: [ods-iron]
 claims:
   - id: CLM-IRON-01
     outcome: Iron status and hemoglobin

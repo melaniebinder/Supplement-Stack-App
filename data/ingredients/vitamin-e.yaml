@@ -18,6 +18,11 @@ effect_groups:
   - {id: bleeding-risk, min_daily_dose: {amount: 180, unit: mg}}
 recommendable: false
 recommendable_note: Large trials show no cardiovascular benefit and some signals of harm. Food sources come first.
+timing:
+  best_slot: with_meal
+  take_with: food_with_fat
+  note: "Fat-soluble: absorbed best with a meal that contains some fat."
+  sources: [ods-vitamin-e]
 claims:
   - id: CLM-VITE-01
     outcome: Prostate cancer risk

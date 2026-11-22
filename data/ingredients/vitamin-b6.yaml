@@ -15,6 +15,11 @@ food_sources: [chickpeas, tuna, salmon, chicken breast, potatoes, bananas, forti
 effect_groups: []
 recommendable: false
 recommendable_note: Deficiency is uncommon. B6 often appears in multivitamins, B-complex, "energy", and magnesium products, so stacking is the main risk.
+timing:
+  best_slot: any
+  take_with: either
+  note: "No meaningful timing effect."
+  sources: [ods-vitamin-b6]
 claims:
   - id: CLM-B6-01
     outcome: Cardiovascular events from B-vitamin supplementation (B6 with folic acid and B12)

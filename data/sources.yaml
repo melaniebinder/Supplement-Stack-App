@@ -78,3 +78,28 @@ sources:
 
   # ---- Other studies ----
   - {id: study-melatonin-gummies-2023, type: observational, title: "Quantity of melatonin and CBD in melatonin gummies sold in the US", citation: "Cohen PA et al. JAMA. 2023;329(16):1401-1402", doi: "10.1001/jama.2023.2296", url: null, verified: false, accessed_at: null}
+
+  # ---- Added for timing rules (drug labels) ----
+  - {id: dailymed-levothyroxine, type: regulatory, title: "Levothyroxine sodium tablets: FDA-approved prescribing information (dosing and administration; drug interactions with calcium and iron)", publisher: NLM DailyMed, url: null, verified: false, accessed_at: null}
+  - {id: dailymed-alendronate, type: regulatory, title: "Alendronate sodium tablets: FDA-approved prescribing information (dosing and administration)", publisher: NLM DailyMed, url: null, verified: false, accessed_at: null}
+  - {id: dailymed-ciprofloxacin, type: regulatory, title: "Ciprofloxacin tablets: FDA-approved prescribing information (interactions with multivalent cations)", publisher: NLM DailyMed, url: null, verified: false, accessed_at: null}
+  - {id: dailymed-doxycycline, type: regulatory, title: "Doxycycline: FDA-approved prescribing information (interactions with calcium, iron, magnesium, zinc)", publisher: NLM DailyMed, url: null, verified: false, accessed_at: null}
+  - {id: dailymed-omeprazole, type: regulatory, title: "Omeprazole delayed-release capsules: FDA-approved prescribing information (administration before a meal)", publisher: NLM DailyMed, url: null, verified: false, accessed_at: null}
+
+  # ---- Added for food swaps ----
+  - {id: usda-fdc, type: other, title: "USDA FoodData Central (nutrient content per serving)", publisher: USDA Agricultural Research Service, url: "https://fdc.nal.usda.gov/", verified: false, accessed_at: null}
+  - {id: guideline-dga-2020, type: guideline, title: "Dietary Guidelines for Americans, 2020–2025 (check for the newer 2025–2030 edition before publishing)", publisher: USDA and HHS, url: null, verified: false, accessed_at: null}
+
+  # ---- Added for lifestyle alternatives ----
+  - {id: guideline-acp-insomnia-2016, type: guideline, title: "Management of chronic insomnia disorder in adults: a clinical practice guideline from the American College of Physicians", citation: "Qaseem A et al. Ann Intern Med. 2016;165(2):125-133", doi: "10.7326/M15-2175", url: null, verified: false, accessed_at: null}
+  - {id: guideline-aasm-behavioral-2021, type: guideline, title: "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline", citation: "Edinger JD et al. J Clin Sleep Med. 2021;17(2):255-262", doi: "10.5664/jcsm.8986", url: null, verified: false, accessed_at: null}
+  - {id: study-caffeine-sleep-2013, type: rct, title: "Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed", citation: "Drake C et al. J Clin Sleep Med. 2013;9(11):1195-1200", doi: "10.5664/jcsm.3170", url: null, verified: false, accessed_at: null}
+  - {id: guideline-pag-2018, type: guideline, title: "Physical Activity Guidelines for Americans, 2nd edition (2018)", publisher: US Department of Health and Human Services, url: null, verified: false, accessed_at: null}
+  - {id: guideline-aha-seafood-2018, type: guideline, title: "Seafood long-chain n-3 polyunsaturated fatty acids and cardiovascular disease: a science advisory from the American Heart Association", citation: "Rimm EB et al. Circulation. 2018;138:e35-e47", doi: "10.1161/CIR.0000000000000574", url: null, verified: false, accessed_at: null}
+  - {id: trial-predimed-2018, type: rct, title: "Primary prevention of cardiovascular disease with a Mediterranean diet supplemented with extra-virgin olive oil or nuts (PREDIMED, republished)", citation: "Estruch R et al. N Engl J Med. 2018;378:e34", doi: "10.1056/NEJMoa1800389", url: null, verified: false, accessed_at: null}
+  - {id: review-mbsr-2014, type: systematic_review, title: "Meditation programs for psychological stress and well-being: a systematic review and meta-analysis", citation: "Goyal M et al. JAMA Intern Med. 2014;174(3):357-368", doi: "10.1001/jamainternmed.2013.13018", url: null, verified: false, accessed_at: null}
+  - {id: review-exercise-mental-health-2023, type: systematic_review, title: "Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews", citation: "Singh B et al. Br J Sports Med. 2023;57:1203-1209", doi: "10.1136/bjsports-2022-106195", url: null, verified: false, accessed_at: null}
+  - {id: study-sleep-colds-2015, type: observational, title: "Behaviorally assessed sleep and susceptibility to the common cold", citation: "Prather AA et al. Sleep. 2015;38(9):1353-1359", doi: "10.5665/sleep.4968", url: null, verified: false, accessed_at: null}
+  - {id: review-cochrane-physical-interventions-2023, type: systematic_review, title: "Physical interventions to interrupt or reduce the spread of respiratory viruses", citation: "Jefferson T et al. Cochrane Database Syst Rev. 2023;CD006207", url: null, verified: false, accessed_at: null}
+  - {id: cdc-flu-vaccine, type: guideline, title: "CDC/ACIP recommendations for annual seasonal influenza vaccination", publisher: US Centers for Disease Control and Prevention, url: null, verified: false, accessed_at: null}
+  - {id: guideline-issn-protein-2017, type: guideline, title: "International Society of Sports Nutrition position stand: protein and exercise", citation: "Jäger R et al. J Int Soc Sports Nutr. 2017;14:20", doi: "10.1186/s12970-017-0177-8", url: null, verified: false, accessed_at: null}

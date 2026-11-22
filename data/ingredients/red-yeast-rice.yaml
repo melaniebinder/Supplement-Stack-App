@@ -8,6 +8,11 @@ food_sources: []
 effect_groups: []
 recommendable: false
 recommendable_note: Monacolin K is chemically identical to the statin drug lovastatin, and content varies by product. Cholesterol lowering belongs with a clinician.
+timing:
+  best_slot: any
+  take_with: either
+  note: "Not recommended. Timing doesn't change its statin-like effects."
+  sources: [nccih-red-yeast-rice]
 claims:
   - id: CLM-RYR-01
     outcome: LDL cholesterol

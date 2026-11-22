@@ -8,6 +8,11 @@ food_sources: []
 effect_groups: [bleeding-risk]
 recommendable: false
 recommendable_note: Large trials found no cognitive benefit.
+timing:
+  best_slot: any
+  take_with: either
+  note: "No meaningful timing effect."
+  sources: [nccih-ginkgo]
 claims:
   - id: CLM-GIN-01
     outcome: Dementia and cognitive decline

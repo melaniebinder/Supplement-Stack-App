@@ -18,6 +18,11 @@ food_sources: [beef liver, sweet potato, carrots, spinach, cantaloupe, eggs, for
 effect_groups: []
 recommendable: false
 recommendable_note: Deficiency is uncommon in the US, and high-dose preformed vitamin A carries real risks. Food sources come first.
+timing:
+  best_slot: with_meal
+  take_with: food_with_fat
+  note: "Fat-soluble: absorbed best with a meal that contains some fat."
+  sources: [ods-vitamin-a]
 claims:
   - id: CLM-VITA-01
     outcome: Lung cancer risk with high-dose beta-carotene supplements

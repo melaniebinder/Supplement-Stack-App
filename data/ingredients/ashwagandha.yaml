@@ -8,6 +8,11 @@ food_sources: []
 effect_groups: [sedative, hepatotoxicity-reports]
 recommendable: false
 recommendable_note: Evidence comes from small, short trials, and long-term safety isn't established.
+timing:
+  best_slot: any
+  take_with: either
+  note: "Can cause drowsiness in some people. If it does, take it in the evening."
+  sources: [ods-ashwagandha]
 claims:
   - id: CLM-ASH-01
     outcome: Perceived stress

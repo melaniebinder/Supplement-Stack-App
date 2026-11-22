@@ -12,6 +12,11 @@ food_sources: [beef liver, eggs (cooked), salmon, pork, sunflower seeds, sweet p
 effect_groups: []
 recommendable: false
 recommendable_note: Deficiency is rare, and there's little evidence for hair or nail benefits in people who aren't deficient.
+timing:
+  best_slot: any
+  take_with: either
+  note: "No meaningful timing effect. Stop several days before blood tests only if your clinician advises."
+  sources: [fda-biotin-lab-tests]
 claims:
   - id: CLM-BIO-01
     outcome: Hair, skin, and nail health

@@ -13,6 +13,11 @@ food_sources: [oats, barley, beans, lentils, apples, citrus, vegetables, whole g
 effect_groups: []
 recommendable: true
 recommend_only_if: The goal is heart health or LDL cholesterol, and fiber intake from food is still below the adequate intake after diet changes.
+timing:
+  best_slot: any
+  take_with: water
+  note: "Take with a full glass of water, at least 2 hours apart from medications and other supplements."
+  sources: [cfr-101-81]
 claims:
   - id: CLM-PSY-01
     outcome: LDL cholesterol

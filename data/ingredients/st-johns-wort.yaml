@@ -8,6 +8,11 @@ food_sources: []
 effect_groups: []
 recommendable: false
 recommendable_note: It has many serious drug interactions, and its main studied use is treating a medical condition (depression), which is outside the product's scope.
+timing:
+  best_slot: any
+  take_with: either
+  note: "Timing doesn't reduce its drug interactions."
+  sources: [nccih-st-johns-wort]
 claims:
   - id: CLM-SJW-01
     outcome: Symptoms of major depression

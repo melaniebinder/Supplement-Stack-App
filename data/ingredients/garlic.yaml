@@ -8,6 +8,11 @@ food_sources: [garlic used in cooking]
 effect_groups: [bleeding-risk]
 recommendable: false
 recommendable_note: Effects are small. Cooking with garlic comes first.
+timing:
+  best_slot: with_meal
+  take_with: food
+  note: "Take with food to reduce heartburn and stomach upset."
+  sources: [nccih-garlic]
 claims:
   - id: CLM-GAR-01
     outcome: Blood pressure

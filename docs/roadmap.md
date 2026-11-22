@@ -11,8 +11,9 @@ Organized by confidence, not dates. Items move left only once the step before th
 - [ ] Verify all citations against live sources
 - [x] Validator that enforces the evidence rules in CI
 - [ ] Get a credentialed reviewer (PharmD or RD) to audit 20 interaction records
-- [ ] Add structured timing fields (`separate_by_hours`, `take_with`, best time of day) to the data
-- [ ] Add a lifestyle-alternatives dataset (goal → supplement → habit, each graded)
+- [x] Add structured timing fields (`best_slot`, `take_with`, interaction `management`) to the data (D-021)
+- [x] Add a lifestyle-alternatives dataset: food swaps plus graded habits for 7 goals (D-022)
+- [ ] Reviewer to confirm the 4 `draft_default` timing gaps
 - [ ] Measure DSLD coverage for the top 50 multivitamins
 - [ ] Spike: photo-scan accuracy on 20 real Supplement Facts panels (**launch gate**, D-020)
 - [ ] Clickable prototype of Stack Check, tested with 5 users

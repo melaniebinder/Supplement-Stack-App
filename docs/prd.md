@@ -71,8 +71,8 @@ Interaction flags show evidence in plain words (**probable / possible / theoreti
 
 ### Lifestyle swaps
 There are two kinds, and both are shown in a **direct tone** (D-015):
-- **Food covers the nutrient** (vitamins and minerals). This works without a "why" chip. Example: *"Your 50 mg zinc is more than you need. 3 oz beef plus a handful of pumpkin seeds covers your daily 8 mg."*
-- **A habit addresses the same goal** (needs the "why" chip). Example: *"Melatonin probably isn't doing much for ongoing sleep problems (evidence: weak). A fixed wake time and morning daylight have stronger evidence."*
+- **Food covers the nutrient** (vitamins and minerals). This works without a "why" chip. Example: *"Your 50 mg zinc is more than you need. Your multi already has your daily 8 mg, and 3 oz beef plus 1 oz pumpkin seeds adds about 6 mg."* (Amounts come from `data/lifestyle-alternatives.yaml`.)
+- **A habit addresses the same goal** (needs the "why" chip). Example: *"Melatonin probably isn't doing much for ongoing sleep problems (evidence: weak). CBT-I habits, like a fixed wake time, have stronger evidence."* (Habits and grades come from `data/lifestyle-alternatives.yaml`.)
 
 Rules:
 - Show both evidence grades side by side. Never claim "same effect" unless a direct comparison exists. The standard wording is "addresses the same goal, with stronger evidence."

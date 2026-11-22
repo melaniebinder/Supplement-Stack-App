@@ -21,6 +21,11 @@ food_sources: [yogurt, cheese, milk, sardines with bones, fortified plant milks,
 effect_groups: [mineral-chelators]
 recommendable: true
 recommend_only_if: Estimated intake from food stays below the RDA after diet changes (e.g. dairy-free diets).
+timing:
+  best_slot: with_meal
+  take_with: food
+  note: "Calcium carbonate needs food (stomach acid) to absorb. Calcium citrate works with or without food. Split doses above 500 mg."
+  sources: [ods-calcium]
 claims:
   - id: CLM-CAL-00
     outcome: Meeting calcium needs

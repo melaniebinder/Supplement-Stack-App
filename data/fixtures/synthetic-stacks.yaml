@@ -8,6 +8,9 @@
 #   - Interactions between two ingredients inside the SAME product are suppressed (the product is already formulated together),
 #     but they still count toward upper-limit totals.
 #   - Any supplement–drug flag sets route_to_pharmacist: true.
+#   - schedule_constraints: every constraint must hold in the generated daily schedule.
+#     {before: X, after: Y, min_gap_hours: N} means Y is taken at least N hours after X.
+#   - swaps: expected "You probably don't need this" items (food = food covers the nutrient; habit = habit for the stated goal).
 
 fixtures:
   - id: FX-001
@@ -16,18 +19,22 @@ fixtures:
     drug_classes: []
     products:
       - name: Vitamin D3 2000 IU
+        why: bones
         ingredients:
           - {ingredient: vitamin-d, amount: 50, unit: mcg}
       - name: Magnesium glycinate (400 mg elemental)
         ingredients:
           - {ingredient: magnesium, amount: 400, unit: mg}
       - name: Fish oil 1 g
+        why: heart
         ingredients:
           - {ingredient: omega-3, amount: 1000, unit: mg EPA+DHA}
       - name: Ashwagandha root extract
+        why: stress
         ingredients:
           - {ingredient: ashwagandha, amount: 600, unit: mg}
       - name: Zinc 50 mg
+        why: immunity
         ingredients:
           - {ingredient: zinc, amount: 50, unit: mg}
       - name: Women's daily multivitamin (synthetic formula)
@@ -57,6 +64,16 @@ fixtures:
       within_ul: [vitamin-d]                          # 75 mcg vs UL 100
       overlaps: [vitamin-d, magnesium, zinc]
       route_to_pharmacist: false
+      schedule_constraints:
+        - {apart: [zinc, iron], min_gap_hours: 2, from: INT-002}          # standalone zinc vs the multi's iron
+        - {slot_of: omega-3, take_with: food_with_fat}
+        - {slot_of: vitamin-d, take_with: food_with_fat}
+      swaps:
+        - {product: "Zinc 50 mg", kind: food, ingredient: zinc}
+        - {product: "Zinc 50 mg", kind: habit, goal: immunity, habits: [HAB-IMM-01, HAB-IMM-02, HAB-IMM-03]}
+        - {product: "Fish oil 1 g", kind: habit, goal: heart, habits: [HAB-HEART-01, HAB-HEART-02, HAB-HEART-03, HAB-HEART-04]}
+        - {product: "Ashwagandha root extract", kind: habit, goal: stress, habits: [HAB-STRESS-01, HAB-STRESS-02]}
+        - {product: "Vitamin D3 2000 IU", kind: habit, goal: bones, habits: [HAB-BONE-01, HAB-BONE-02]}
 
   - id: FX-002
     persona: Robert, 61, "the Medicated Adult"
@@ -101,3 +118,10 @@ fixtures:
       ul_flags: []
       overlaps: []
       route_to_pharmacist: true
+      schedule_constraints:
+        - {slot_of: drug_class/levothyroxine, slot: wake, take_with: empty_stomach}
+        - {before: drug_class/levothyroxine, after: iron, min_gap_hours: 4, from: INT-023}
+        - {before: drug_class/levothyroxine, after: calcium, min_gap_hours: 4, from: INT-024}
+        - {apart: [calcium, iron], min_gap_hours: 2, from: INT-001}
+      schedule_excludes: [st-johns-wort]   # "avoid" items aren't scheduled; they appear under "Talk to a pharmacist first"
+      swaps: []                            # no "why" given and no nutrient overdose

@@ -1,0 +1,344 @@
+# Lifestyle alternatives: the data behind "You probably don't need this" (D-018).
+#
+# Two kinds (PRD, "Lifestyle swaps"):
+#   food_swaps: food covers the NUTRIENT. Per-serving amounts let the app show that
+#               "these foods cover your daily need". Amounts are in the ingredient's canonical unit.
+#   goals:      a habit addresses the same GOAL (needs the "Why do you take it?" chip).
+#               Each habit is graded and compared with the best supplement claim for that goal.
+#
+# Rules (enforced by scripts/validate-data.mjs):
+#   - Every food list and habit cites >= 1 source. Food amounts are approximate and must be verified
+#     against USDA FoodData Central or the ODS fact-sheet tables before publishing.
+#   - Swap wording is "addresses the same goal, with stronger evidence". Never "same effect",
+#     unless a head-to-head comparison is cited (none are, yet).
+#   - relation: replaces   = the habit is offered INSTEAD of the supplement
+#               complements = the habit comes first and the supplement may add to it (e.g. creatine + training)
+#   - No swap is shown when the user's reason is "my doctor told me to" (D-015).
+#   - swap: route_to_clinician on a goal supplement replaces the swap with the goal's routing_note
+#     (used where a deficiency should be tested for, e.g. iron or B12 for tiredness).
+
+food_swaps:
+  - ingredient: zinc
+    target: rda
+    foods:
+      - {food: "Oysters, cooked", serving: "3 oz", amount: 32, unit: mg}
+      - {food: "Beef sirloin, roasted", serving: "3 oz", amount: 3.8, unit: mg}
+      - {food: "Crab, cooked", serving: "3 oz", amount: 3.2, unit: mg}
+      - {food: "Pork chop, cooked", serving: "3 oz", amount: 2.9, unit: mg}
+      - {food: "Pumpkin seeds", serving: "1 oz", amount: 2.2, unit: mg}
+      - {food: "Cashews", serving: "1 oz", amount: 1.6, unit: mg}
+      - {food: "Chickpeas, cooked", serving: "1/2 cup", amount: 1.3, unit: mg}
+    sources: [ods-zinc]
+
+  - ingredient: magnesium
+    target: rda
+    foods:
+      - {food: "Pumpkin seeds", serving: "1 oz", amount: 156, unit: mg}
+      - {food: "Chia seeds", serving: "1 oz", amount: 111, unit: mg}
+      - {food: "Almonds", serving: "1 oz", amount: 80, unit: mg}
+      - {food: "Spinach, boiled", serving: "1/2 cup", amount: 78, unit: mg}
+      - {food: "Cashews", serving: "1 oz", amount: 74, unit: mg}
+      - {food: "Black beans, cooked", serving: "1/2 cup", amount: 60, unit: mg}
+      - {food: "Edamame, shelled, cooked", serving: "1/2 cup", amount: 50, unit: mg}
+      - {food: "Brown rice, cooked", serving: "1/2 cup", amount: 42, unit: mg}
+    sources: [ods-magnesium]
+
+  - ingredient: vitamin-d
+    target: rda
+    note: Few foods are rich in vitamin D, so food alone rarely covers the RDA. That's why vitamin D stays recommendable (with conditions). Sun exposure also contributes.
+    foods:
+      - {food: "Rainbow trout, farmed, cooked", serving: "3 oz", amount: 16.2, unit: mcg}
+      - {food: "Sockeye salmon, cooked", serving: "3 oz", amount: 14.2, unit: mcg}
+      - {food: "Mushrooms exposed to UV light", serving: "1/2 cup", amount: 9.2, unit: mcg}
+      - {food: "Milk, fortified", serving: "1 cup", amount: 2.9, unit: mcg}
+      - {food: "Soy milk, fortified", serving: "1 cup", amount: 2.9, unit: mcg}
+      - {food: "Egg, large", serving: "1 egg", amount: 1.1, unit: mcg}
+    sources: [ods-vitamin-d]
+
+  - ingredient: calcium
+    target: rda
+    foods:
+      - {food: "Yogurt, plain, low-fat", serving: "8 oz", amount: 415, unit: mg}
+      - {food: "Mozzarella, part-skim", serving: "1.5 oz", amount: 333, unit: mg}
+      - {food: "Sardines, canned with bones", serving: "3 oz", amount: 325, unit: mg}
+      - {food: "Milk", serving: "1 cup", amount: 300, unit: mg}
+      - {food: "Soy milk, calcium-fortified", serving: "1 cup", amount: 299, unit: mg}
+      - {food: "Tofu, firm, made with calcium sulfate", serving: "1/2 cup", amount: 253, unit: mg}
+      - {food: "Salmon, canned with bones", serving: "3 oz", amount: 181, unit: mg}
+      - {food: "Kale, cooked", serving: "1 cup", amount: 177, unit: mg}
+    sources: [ods-calcium]
+
+  - ingredient: iron
+    target: rda
+    note: Iron should only be supplemented after testing. These foods help maintain intake. Pair plant sources with vitamin C.
+    foods:
+      - {food: "Breakfast cereal, fortified (100% DV)", serving: "1 serving", amount: 18, unit: mg}
+      - {food: "Oysters, cooked", serving: "3 oz", amount: 8, unit: mg}
+      - {food: "White beans, canned", serving: "1 cup", amount: 8, unit: mg}
+      - {food: "Lentils, boiled", serving: "1/2 cup", amount: 3, unit: mg}
+      - {food: "Spinach, boiled", serving: "1/2 cup", amount: 3, unit: mg}
+      - {food: "Tofu, firm", serving: "1/2 cup", amount: 3, unit: mg}
+      - {food: "Beef, braised", serving: "3 oz", amount: 2, unit: mg}
+    sources: [ods-iron]
+
+  - ingredient: vitamin-b12
+    target: rda
+    note: Vegans need fortified foods or a supplement. B12 is recommendable for them (see the ingredient file).
+    foods:
+      - {food: "Clams, cooked", serving: "3 oz", amount: 84.1, unit: mcg}
+      - {food: "Nutritional yeast, fortified", serving: "1 serving", amount: 8.3, unit: mcg}
+      - {food: "Sockeye salmon, cooked", serving: "3 oz", amount: 4.8, unit: mcg}
+      - {food: "Tuna, canned light", serving: "3 oz", amount: 2.5, unit: mcg}
+      - {food: "Ground beef, cooked", serving: "3 oz", amount: 2.4, unit: mcg}
+      - {food: "Milk", serving: "1 cup", amount: 1.3, unit: mcg}
+      - {food: "Egg, large", serving: "1 egg", amount: 0.5, unit: mcg}
+    sources: [ods-vitamin-b12]
+
+  - ingredient: folate
+    target: rda
+    foods:
+      - {food: "Spinach, boiled", serving: "1/2 cup", amount: 131, unit: mcg DFE}
+      - {food: "Black-eyed peas, boiled", serving: "1/2 cup", amount: 105, unit: mcg DFE}
+      - {food: "Breakfast cereal, fortified (25% DV)", serving: "1 serving", amount: 100, unit: mcg DFE}
+      - {food: "Asparagus, boiled", serving: "4 spears", amount: 89, unit: mcg DFE}
+      - {food: "Brussels sprouts, boiled", serving: "1/2 cup", amount: 78, unit: mcg DFE}
+      - {food: "Avocado", serving: "1/2 cup", amount: 59, unit: mcg DFE}
+    sources: [ods-folate]
+
+  - ingredient: vitamin-c
+    target: rda
+    foods:
+      - {food: "Red bell pepper, raw", serving: "1/2 cup", amount: 95, unit: mg}
+      - {food: "Orange", serving: "1 medium", amount: 70, unit: mg}
+      - {food: "Kiwifruit", serving: "1 medium", amount: 64, unit: mg}
+      - {food: "Broccoli, cooked", serving: "1/2 cup", amount: 51, unit: mg}
+      - {food: "Strawberries", serving: "1/2 cup", amount: 49, unit: mg}
+    sources: [ods-vitamin-c]
+
+  - ingredient: vitamin-e
+    target: rda
+    foods:
+      - {food: "Sunflower seeds", serving: "1 oz", amount: 7.4, unit: mg}
+      - {food: "Almonds", serving: "1 oz", amount: 6.8, unit: mg}
+      - {food: "Sunflower oil", serving: "1 tbsp", amount: 5.6, unit: mg}
+      - {food: "Hazelnuts", serving: "1 oz", amount: 4.3, unit: mg}
+      - {food: "Peanut butter", serving: "2 tbsp", amount: 2.9, unit: mg}
+    sources: [ods-vitamin-e]
+
+  - ingredient: selenium
+    target: rda
+    note: A single Brazil nut can exceed the RDA. Eating several every day can approach the UL.
+    foods:
+      - {food: "Brazil nut", serving: "1 nut", amount: 68, unit: mcg}
+      - {food: "Tuna, cooked", serving: "3 oz", amount: 92, unit: mcg}
+      - {food: "Sardines, canned", serving: "3 oz", amount: 45, unit: mcg}
+      - {food: "Shrimp, cooked", serving: "3 oz", amount: 40, unit: mcg}
+      - {food: "Egg, large", serving: "1 egg", amount: 15, unit: mcg}
+    sources: [ods-selenium]
+
+  - ingredient: iodine
+    target: rda
+    foods:
+      - {food: "Cod, baked", serving: "3 oz", amount: 158, unit: mcg}
+      - {food: "Milk", serving: "1 cup", amount: 84, unit: mcg}
+      - {food: "Iodized salt", serving: "1/4 tsp", amount: 78, unit: mcg}
+      - {food: "Egg, large", serving: "1 egg", amount: 31, unit: mcg}
+    sources: [ods-iodine]
+
+  - ingredient: omega-3
+    target: per_week
+    note: "Compared per week, as AHA advises about 2 servings of fatty fish weekly. EPA+DHA amounts. Plant ALA is a different fatty acid and converts poorly to EPA/DHA."
+    foods:
+      - {food: "Atlantic salmon, farmed, cooked", serving: "3 oz", amount: 1.83, unit: g EPA+DHA}
+      - {food: "Atlantic herring, cooked", serving: "3 oz", amount: 1.71, unit: g EPA+DHA}
+      - {food: "Sardines, canned", serving: "3 oz", amount: 1.19, unit: g EPA+DHA}
+      - {food: "Atlantic mackerel, cooked", serving: "3 oz", amount: 1.02, unit: g EPA+DHA}
+      - {food: "Rainbow trout, farmed, cooked", serving: "3 oz", amount: 0.84, unit: g EPA+DHA}
+    sources: [ods-omega-3, guideline-aha-seafood-2018]
+
+  - ingredient: psyllium
+    target: ai
+    note: Compared with total daily fiber (AI 25 g for women, 38 g for men, ages 19–50). Beans, oats, and barley are also rich in soluble fiber.
+    foods:
+      - {food: "Chia seeds", serving: "1 oz", amount: 9.8, unit: g fiber}
+      - {food: "Raspberries", serving: "1 cup", amount: 8.0, unit: g fiber}
+      - {food: "Lentils, cooked", serving: "1/2 cup", amount: 7.8, unit: g fiber}
+      - {food: "Black beans, cooked", serving: "1/2 cup", amount: 7.5, unit: g fiber}
+      - {food: "Pear, with skin", serving: "1 medium", amount: 5.5, unit: g fiber}
+      - {food: "Oatmeal, cooked", serving: "1 cup", amount: 4.0, unit: g fiber}
+    sources: [usda-fdc, guideline-dga-2020]
+
+# ---------------------------------------------------------------------------
+# Goals map to the "Why do you take it?" chips.
+# supplements: ingredients people commonly take for this goal, each with the claim ids that describe
+#              the evidence FOR THIS GOAL (the comparison the UI shows). Claims must belong to that ingredient.
+# habits:      graded alternatives. A swap is shown when a habit's grade is stronger than the
+#              supplement's best benefit grade for this goal (or the supplement has no benefit claim).
+goals:
+  - id: sleep
+    name: Better sleep
+    supplements:
+      - {ingredient: melatonin, claims: [CLM-MEL-02], note: "Jet lag (CLM-MEL-01) is the exception: melatonin is a reasonable choice there."}
+      - {ingredient: magnesium, claims: [CLM-MAG-01]}
+      - {ingredient: ashwagandha, claims: [CLM-ASH-02]}
+    habits:
+      - id: HAB-SLEEP-01
+        rung: lifestyle
+        relation: replaces
+        text: "CBT-I (cognitive behavioral therapy for insomnia): a fixed wake time, limiting time awake in bed, and getting out of bed when you can't sleep. Available through clinicians and validated digital programs."
+        evidence_grade: A
+        sources: [guideline-acp-insomnia-2016, guideline-aasm-behavioral-2021]
+      - id: HAB-SLEEP-02
+        rung: lifestyle
+        relation: replaces
+        text: "Stop caffeine at least 6 hours before bedtime."
+        evidence_grade: B
+        sources: [study-caffeine-sleep-2013]
+    routing_note: "Ongoing insomnia (3+ nights a week for 3+ months) is worth raising with a clinician. Guidelines recommend CBT-I as the first treatment."
+
+  - id: stress
+    name: Stress and mood
+    supplements:
+      - {ingredient: ashwagandha, claims: [CLM-ASH-01]}
+      - {ingredient: st-johns-wort, claims: [CLM-SJW-01], note: "Not a self-care option because of major drug interactions. Depression should be managed with a clinician."}
+    habits:
+      - id: HAB-STRESS-01
+        rung: lifestyle
+        relation: replaces
+        text: "Regular physical activity. Even walking most days reduces symptoms of anxiety, distress, and depression."
+        evidence_grade: A
+        sources: [review-exercise-mental-health-2023, guideline-pag-2018]
+      - id: HAB-STRESS-02
+        rung: lifestyle
+        relation: replaces
+        text: "A structured mindfulness or meditation program (e.g. 8-week MBSR)."
+        evidence_grade: B
+        sources: [review-mbsr-2014]
+    routing_note: "If low mood or anxiety lasts more than two weeks or affects daily life, talk to a clinician."
+
+  - id: heart
+    name: Heart health
+    supplements:
+      - {ingredient: omega-3, claims: [CLM-O3-01]}
+      - {ingredient: garlic, claims: [CLM-GAR-01, CLM-GAR-02]}
+      - {ingredient: coq10, claims: []}
+      - {ingredient: red-yeast-rice, claims: [CLM-RYR-01], note: "Works like a statin, so cholesterol treatment belongs with a clinician."}
+      - {ingredient: psyllium, claims: [CLM-PSY-01]}
+    habits:
+      - id: HAB-HEART-01
+        rung: diet
+        relation: replaces
+        text: "Eat fatty fish (salmon, sardines, trout, mackerel) about twice a week."
+        evidence_grade: B
+        sources: [guideline-aha-seafood-2018]
+      - id: HAB-HEART-02
+        rung: diet
+        relation: replaces
+        text: "A Mediterranean-style eating pattern: vegetables, legumes, whole grains, nuts, olive oil, and fish."
+        evidence_grade: A
+        sources: [trial-predimed-2018, guideline-dga-2020]
+      - id: HAB-HEART-03
+        rung: diet
+        relation: replaces
+        text: "Get soluble fiber from oats, barley, beans, and lentils to help lower LDL."
+        evidence_grade: A
+        sources: [cfr-101-81]
+      - id: HAB-HEART-04
+        rung: lifestyle
+        relation: replaces
+        text: "At least 150 minutes a week of moderate activity (e.g. brisk walking)."
+        evidence_grade: A
+        sources: [guideline-pag-2018]
+    routing_note: "Know your blood pressure and cholesterol numbers. Treatment decisions belong with a clinician."
+
+  - id: bones
+    name: Bone health
+    supplements:
+      - {ingredient: calcium, claims: [CLM-CAL-01]}
+      - {ingredient: vitamin-d, claims: [CLM-VITD-02]}
+      - {ingredient: vitamin-k, claims: [CLM-VITK-01]}
+    habits:
+      - id: HAB-BONE-01
+        rung: diet
+        relation: replaces
+        text: "Get calcium from food first: dairy, fortified plant milks, calcium-set tofu, canned fish with bones."
+        evidence_grade: A
+        sources: [ods-calcium, guideline-dga-2020]
+      - id: HAB-BONE-02
+        rung: lifestyle
+        relation: replaces
+        text: "Weight-bearing and muscle-strengthening activity at least 2 days a week."
+        evidence_grade: B
+        sources: [guideline-pag-2018]
+    routing_note: "If you've had a fracture as an adult, or have risk factors for osteoporosis, ask about bone density screening."
+
+  - id: immunity
+    name: Immunity and colds
+    supplements:
+      - {ingredient: vitamin-c, claims: [CLM-VITC-01, CLM-VITC-02]}
+      - {ingredient: zinc, claims: [CLM-ZINC-01]}
+      - {ingredient: echinacea, claims: [CLM-ECH-01]}
+    habits:
+      - id: HAB-IMM-01
+        rung: lifestyle
+        relation: replaces
+        text: "Stay up to date on recommended vaccines, such as the annual flu shot. Your pharmacist can tell you which ones apply."
+        evidence_grade: A
+        sources: [cdc-flu-vaccine]
+      - id: HAB-IMM-02
+        rung: lifestyle
+        relation: replaces
+        text: "Regular handwashing, especially during cold and flu season."
+        evidence_grade: B
+        sources: [review-cochrane-physical-interventions-2023]
+      - id: HAB-IMM-03
+        rung: lifestyle
+        relation: replaces
+        text: "Get 7 or more hours of sleep. Short sleep is linked to catching colds more easily."
+        evidence_grade: C
+        sources: [study-sleep-colds-2015]
+
+  - id: energy
+    name: Energy
+    supplements:
+      - {ingredient: vitamin-b12, claims: [], swap: route_to_clinician, note: "Helps only if you're deficient (e.g. vegan diet, metformin, age 50+)."}
+      - {ingredient: vitamin-b6, claims: []}
+      - {ingredient: biotin, claims: []}
+      - {ingredient: iron, claims: [], swap: route_to_clinician, note: "Only if testing confirms low iron."}
+      - {ingredient: coq10, claims: []}
+      - {ingredient: green-tea-extract, claims: []}
+    habits:
+      - id: HAB-ENERGY-01
+        rung: lifestyle
+        relation: replaces
+        text: "Regular physical activity. Active adults report less fatigue and better energy."
+        evidence_grade: C
+        sources: [guideline-pag-2018]
+      - id: HAB-ENERGY-02
+        rung: lifestyle
+        relation: replaces
+        text: "Consistent sleep (7+ hours) with a fixed wake time."
+        evidence_grade: C
+        sources: [guideline-aasm-behavioral-2021]
+    routing_note: "Persistent tiredness has many medical causes (e.g. anemia, thyroid problems, sleep apnea). Get checked rather than adding supplements."
+
+  - id: workout
+    name: Workout and recovery
+    supplements:
+      - {ingredient: creatine, claims: [CLM-CRE-01]}
+    habits:
+      - id: HAB-WORK-01
+        rung: lifestyle
+        relation: complements
+        text: "Progressive resistance training at least 2 days a week. This is the main driver of strength, and creatine only adds to it."
+        evidence_grade: A
+        sources: [guideline-pag-2018, guideline-issn-creatine-2017]
+      - id: HAB-WORK-02
+        rung: diet
+        relation: complements
+        text: "Enough protein from food, spread across meals (about 1.4–2.0 g per kg of body weight per day for people training regularly)."
+        evidence_grade: B
+        sources: [guideline-issn-protein-2017]
+
+status: draft
+reviewed_by: null
