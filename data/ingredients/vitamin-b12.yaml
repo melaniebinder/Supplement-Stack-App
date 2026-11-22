@@ -1,0 +1,35 @@
+id: vitamin-b12
+name: Vitamin B12
+type: vitamin
+synonyms: [cobalamin, cyanocobalamin, methylcobalamin, hydroxocobalamin, adenosylcobalamin]
+forms: [cyanocobalamin, methylcobalamin, hydroxocobalamin, adenosylcobalamin]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: adults, amount: 2.4, unit: mcg}
+  ul: null
+  notes: No UL has been set because of low potential for toxicity.
+food_sources: [clams, beef liver, salmon, tuna, beef, milk, yogurt, eggs, fortified breakfast cereals, fortified nutritional yeast]
+effect_groups: []
+recommendable: true
+recommend_only_if: The user follows a vegan diet, is 50 or older, or takes metformin or a long-term acid reducer, and fortified foods aren't covering it.
+claims:
+  - id: CLM-B12-01
+    outcome: Maintaining adequate B12 status
+    population: People following vegan diets
+    direction: benefit
+    evidence_grade: A
+    summary: B12 is found naturally almost only in animal foods. People eating vegan diets need fortified foods or supplements to meet needs.
+    sources: [ods-vitamin-b12]
+  - id: CLM-B12-02
+    outcome: Maintaining adequate B12 status
+    population: Adults 50+
+    direction: benefit
+    evidence_grade: A
+    summary: Absorption of food-bound B12 often declines with age. Adults over 50 are advised to get most of their B12 from fortified foods or supplements.
+    sources: [ods-vitamin-b12]
+safety_notes: []
+sources: [ods-vitamin-b12]
+status: draft
+reviewed_by: null
+reviewed_at: null

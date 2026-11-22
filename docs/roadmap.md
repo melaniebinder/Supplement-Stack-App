@@ -5,7 +5,9 @@ Organized by confidence, not dates. Items move left only once the step before th
 ## Now: validate the problem and the evidence model
 - [ ] Run 8–10 user interviews ([guide](research/interview-guide.md))
 - [ ] Finish the competitor scan
-- [ ] Build a 30-ingredient pilot knowledge base (the most commonly used supplements) using the [evidence model](evidence-model.md)
+- [x] Draft a 30-ingredient pilot knowledge base using the [evidence model](evidence-model.md) ([`data/`](../data/))
+- [ ] Verify all citations against live sources
+- [x] Validator that enforces the evidence rules in CI
 - [ ] Get a credentialed reviewer (PharmD or RD) to audit 20 interaction records
 - [ ] Clickable prototype of Stack Check, tested with 5 users
 - [ ] Copy review against health-claim guidelines

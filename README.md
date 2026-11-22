@@ -39,7 +39,7 @@ The reasoning behind each choice is in [`docs/decisions.md`](docs/decisions.md).
 
 ## 3. Status
 
-**Stage: 💡 Idea / product spec.** No code has been written yet. This repo starts with the problem, the requirements, and the evidence model, and code comes after.
+**Stage: 💡 Product spec + draft knowledge base.** The app isn't built yet. A 30-ingredient evidence knowledge base is drafted in [`data/`](data/), with a validator that enforces the evidence rules in CI.
 
 | Area | Status |
 |---|---|
@@ -48,6 +48,7 @@ The reasoning behind each choice is in [`docs/decisions.md`](docs/decisions.md).
 | Evidence model | ✅ Draft |
 | Competitor scan | 🟡 In progress |
 | User interviews | ⏳ Guide written, interviews not started |
+| Knowledge base (30 ingredients, 31 interactions) | 🟡 Draft: sources need verifying, records need expert review |
 | Clickable prototype | ⏳ Not started |
 | Demo | — |
 
@@ -63,7 +64,14 @@ Full definitions are in [`docs/prd.md`](docs/prd.md#success-metrics).
 
 ## 5. Tech stack and how to run it
 
-_Not built yet._ The proposed stack is TypeScript and Next.js, with the curated knowledge base kept as versioned JSON/YAML in the repo (see [decision D-007](docs/decisions.md)). Setup steps will be added once `src/` exists.
+The app isn't built yet. The proposed stack is TypeScript and Next.js, with the curated knowledge base as versioned YAML in the repo (see [decision D-007](docs/decisions.md)).
+
+To validate the knowledge base (Node 18+):
+
+```bash
+npm install
+npm run validate
+```
 
 ## Repo map
 
@@ -78,6 +86,8 @@ _Not built yet._ The proposed stack is TypeScript and Next.js, with the curated 
 │   └── research/
 │       ├── competitor-scan.md
 │       └── interview-guide.md
+├── data/                   knowledge base (YAML) + synthetic test stacks
+├── scripts/                validate-data.mjs
 ├── design/
 │   └── wireframes.md
 └── src/                    (added once building starts)

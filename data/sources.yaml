@@ -1,0 +1,80 @@
+# Source registry. Every claim, interaction, and safety note must cite ids from this file.
+# verified: false means the citation was written from reference knowledge and has NOT yet been
+# checked against the live source. It must be verified (and accessed_at set) before a record is published.
+#
+# type: ods | nccih | livertox | guideline | regulatory | rct | systematic_review | observational | other
+
+sources:
+  # ---- NIH Office of Dietary Supplements (ODS): Health Professional fact sheets ----
+  - {id: ods-vitamin-a,   type: ods, title: "Vitamin A and Carotenoids: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-vitamin-b6,  type: ods, title: "Vitamin B6: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-vitamin-b12, type: ods, title: "Vitamin B12: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-folate,      type: ods, title: "Folate: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-biotin,      type: ods, title: "Biotin: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-vitamin-c,   type: ods, title: "Vitamin C: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-vitamin-d,   type: ods, title: "Vitamin D: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-vitamin-e,   type: ods, title: "Vitamin E: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-vitamin-k,   type: ods, title: "Vitamin K: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-calcium,     type: ods, title: "Calcium: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-iron,        type: ods, title: "Iron: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-magnesium,   type: ods, title: "Magnesium: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-zinc,        type: ods, title: "Zinc: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-selenium,    type: ods, title: "Selenium: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-iodine,      type: ods, title: "Iodine: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-omega-3,     type: ods, title: "Omega-3 Fatty Acids: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-probiotics,  type: ods, title: "Probiotics: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-ashwagandha, type: ods, title: "Ashwagandha: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional/", verified: false, accessed_at: null}
+  - {id: ods-exercise,    type: ods, title: "Dietary Supplements for Exercise and Athletic Performance: Fact Sheet for Health Professionals", publisher: NIH ODS, url: "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/", verified: false, accessed_at: null}
+
+  # ---- NIH National Center for Complementary and Integrative Health (NCCIH) ----
+  - {id: nccih-melatonin,       type: nccih, title: "Melatonin: What You Need To Know", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know", verified: false, accessed_at: null}
+  - {id: nccih-st-johns-wort,   type: nccih, title: "St. John's Wort", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/st-johns-wort", verified: false, accessed_at: null}
+  - {id: nccih-ginkgo,          type: nccih, title: "Ginkgo", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/ginkgo", verified: false, accessed_at: null}
+  - {id: nccih-garlic,          type: nccih, title: "Garlic", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/garlic", verified: false, accessed_at: null}
+  - {id: nccih-turmeric,        type: nccih, title: "Turmeric", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/turmeric", verified: false, accessed_at: null}
+  - {id: nccih-green-tea,       type: nccih, title: "Green Tea", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/green-tea", verified: false, accessed_at: null}
+  - {id: nccih-echinacea,       type: nccih, title: "Echinacea", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/echinacea", verified: false, accessed_at: null}
+  - {id: nccih-coq10,           type: nccih, title: "Coenzyme Q10", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/coenzyme-q10", verified: false, accessed_at: null}
+  - {id: nccih-red-yeast-rice,  type: nccih, title: "Red Yeast Rice", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/red-yeast-rice", verified: false, accessed_at: null}
+  - {id: nccih-glucosamine,     type: nccih, title: "Glucosamine and Chondroitin for Osteoarthritis", publisher: NIH NCCIH, url: "https://www.nccih.nih.gov/health/glucosamine-and-chondroitin-for-osteoarthritis", verified: false, accessed_at: null}
+
+  # ---- Liver safety ----
+  - {id: livertox, type: livertox, title: "LiverTox: Clinical and Research Information on Drug-Induced Liver Injury (see entries for the specific herbal/dietary supplement)", publisher: NIDDK / NCBI Bookshelf, url: "https://www.ncbi.nlm.nih.gov/books/NBK547852/", verified: false, accessed_at: null}
+
+  # ---- Guidelines and regulatory ----
+  - {id: uspstf-folic-acid-2023, type: guideline, title: "Folic Acid Supplementation to Prevent Neural Tube Defects: Preventive Medication (recommendation statement, 2023)", publisher: US Preventive Services Task Force, url: null, verified: false, accessed_at: null}
+  - {id: uspstf-fracture-2018, type: guideline, title: "Vitamin D, Calcium, or Combined Supplementation for the Primary Prevention of Fractures in Community-Dwelling Adults (recommendation statement, 2018). Check for a newer update.", publisher: US Preventive Services Task Force, url: null, verified: false, accessed_at: null}
+  - {id: guideline-issn-creatine-2017, type: guideline, title: "International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine", citation: "Kreider RB et al. J Int Soc Sports Nutr. 2017;14:18", doi: "10.1186/s12970-017-0173-z", url: null, verified: false, accessed_at: null}
+  - {id: guideline-aasm-insomnia-2017, type: guideline, title: "Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy of Sleep Medicine Clinical Practice Guideline", citation: "Sateia MJ et al. J Clin Sleep Med. 2017;13(2):307-349", doi: "10.5664/jcsm.6470", url: null, verified: false, accessed_at: null}
+  - {id: efsa-b6-ul-2023, type: regulatory, title: "Scientific opinion on the tolerable upper intake level for vitamin B6", citation: "EFSA NDA Panel. EFSA Journal. 2023;21(5):8006", doi: "10.2903/j.efsa.2023.8006", url: null, verified: false, accessed_at: null}
+  - {id: cfr-101-81, type: regulatory, title: "21 CFR 101.81, Health claims: Soluble fiber from certain foods and risk of coronary heart disease (includes psyllium husk)", publisher: US FDA / eCFR, url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-E/section-101.81", verified: false, accessed_at: null}
+  - {id: fda-biotin-lab-tests, type: regulatory, title: "FDA Safety Communication: biotin (vitamin B7) may interfere with lab tests (2017, updated 2019)", publisher: US FDA, url: null, verified: false, accessed_at: null}
+  - {id: fda-ppi-magnesium-2011, type: regulatory, title: "FDA Drug Safety Communication: Low magnesium levels can be associated with long-term use of proton pump inhibitor drugs (2011)", publisher: US FDA, url: null, verified: false, accessed_at: null}
+  - {id: fda-intranasal-zinc-2009, type: regulatory, title: "FDA warning on intranasal zinc products and loss of sense of smell (2009)", publisher: US FDA, url: null, verified: false, accessed_at: null}
+  - {id: regulatory-japan-beni-koji-2024, type: regulatory, title: "Japanese government (MHLW) statements and recalls concerning red yeast rice (beni-koji) supplements linked to kidney illness, 2024", publisher: Ministry of Health, Labour and Welfare (Japan), url: null, verified: false, accessed_at: null}
+
+  # ---- Randomized trials ----
+  - {id: trial-atbc-1994, type: rct, title: "The effect of vitamin E and beta carotene on the incidence of lung cancer and other cancers in male smokers (ATBC)", citation: "N Engl J Med. 1994;330:1029-1035", doi: "10.1056/NEJM199404143301501", url: null, verified: false, accessed_at: null}
+  - {id: trial-caret-1996, type: rct, title: "Effects of a combination of beta carotene and vitamin A on lung cancer and cardiovascular disease (CARET)", citation: "Omenn GS et al. N Engl J Med. 1996;334:1150-1155", doi: "10.1056/NEJM199605023341802", url: null, verified: false, accessed_at: null}
+  - {id: trial-select-2009, type: rct, title: "Effect of selenium and vitamin E on risk of prostate cancer and other cancers (SELECT)", citation: "Lippman SM et al. JAMA. 2009;301(1):39-51", doi: "10.1001/jama.2008.864", url: null, verified: false, accessed_at: null}
+  - {id: trial-select-2011, type: rct, title: "Vitamin E and the risk of prostate cancer: updated results of SELECT", citation: "Klein EA et al. JAMA. 2011;306(14):1549-1556", doi: "10.1001/jama.2011.1437", url: null, verified: false, accessed_at: null}
+  - {id: trial-vital-omega3-2019, type: rct, title: "Marine n-3 fatty acids and prevention of cardiovascular disease and cancer (VITAL)", citation: "Manson JE et al. N Engl J Med. 2019;380:23-32", doi: "10.1056/NEJMoa1811403", url: null, verified: false, accessed_at: null}
+  - {id: trial-vital-vitd-2019, type: rct, title: "Vitamin D supplements and prevention of cancer and cardiovascular disease (VITAL)", citation: "Manson JE et al. N Engl J Med. 2019;380:33-44", doi: "10.1056/NEJMoa1809944", url: null, verified: false, accessed_at: null}
+  - {id: trial-vital-fracture-2022, type: rct, title: "Supplemental vitamin D and incident fractures in midlife and older adults (VITAL)", citation: "LeBoff MS et al. N Engl J Med. 2022;387:299-309", doi: "10.1056/NEJMoa2202106", url: null, verified: false, accessed_at: null}
+  - {id: trial-ascend-2018, type: rct, title: "Effects of n-3 fatty acid supplements in diabetes mellitus (ASCEND)", citation: "ASCEND Study Collaborative Group. N Engl J Med. 2018;379:1540-1550", doi: "10.1056/NEJMoa1804989", url: null, verified: false, accessed_at: null}
+  - {id: trial-gem-2008, type: rct, title: "Ginkgo biloba for prevention of dementia (GEM)", citation: "DeKosky ST et al. JAMA. 2008;300(19):2253-2262", doi: "10.1001/jama.2008.683", url: null, verified: false, accessed_at: null}
+  - {id: trial-gait-2006, type: rct, title: "Glucosamine, chondroitin sulfate, and the two in combination for painful knee osteoarthritis (GAIT)", citation: "Clegg DO et al. N Engl J Med. 2006;354:795-808", doi: "10.1056/NEJMoa052771", url: null, verified: false, accessed_at: null}
+
+  # ---- Systematic reviews / meta-analyses ----
+  - {id: review-cochrane-vitc-cold-2013, type: systematic_review, title: "Vitamin C for preventing and treating the common cold", citation: "Hemilä H, Chalker E. Cochrane Database Syst Rev. 2013;CD000980", url: null, verified: false, accessed_at: null}
+  - {id: review-cochrane-zinc-cold-2024, type: systematic_review, title: "Zinc for prevention and treatment of the common cold", citation: "Nault D et al. Cochrane Database Syst Rev. 2024;CD014914", url: null, verified: false, accessed_at: null}
+  - {id: review-cochrane-melatonin-jetlag-2002, type: systematic_review, title: "Melatonin for the prevention and treatment of jet lag", citation: "Herxheimer A, Petrie KJ. Cochrane Database Syst Rev. 2002;CD001520", url: null, verified: false, accessed_at: null}
+  - {id: review-cochrane-echinacea-2014, type: systematic_review, title: "Echinacea for preventing and treating the common cold", citation: "Karsch-Völk M et al. Cochrane Database Syst Rev. 2014;CD000530", url: null, verified: false, accessed_at: null}
+  - {id: review-cochrane-sjw-2008, type: systematic_review, title: "St John's wort for major depression", citation: "Linde K et al. Cochrane Database Syst Rev. 2008;CD000448", url: null, verified: false, accessed_at: null}
+  - {id: review-cochrane-probiotics-aad-2019, type: systematic_review, title: "Probiotics for the prevention of pediatric antibiotic-associated diarrhea", citation: "Guo Q et al. Cochrane Database Syst Rev. 2019;CD004827", url: null, verified: false, accessed_at: null}
+  - {id: review-cochrane-green-tea-weight-2012, type: systematic_review, title: "Green tea for weight loss and weight maintenance in overweight or obese adults", citation: "Jurgens TM et al. Cochrane Database Syst Rev. 2012;CD008650", url: null, verified: false, accessed_at: null}
+  - {id: review-omega3-af-2021, type: systematic_review, title: "Effect of long-term marine omega-3 fatty acids supplementation on the risk of atrial fibrillation in randomized controlled trials of cardiovascular outcomes", citation: "Gencer B et al. Circulation. 2021;144:1981-1990", doi: "10.1161/CIRCULATIONAHA.121.055654", url: null, verified: false, accessed_at: null}
+  - {id: review-magnesium-insomnia-2021, type: systematic_review, title: "Oral magnesium supplementation for insomnia in older adults: a systematic review and meta-analysis", citation: "Mah J, Pitre T. BMC Complement Med Ther. 2021;21:125", doi: "10.1186/s12906-021-03297-z", url: null, verified: false, accessed_at: null}
+
+  # ---- Other studies ----
+  - {id: study-melatonin-gummies-2023, type: observational, title: "Quantity of melatonin and CBD in melatonin gummies sold in the US", citation: "Cohen PA et al. JAMA. 2023;329(16):1401-1402", doi: "10.1001/jama.2023.2296", url: null, verified: false, accessed_at: null}

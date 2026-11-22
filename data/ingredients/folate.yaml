@@ -1,0 +1,33 @@
+id: folate
+name: Folate / Folic acid
+type: vitamin
+synonyms: [folic acid, vitamin B9, L-methylfolate, 5-MTHF, methylfolate, folacin]
+forms: [folic acid (synthetic), L-methylfolate (5-MTHF), food folate]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: adults, amount: 400, unit: mcg DFE}
+  ul: {amount: 1000, unit: mcg, applies_to: "folic acid from supplements and fortified foods only; does not apply to natural food folate"}
+unit_conversions:
+  - {from: mcg folic acid (taken with food), to: mcg DFE, factor: 1.7}
+  - {from: mcg folic acid (empty stomach), to: mcg DFE, factor: 2.0}
+food_sources: [beef liver, spinach, black-eyed peas, asparagus, Brussels sprouts, avocado, fortified grains and cereals]
+effect_groups: []
+recommendable: false
+recommendable_note: The strongest evidence concerns pregnancy planning, which is routed to a clinician (D-008). Shown as information only.
+claims:
+  - id: CLM-FOL-01
+    outcome: Neural tube defect risk
+    population: People who are planning or capable of pregnancy
+    direction: benefit
+    evidence_grade: A
+    summary: The USPSTF recommends daily folic acid (0.4 to 0.8 mg) for people planning or capable of pregnancy to reduce neural tube defect risk.
+    sources: [uspstf-folic-acid-2023, ods-folate]
+safety_notes:
+  - level: caution
+    text: High folic acid intake can mask the anemia of vitamin B12 deficiency while nerve damage continues. Check B12 status, especially in older adults.
+    sources: [ods-folate]
+sources: [ods-folate]
+status: draft
+reviewed_by: null
+reviewed_at: null

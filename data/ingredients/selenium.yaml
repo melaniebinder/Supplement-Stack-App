@@ -1,0 +1,30 @@
+id: selenium
+name: Selenium
+type: mineral
+synonyms: [selenomethionine, sodium selenite, selenium yeast, L-selenomethionine]
+forms: [selenomethionine, sodium selenite, selenium yeast]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: adults, amount: 55, unit: mcg}
+  ul: {amount: 400, unit: mcg, applies_to: total intake}
+food_sources: [Brazil nuts (very high; amount varies by nut), tuna, sardines, shrimp, ham, eggs, whole grains]
+effect_groups: []
+recommendable: false
+recommendable_note: Most US diets are adequate. A single Brazil nut can provide more than the RDA.
+claims:
+  - id: CLM-SEL-01
+    outcome: Prostate and other cancer prevention
+    population: Healthy men 50+
+    direction: no_effect
+    evidence_grade: A
+    summary: The large SELECT trial found that 200 mcg/day of selenium did not reduce prostate or other cancers.
+    sources: [trial-select-2009]
+safety_notes:
+  - level: caution
+    text: Chronic intake above the UL can cause selenosis (hair and nail loss, garlic breath, skin rash, nerve problems). SELECT also saw a non-significant signal for type 2 diabetes.
+    sources: [ods-selenium, trial-select-2009]
+sources: [ods-selenium]
+status: draft
+reviewed_by: null
+reviewed_at: null

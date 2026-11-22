@@ -41,6 +41,18 @@ Short entries: what we chose, what we didn't, and why. Newest at the bottom. Sta
 **Chose** no account needed, with the stack kept in local storage, **over** requiring sign-up.
 **Why:** It lowers friction and minimizes the health-adjacent personal data we hold, which reduces privacy and compliance exposure.
 
+### D-010 · One file per ingredient, plus effect groups for additive risk ✅
+**Chose** one YAML file per ingredient, plus a separate "effect group" layer (bleeding risk, sedative, liver-injury reports, minerals that bind drugs), **over** a single big table of pairwise interactions.
+**Why:** One file per ingredient keeps reviews small (one PR = one ingredient to sign off). Pairwise-only data misses the real-world pattern of several mildly risky supplements adding up, e.g. fish oil + turmeric + a blood thinner. Pairwise records still override group rules when specific evidence exists.
+
+### D-011 · Encode the product rules in a validator, not just in docs ✅
+**Chose** a CI validator that fails on uncited claims, sub-B recommendations, or drug flags without pharmacist routing, **over** relying on reviewer discipline.
+**Why:** The PRD's guardrails (100% citation coverage, lifestyle-first, recommend only A/B) are only credible if they're enforced automatically. `--strict` mode doubles as the publishing gate.
+
+### D-012 · Ship the draft dataset marked unverified, rather than wait ✅
+**Chose** to commit the 30-ingredient set with every source `verified: false` and every record `draft`, **over** holding it until verification.
+**Why:** The schema and coverage can be reviewed now, and the gap to "publishable" is measurable (`npm run validate:strict`). Nothing is user-facing yet.
+
 ---
 
 _Template for new entries:_

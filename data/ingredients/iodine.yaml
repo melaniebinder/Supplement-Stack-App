@@ -1,0 +1,30 @@
+id: iodine
+name: Iodine
+type: mineral
+synonyms: [potassium iodide, sodium iodide, kelp, seaweed extract, bladderwrack]
+forms: [potassium iodide, kelp/seaweed (iodine content varies widely)]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: adults, amount: 150, unit: mcg}
+  ul: {amount: 1100, unit: mcg, applies_to: total intake}
+food_sources: [iodized salt, cod, seaweed, milk, yogurt, eggs]
+effect_groups: []
+recommendable: false
+recommendable_note: Iodized salt and dairy usually cover needs. Pregnancy-related needs are routed to a clinician (D-008).
+claims:
+  - id: CLM-IOD-01
+    outcome: Thyroid function with excess iodine intake
+    population: Adults, especially those with existing thyroid disease
+    direction: harm
+    evidence_grade: C
+    summary: Excess iodine, often from kelp or seaweed supplements, can cause thyroid dysfunction (both hyper- and hypothyroidism).
+    sources: [ods-iodine]
+safety_notes:
+  - level: caution
+    text: Kelp and seaweed supplements can contain far more iodine than the label suggests.
+    sources: [ods-iodine]
+sources: [ods-iodine]
+status: draft
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,26 @@
+id: glucosamine
+name: Glucosamine (with or without chondroitin)
+type: other
+synonyms: [glucosamine sulfate, glucosamine hydrochloride, glucosamine HCl, chondroitin sulfate]
+forms: [glucosamine sulfate, glucosamine hydrochloride, combined with chondroitin]
+reference_intakes: null
+food_sources: []
+effect_groups: []
+recommendable: false
+recommendable_note: Trials show no consistent benefit.
+claims:
+  - id: CLM-GLU-01
+    outcome: Knee osteoarthritis pain
+    population: Adults with knee osteoarthritis
+    direction: mixed
+    evidence_grade: C
+    summary: The large GAIT trial found no overall benefit over placebo. Some other studies suggest small effects.
+    sources: [trial-gait-2006, nccih-glucosamine]
+safety_notes:
+  - level: caution
+    text: Often made from shellfish shells. People with shellfish allergy should check the source.
+    sources: [nccih-glucosamine]
+sources: [nccih-glucosamine]
+status: draft
+reviewed_by: null
+reviewed_at: null

@@ -1,0 +1,26 @@
+id: turmeric
+name: Turmeric / Curcumin
+type: botanical
+synonyms: [curcumin, Curcuma longa, curcuminoids, turmeric extract]
+forms: [turmeric root powder, standardized curcumin extracts, curcumin with piperine (black pepper extract)]
+reference_intakes: null
+food_sources: [turmeric used as a cooking spice (not associated with the safety signals below)]
+effect_groups: [bleeding-risk, hepatotoxicity-reports]
+recommendable: false
+recommendable_note: Evidence is limited, and there are case reports of liver injury with concentrated supplements.
+claims:
+  - id: CLM-TUR-01
+    outcome: Knee osteoarthritis pain
+    population: Adults with knee osteoarthritis
+    direction: benefit
+    evidence_grade: C
+    summary: Small, short trials suggest a modest effect on pain. Higher-quality studies are needed.
+    sources: [nccih-turmeric]
+safety_notes:
+  - level: caution
+    text: Liver injury has been reported with turmeric and curcumin supplements, including formulations with piperine, which increases absorption.
+    sources: [livertox, nccih-turmeric]
+sources: [nccih-turmeric]
+status: draft
+reviewed_by: null
+reviewed_at: null

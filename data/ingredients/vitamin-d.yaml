@@ -1,0 +1,48 @@
+id: vitamin-d
+name: Vitamin D
+type: vitamin
+synonyms: [cholecalciferol, vitamin D3, ergocalciferol, vitamin D2, calciferol]
+forms: [D3 (cholecalciferol), D2 (ergocalciferol)]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: adults 19-70, amount: 15, unit: mcg}
+    - {group: adults 71+, amount: 20, unit: mcg}
+  ul: {amount: 100, unit: mcg, applies_to: total intake}
+unit_conversions:
+  - {from: IU, to: mcg, factor: 0.025}
+food_sources: [trout, salmon, sardines, UV-exposed mushrooms, fortified milk, fortified plant milks, egg yolks]
+lifestyle_sources: [sensible sun exposure (varies with latitude, season, and skin tone)]
+effect_groups: []
+recommendable: true
+recommend_only_if: Sun exposure and food sources are limited (e.g. older adults, darker skin, northern latitudes in winter, mostly indoors).
+claims:
+  - id: CLM-VITD-01
+    outcome: Maintaining adequate vitamin D status
+    population: People with limited sun exposure or low dietary intake
+    direction: benefit
+    evidence_grade: A
+    summary: Few foods contain vitamin D. Supplements reliably raise vitamin D status when sun and diet are insufficient.
+    sources: [ods-vitamin-d]
+  - id: CLM-VITD-02
+    outcome: Fracture risk
+    population: Generally healthy midlife and older adults not selected for deficiency
+    direction: no_effect
+    evidence_grade: B
+    summary: In the large VITAL trial, 2,000 IU/day did not reduce fractures compared with placebo.
+    sources: [trial-vital-fracture-2022, uspstf-fracture-2018]
+  - id: CLM-VITD-03
+    outcome: Invasive cancer and major cardiovascular events
+    population: Generally healthy adults 50+
+    direction: no_effect
+    evidence_grade: B
+    summary: VITAL found no reduction in invasive cancer or major cardiovascular events over about 5 years.
+    sources: [trial-vital-vitd-2019]
+safety_notes:
+  - level: caution
+    text: Chronic intake above the UL can raise blood calcium (hypercalcemia). Toxicity almost always comes from supplements, not sun or food.
+    sources: [ods-vitamin-d]
+sources: [ods-vitamin-d]
+status: draft
+reviewed_by: null
+reviewed_at: null

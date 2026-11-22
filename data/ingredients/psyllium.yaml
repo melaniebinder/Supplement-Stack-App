@@ -1,0 +1,34 @@
+id: psyllium
+name: Psyllium (fiber)
+type: fiber
+synonyms: [psyllium husk, ispaghula, Plantago ovata, soluble fiber supplement]
+forms: [husk powder, capsules]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes, total fiber)
+  ai:
+    - {group: men 19-50, amount: 38, unit: g total fiber}
+    - {group: women 19-50, amount: 25, unit: g total fiber}
+  ul: null
+food_sources: [oats, barley, beans, lentils, apples, citrus, vegetables, whole grains]
+effect_groups: []
+recommendable: true
+recommend_only_if: The goal is heart health or LDL cholesterol, and fiber intake from food is still below the adequate intake after diet changes.
+claims:
+  - id: CLM-PSY-01
+    outcome: LDL cholesterol
+    population: Adults
+    direction: benefit
+    evidence_grade: A
+    summary: Soluble fiber from psyllium husk, as part of a diet low in saturated fat and cholesterol, lowers LDL cholesterol. FDA authorizes a health claim for it.
+    sources: [cfr-101-81]
+safety_notes:
+  - level: caution
+    text: Take with plenty of water. Taken dry, it can swell and cause choking or blockage.
+    sources: [cfr-101-81]
+  - level: info
+    text: Can slow the absorption of medications and other supplements. Take it at least 2 hours apart from them.
+    sources: [cfr-101-81]
+sources: [cfr-101-81]
+status: draft
+reviewed_by: null
+reviewed_at: null

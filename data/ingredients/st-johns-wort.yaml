@@ -1,0 +1,29 @@
+id: st-johns-wort
+name: St. John's wort
+type: botanical
+synonyms: [Hypericum perforatum, hypericum, SJW]
+forms: [standardized extract (hypericin/hyperforin)]
+reference_intakes: null
+food_sources: []
+effect_groups: []
+recommendable: false
+recommendable_note: It has many serious drug interactions, and its main studied use is treating a medical condition (depression), which is outside the product's scope.
+claims:
+  - id: CLM-SJW-01
+    outcome: Symptoms of major depression
+    population: Adults with mild-to-moderate depression
+    direction: benefit
+    evidence_grade: B
+    summary: Trials found it more effective than placebo. Depression should be managed with a clinician, especially given the interactions.
+    sources: [review-cochrane-sjw-2008]
+safety_notes:
+  - level: warning
+    text: It strongly speeds up the metabolism of many drugs (CYP3A4 and P-glycoprotein induction) and can make them less effective, including birth control, blood thinners, transplant drugs, and HIV medicines.
+    sources: [nccih-st-johns-wort]
+  - level: caution
+    text: Can increase sensitivity to sunlight.
+    sources: [nccih-st-johns-wort]
+sources: [nccih-st-johns-wort]
+status: draft
+reviewed_by: null
+reviewed_at: null

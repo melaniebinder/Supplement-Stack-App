@@ -1,0 +1,24 @@
+# Curated, high-risk drug classes for v1 (D-006). Any supplement–drug hit routes to a pharmacist.
+# Example drugs are for search/matching only (generic names, no brands).
+drug_classes:
+  - {id: warfarin,               name: "Warfarin (vitamin K antagonist)",       examples: [warfarin]}
+  - {id: doacs,                  name: "Direct oral anticoagulants",            examples: [apixaban, rivaroxaban, dabigatran, edoxaban]}
+  - {id: antiplatelets,          name: "Antiplatelet drugs",                     examples: [clopidogrel, prasugrel, ticagrelor, daily low-dose aspirin]}
+  - {id: serotonergic-drugs,     name: "SSRIs, SNRIs and other serotonergic drugs", examples: [sertraline, fluoxetine, escitalopram, paroxetine, venlafaxine, duloxetine, tramadol, triptans]}
+  - {id: hormonal-contraceptives, name: "Hormonal contraceptives",              examples: [combined oral contraceptive pill, progestin-only pill, contraceptive implant, contraceptive patch, vaginal ring]}
+  - {id: immunosuppressants,     name: "Immunosuppressants",                     examples: [cyclosporine, tacrolimus, sirolimus, mycophenolate]}
+  - {id: hiv-antiretrovirals,    name: "HIV antiretrovirals (protease inhibitors, NNRTIs)", examples: [darunavir, atazanavir, saquinavir, efavirenz, rilpivirine]}
+  - {id: digoxin,                name: "Digoxin",                                examples: [digoxin]}
+  - {id: statins,                name: "Statins",                                examples: [atorvastatin, simvastatin, rosuvastatin, pravastatin, lovastatin]}
+  - {id: levothyroxine,          name: "Thyroid hormone",                        examples: [levothyroxine, liothyronine]}
+  - {id: antithyroid-drugs,      name: "Antithyroid drugs and other drugs affecting thyroid iodine", examples: [methimazole, propylthiouracil, amiodarone, lithium]}
+  - {id: quinolone-antibiotics,  name: "Quinolone antibiotics",                  examples: [ciprofloxacin, levofloxacin, moxifloxacin]}
+  - {id: tetracycline-antibiotics, name: "Tetracycline antibiotics",             examples: [doxycycline, minocycline, tetracycline]}
+  - {id: antibiotics-general,    name: "Antibiotics (any)",                      examples: [amoxicillin, azithromycin, cephalexin]}
+  - {id: bisphosphonates,        name: "Bisphosphonates",                        examples: [alendronate, risedronate, ibandronate]}
+  - {id: ppis,                   name: "Proton pump inhibitors (long-term)",     examples: [omeprazole, esomeprazole, pantoprazole, lansoprazole]}
+  - {id: metformin,              name: "Metformin",                              examples: [metformin]}
+  - {id: thiazide-diuretics,     name: "Thiazide diuretics",                     examples: [hydrochlorothiazide, chlorthalidone, indapamide]}
+  - {id: oral-retinoids,         name: "Oral retinoids",                         examples: [isotretinoin, acitretin]}
+  - {id: sedatives,              name: "Sedatives and other CNS depressants",    examples: [benzodiazepines, zolpidem, eszopiclone, opioids, sedating antihistamines]}
+  - {id: beta-blockers,          name: "Beta-blockers",                          examples: [nadolol, propranolol, metoprolol, atenolol]}

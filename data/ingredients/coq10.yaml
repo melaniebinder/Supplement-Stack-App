@@ -1,0 +1,23 @@
+id: coq10
+name: Coenzyme Q10
+type: other
+synonyms: [CoQ10, ubiquinone, ubiquinol, ubidecarenone]
+forms: [ubiquinone, ubiquinol]
+reference_intakes: null
+food_sources: [organ meats, beef, chicken, fatty fish, soybean oil, peanuts (small amounts)]
+effect_groups: []
+recommendable: false
+recommendable_note: Evidence for the most common reason people take it (statin muscle symptoms) is mixed.
+claims:
+  - id: CLM-COQ-01
+    outcome: Statin-associated muscle symptoms
+    population: Adults taking statins
+    direction: mixed
+    evidence_grade: C
+    summary: Studies disagree. Some meta-analyses found no benefit, while others suggest a possible reduction in muscle symptoms.
+    sources: [nccih-coq10]
+safety_notes: []
+sources: [nccih-coq10]
+status: draft
+reviewed_by: null
+reviewed_at: null

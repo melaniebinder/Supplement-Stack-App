@@ -1,0 +1,34 @@
+id: zinc
+name: Zinc
+type: mineral
+synonyms: [zinc gluconate, zinc picolinate, zinc citrate, zinc acetate, zinc sulfate, zinc oxide, zinc bisglycinate]
+forms: [gluconate, picolinate, citrate, acetate, sulfate, oxide]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: men, amount: 11, unit: mg}
+    - {group: women, amount: 8, unit: mg}
+  ul: {amount: 40, unit: mg, applies_to: total intake (elemental zinc)}
+food_sources: [oysters, beef, crab, pork, pumpkin seeds, chickpeas, cashews, fortified cereals]
+effect_groups: [mineral-chelators]
+recommendable: false
+recommendable_note: Most people meet needs from food. Excess is common when a standalone zinc product is stacked with a multivitamin.
+claims:
+  - id: CLM-ZINC-01
+    outcome: Duration of the common cold (lozenges started early)
+    population: Adults
+    direction: mixed
+    evidence_grade: C
+    summary: The 2024 Cochrane review found the evidence on zinc for preventing or treating colds uncertain, with results varying across studies.
+    sources: [review-cochrane-zinc-cold-2024]
+safety_notes:
+  - level: caution
+    text: Long-term intake above the UL can cause copper deficiency (anemia, nerve problems) and lower HDL cholesterol.
+    sources: [ods-zinc]
+  - level: warning
+    text: Intranasal zinc products have been linked to permanent loss of smell.
+    sources: [fda-intranasal-zinc-2009, ods-zinc]
+sources: [ods-zinc]
+status: draft
+reviewed_by: null
+reviewed_at: null

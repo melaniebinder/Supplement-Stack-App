@@ -1,0 +1,29 @@
+id: creatine
+name: Creatine
+type: other
+synonyms: [creatine monohydrate, creatine HCl, creatine hydrochloride]
+forms: [creatine monohydrate (most studied)]
+reference_intakes: null
+food_sources: [red meat, fish (small amounts; the body also makes creatine)]
+effect_groups: []
+recommendable: true
+recommend_only_if: The goal is strength or exercise recovery, the user does regular resistance training, and has no kidney disease.
+claims:
+  - id: CLM-CRE-01
+    outcome: Muscle strength and lean mass
+    population: Adults doing resistance training
+    direction: benefit
+    evidence_grade: A
+    summary: Creatine monohydrate combined with resistance training consistently increases strength and lean mass compared with training alone.
+    sources: [guideline-issn-creatine-2017, ods-exercise]
+safety_notes:
+  - level: caution
+    text: Creatine can raise blood creatinine, which may look like reduced kidney function on lab tests. Tell your clinician. People with kidney disease should consult a clinician first.
+    sources: [guideline-issn-creatine-2017, ods-exercise]
+  - level: info
+    text: Early weight gain is common and is mostly water held in muscle.
+    sources: [ods-exercise]
+sources: [ods-exercise]
+status: draft
+reviewed_by: null
+reviewed_at: null

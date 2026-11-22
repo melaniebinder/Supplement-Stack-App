@@ -1,0 +1,53 @@
+id: calcium
+name: Calcium
+type: mineral
+synonyms: [calcium carbonate, calcium citrate, calcium phosphate, calcium gluconate, calcium lactate]
+forms: [calcium carbonate (take with food), calcium citrate (with or without food)]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: adults 19-50, amount: 1000, unit: mg}
+    - {group: men 51-70, amount: 1000, unit: mg}
+    - {group: women 51+, amount: 1200, unit: mg}
+    - {group: men 71+, amount: 1200, unit: mg}
+  ul:
+    amount: 2500
+    unit: mg
+    applies_to: total intake (food + supplements), adults 19-50
+    by_group:
+      - {group: adults 51+, amount: 2000, unit: mg}
+  notes: Amounts are elemental calcium. Absorption is best in doses of 500 mg or less.
+food_sources: [yogurt, cheese, milk, sardines with bones, fortified plant milks, tofu made with calcium sulfate, kale, bok choy]
+effect_groups: [mineral-chelators]
+recommendable: true
+recommend_only_if: Estimated intake from food stays below the RDA after diet changes (e.g. dairy-free diets).
+claims:
+  - id: CLM-CAL-00
+    outcome: Meeting calcium needs
+    population: Adults whose diet doesn't provide the RDA (e.g. dairy-free diets)
+    direction: benefit
+    evidence_grade: A
+    summary: Supplements reliably close a calcium intake gap. Food sources are preferred, with supplements covering only the shortfall.
+    sources: [ods-calcium]
+  - id: CLM-CAL-01
+    outcome: Fracture prevention with low-dose calcium plus vitamin D
+    population: Community-dwelling postmenopausal women
+    direction: no_effect
+    evidence_grade: B
+    summary: The USPSTF (2018) recommended against daily supplementation with up to 1,000 mg calcium and 400 IU vitamin D for primary fracture prevention in this group.
+    sources: [uspstf-fracture-2018]
+  - id: CLM-CAL-02
+    outcome: Cardiovascular risk from calcium supplements
+    population: Adults
+    direction: mixed
+    evidence_grade: C
+    summary: Some analyses suggest that calcium supplements (not dietary calcium) may raise cardiovascular risk, while others don't. This is unresolved.
+    sources: [ods-calcium]
+safety_notes:
+  - level: caution
+    text: Supplements, especially combined with vitamin D, have been associated with kidney stones. Constipation is common with calcium carbonate.
+    sources: [ods-calcium]
+sources: [ods-calcium]
+status: draft
+reviewed_by: null
+reviewed_at: null

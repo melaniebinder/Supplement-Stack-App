@@ -1,0 +1,29 @@
+id: green-tea-extract
+name: Green tea extract
+type: botanical
+synonyms: [EGCG, epigallocatechin gallate, Camellia sinensis extract, green tea catechins]
+forms: [concentrated catechin extracts (often in weight-loss products)]
+reference_intakes: null
+food_sources: [brewed green tea (not associated with the liver-injury signal)]
+effect_groups: [hepatotoxicity-reports]
+recommendable: false
+recommendable_note: There's no meaningful benefit for weight, and there are case reports of liver injury with concentrated extracts.
+claims:
+  - id: CLM-GTE-01
+    outcome: Weight loss
+    population: Adults with overweight or obesity
+    direction: no_effect
+    evidence_grade: B
+    summary: Weight loss with green tea preparations was very small and unlikely to be clinically meaningful.
+    sources: [review-cochrane-green-tea-weight-2012]
+safety_notes:
+  - level: warning
+    text: Liver injury has been reported with concentrated green tea extract, particularly when taken on an empty stomach. Brewed tea has not been linked to this.
+    sources: [livertox, nccih-green-tea]
+  - level: info
+    text: Many extracts contain caffeine.
+    sources: [nccih-green-tea]
+sources: [nccih-green-tea]
+status: draft
+reviewed_by: null
+reviewed_at: null

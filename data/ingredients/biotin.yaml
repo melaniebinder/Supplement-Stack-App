@@ -1,0 +1,30 @@
+id: biotin
+name: Biotin
+type: vitamin
+synonyms: [vitamin B7, vitamin H, d-biotin]
+forms: [d-biotin]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  ai:
+    - {group: adults, amount: 30, unit: mcg}
+  ul: null
+food_sources: [beef liver, eggs (cooked), salmon, pork, sunflower seeds, sweet potato, almonds]
+effect_groups: []
+recommendable: false
+recommendable_note: Deficiency is rare, and there's little evidence for hair or nail benefits in people who aren't deficient.
+claims:
+  - id: CLM-BIO-01
+    outcome: Hair, skin, and nail health
+    population: People without biotin deficiency
+    direction: no_effect
+    evidence_grade: D
+    summary: Evidence of benefit is limited to case reports in people with deficiency or specific nail conditions. There's no good evidence in healthy people.
+    sources: [ods-biotin]
+safety_notes:
+  - level: warning
+    text: High-dose biotin (common in hair, skin, and nail products) can cause falsely high or low results on some lab tests, including troponin (used to diagnose heart attack) and thyroid tests. Tell your clinician and the lab before blood tests.
+    sources: [fda-biotin-lab-tests, ods-biotin]
+sources: [ods-biotin]
+status: draft
+reviewed_by: null
+reviewed_at: null
