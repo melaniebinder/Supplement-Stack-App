@@ -42,7 +42,7 @@ Pregnant or breastfeeding people, children, and people managing a diagnosed cond
 - **Personalized supplement brands** (quiz → monthly pack) have a conflict of interest: the recommendation is the product being sold.
 - **Nutrition trackers** (food-logging apps) show nutrient intake from food but don't connect it to supplement decisions.
 
-**The gap:** nothing combines *stack-level interaction checking*, *visible evidence grades*, and *lifestyle-first recommendations* with no incentive to sell.
+**The gap (updated Nov 2026 after the [competitor scan](research/competitor-scan.md)):** stack-level checking and timing are now offered by several apps, some free. What's still missing is a tool that tells you **which supplements you don't need**, because food or a habit covers it, with **free, visible evidence grades**, covering **supplement↔drug as well as supplement↔supplement**, and with **no incentive to sell**.
 
 ## Evidence that this problem is real
 

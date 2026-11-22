@@ -37,7 +37,7 @@ Text wireframes for the v1 single-page flow. All data is synthetic. Values are i
 └──────────────────────────────────────────────────┘
 ```
 
-## 2. Add a multivitamin (MVP: template or search; photo scan is the fast follow)
+## 2. Add a multivitamin (MVP: photo scan, search, or template; D-020)
 
 ```
 ┌──────────────────────────────────────────────────┐
@@ -49,7 +49,7 @@ Text wireframes for the v1 single-page flow. All data is synthetic. Values are i
 │  — or start from a typical one —                 │
 │  ( ) Women's multi  ( ) Men's multi  ( ) 50+     │
 │                                                  │
-│  — coming soon —                                 │
+│  — or —                                          │
 │  [📷 Photograph the Supplement Facts panel]       │
 └──────────────────────────────────────────────────┘
 ```
@@ -91,14 +91,14 @@ Text wireframes for the v1 single-page flow. All data is synthetic. Values are i
 │  Dinner     Zinc                                 │
 │             ↳ away from the multi's iron         │
 │  Bedtime    Melatonin                            │
-│  [ Print / save for my pharmacist ]              │
+│  [ Print for my pharmacist ] [ Add to calendar ] │
 │                                                  │
 │  📉 YOU'RE GETTING TOO MUCH                       │
 │  Zinc: 58 mg/day from 2 products.                │
 │  The adult upper limit is 40 mg. Long-term this  │
 │  can drain your copper.    Evidence: strong (A) ›│
 │                                                  │
-│  🌱 YOU PROBABLY DON'T NEED THIS                  │
+│  🌱 YOU PROBABLY DON'T NEED THIS  · save ~$14/mo │
 │  Zinc (standalone)                               │
 │   Your multi already covers your daily 8 mg.     │
 │   Food covers it too: 3 oz beef + a handful of   │
