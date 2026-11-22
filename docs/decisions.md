@@ -53,6 +53,26 @@ Short entries: what we chose, what we didn't, and why. Newest at the bottom. Sta
 **Chose** to commit the 30-ingredient set with every source `verified: false` and every record `draft`, **over** holding it until verification.
 **Why:** The schema and coverage can be reviewed now, and the gap to "publishable" is measurable (`npm run validate:strict`). Nothing is user-facing yet.
 
+### D-013 · The daily schedule is a core output ✅
+**Chose** to combine all timing rules into one daily schedule **over** listing timing conflicts as separate warnings.
+**Why:** A list of warnings tells someone what's wrong, while a schedule tells them what to do. It's also the most shareable artifact (to save, print, or show a pharmacist). **Requires** structured timing fields in the data (`separate_by_hours`, `take_with`), not just free text.
+
+### D-014 · "Why do you take it?" is optional ✅
+**Chose** an optional reason chip (with "not sure") **over** a required field.
+**Why:** It keeps entry friction low. Users who skip it still get food swaps for nutrients, and only habit-for-goal swaps need the reason. **Revisit** if most users skip it and habit swaps rarely appear.
+
+### D-015 · Direct tone about evidence ✅
+**Chose** direct wording ("this probably isn't doing much for sleep") **over** soft hedging ("you might consider…").
+**Why:** Directness is the differentiator, because the market is full of vague, hopeful copy. **Guardrail:** be direct about *evidence*, but never tell users to stop taking something, and show no swap when the reason is "my doctor told me to".
+
+### D-016 · Medications from a short pick-list for the MVP ✅
+**Chose** a ~20-item list in everyday language mapped to drug classes **over** free-text drug search.
+**Why:** Matching to drug classes is guaranteed, there's no drug database to license, and "Other medication" is honest about what we can't check. **Revisit** after launch: free-text search with matching to the drug-class examples.
+
+### D-017 · Multivitamin entry: templates and DSLD first, photo scan as fast follow 🟡
+**Chose (proposed)** generic multivitamin templates and NIH DSLD name/barcode search for the MVP, with photo scanning of the Supplement Facts panel as a fast follow, **over** launching with photo scanning only.
+**Why:** Templates always work, and DSLD is free, public-domain label data. Photo scanning is the best experience but the riskiest to build, so we prototype it early on 20 real labels and ship it once accuracy is proven. All automatic entry needs user confirmation, and photos are never stored.
+
 ---
 
 _Template for new entries:_

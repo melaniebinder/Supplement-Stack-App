@@ -22,15 +22,90 @@ v1 has three capabilities, built in this order:
 2. **Evidence View:** for each supplement, see what it's studied for and how strong the evidence is.
 3. **Goal-based Guidance:** pick a goal (for example "better sleep") and get a lifestyle-first ladder, with supplements appearing only as a later rung that has evidence behind it.
 
+## Experience (v1)
+
+One page with three input sections, then results grouped by **what to do**.
+
+### Inputs
+1. **Your supplements.** The stack is a list of **products**, each with one or more ingredients. A vitamin D bottle has one ingredient and a multivitamin has 20 (see "Entering multivitamins" below). Each product has an optional dose and an optional **"Why do you take it?"** chip: sleep · energy · stress · immunity · heart · bones · workout · "my doctor told me to" · not sure. (D-014)
+2. **Your medications.** This is a separate section, so users understand that medications are part of the check. The MVP uses a **short pick-list** in everyday language, mapped to `drug-classes.yaml` (D-016). It includes an **"Other medication"** option, which shows "we couldn't check this one, so ask your pharmacist", and a required **"I don't take any medications"** checkbox. Results don't run until the user either adds a medication or ticks that box.
+3. **About you (optional).** Age range, sex, and the screening question (pregnant or breastfeeding, under 18, kidney or liver disease). A "yes" to screening keeps all safety flags and replaces lifestyle-swap and recommendation content with clinician routing (D-008).
+
+**Medication pick-list (MVP)**
+
+| Shown to user | Drug class |
+|---|---|
+| Blood thinner: warfarin | `warfarin` |
+| Blood thinner: apixaban, rivaroxaban, dabigatran, edoxaban | `doacs` |
+| Clopidogrel, ticagrelor, or a daily aspirin | `antiplatelets` |
+| Antidepressant (SSRI/SNRI) or tramadol/triptans | `serotonergic-drugs` |
+| Birth control (pill, patch, ring, implant) | `hormonal-contraceptives` |
+| Thyroid medication (levothyroxine) | `levothyroxine` |
+| Methimazole, PTU, amiodarone, lithium | `antithyroid-drugs` |
+| Statin (cholesterol) | `statins` |
+| Acid reducer: omeprazole, pantoprazole, … (PPI) | `ppis` |
+| Metformin | `metformin` |
+| Water pill: hydrochlorothiazide, chlorthalidone | `thiazide-diuretics` |
+| Antibiotic: ciprofloxacin, levofloxacin | `quinolone-antibiotics` |
+| Antibiotic: doxycycline, minocycline | `tetracycline-antibiotics` |
+| Any other antibiotic (currently taking) | `antibiotics-general` |
+| Osteoporosis: alendronate, risedronate | `bisphosphonates` |
+| Transplant or immune-suppressing medication | `immunosuppressants` |
+| HIV medication | `hiv-antiretrovirals` |
+| Digoxin | `digoxin` |
+| Beta-blocker | `beta-blockers` |
+| Sleep medication or sedative | `sedatives` |
+| Isotretinoin / acitretin | `oral-retinoids` |
+| Other medication | not checked → "ask your pharmacist" |
+
+### Results, grouped by action
+| Order | Section | Contents |
+|---|---|---|
+| 1 | 🔴 **Talk to a pharmacist first** | Major interactions and all supplement–drug flags |
+| 2 | 🕐 **Your daily schedule** | **Core feature (D-013).** All timing rules combined into one wake → breakfast → lunch → dinner → bedtime plan, with each separation explained (e.g. "iron 4h after thyroid medication") |
+| 3 | 📉 **You may be getting too much** | Upper-limit totals across products, and the same ingredient in several products |
+| 4 | 🌱 **You might not need this** | Lifestyle and food swaps, plus supplements with weak evidence for the user's stated reason |
+| 5 | ✅ **Checked, no issues** | Everything else, so users see the whole stack was reviewed |
+
+Every results view has the not-medical-advice notice and a **print / save** button. The schedule plus the flags is the one-page summary to take to a pharmacist.
+
+### Lifestyle swaps
+There are two kinds, and both are shown in a **direct tone** (D-015):
+- **Food covers the nutrient** (vitamins and minerals). This works without a "why" chip. Example: *"Your 50 mg zinc is more than you need. 3 oz beef plus a handful of pumpkin seeds covers your daily 8 mg."*
+- **A habit addresses the same goal** (needs the "why" chip). Example: *"Melatonin probably isn't doing much for ongoing sleep problems (evidence: weak). A fixed wake time and morning daylight have stronger evidence."*
+
+Rules:
+- Show both evidence grades side by side. Never claim "same effect" unless a direct comparison exists. The standard wording is "addresses the same goal, with stronger evidence."
+- Be direct about *evidence*, but never tell users to stop a supplement. Wording is "probably isn't doing much" or "you likely don't need this", not "stop taking". If the user picked "my doctor told me to", no swap is shown.
+
+### Entering multivitamins and other multi-ingredient products (D-017, proposed)
+| Method | MVP? | Notes |
+|---|---|---|
+| **Generic templates:** "Typical women's / men's / 50+ multivitamin", with editable amounts | ✅ MVP | Always works. Approximate until edited |
+| **Search by name or barcode:** NIH Dietary Supplement Label Database (DSLD) | ✅ MVP | Public-domain label data with an API. Coverage and freshness to be measured |
+| **Photo of the Supplement Facts panel:** read and parse the label, then match ingredients | ⏭ Fast follow | Prototype early on 20 real labels |
+
+Rules for any automatic entry:
+- **The user always confirms.** Parsed rows appear on an editable review screen, and nothing is checked until the user confirms.
+- **Unknowns are shown, not dropped.** Ingredients outside the knowledge base and proprietary blends are listed as "not checked."
+- **What parsing must get right:** servings per day (multiply per-serving amounts), the form (e.g. "as retinyl palmitate" vs "as beta-carotene" for the vitamin A upper limit), units (mcg / mcg RAE / mcg DFE / IU conversions), and elemental mineral amounts.
+- **Label reading is transcription, not fact generation.** An AI vision model may read the user's own label (consistent with D-005), but all facts still come from the reviewed knowledge base.
+- **Photos are processed and then discarded, never stored** (D-009).
+
 ## User stories
 
 ### Stack Check (P0)
 | ID | As a… | I want to… | So that… | Acceptance criteria |
 |---|---|---|---|---|
 | SC-1 | supplement user | add supplements by name or common synonym | I don't need to know the scientific name | Search matches name, synonyms, and common misspellings, e.g. "mag glycinate" → magnesium |
+| SC-1b | multivitamin user | add a multi-ingredient product from a template or by name/barcode search | I don't have to type 20 ingredients | Template and DSLD paths work. All rows are editable. Unknown ingredients are shown as "not checked" |
+| SC-1c | multivitamin user (fast follow) | photograph the Supplement Facts panel | entry takes seconds | Parsed rows go to a review screen. Servings per day and forms are handled. The photo is not stored |
 | SC-2 | supplement user | enter dose and frequency (optional) | upper-limit checks are accurate | Works without a dose. Upper-limit checks run only when a dose is given, and the UI says so |
 | SC-3 | supplement user | see interactions between my supplements | I know about conflicts | Each flag shows severity, mechanism in plain language, evidence grade, and sources |
-| SC-4 | person on medication | add medications by drug *class* | I learn about supplement–drug risks | v1 covers a curated list of high-severity classes (anticoagulants, SSRIs, etc.). Every hit routes to "talk to your pharmacist" |
+| SC-4 | person on medication | pick my medications from a short list in everyday language | I learn about supplement–drug risks | Pick-list maps to drug classes (see Experience). "Other medication" says it can't be checked. Every hit routes to "talk to your pharmacist" |
+| SC-4b | anyone | confirm "I don't take any medications" | the check is complete | Results don't run until medications are added or this box is ticked |
+| SC-8 | anyone | get one daily schedule that resolves all timing conflicts | I know exactly when to take each thing | Every timing rule (separate by N hours, with food, empty stomach) is satisfied, or the conflict that can't be resolved is shown and routed to a pharmacist |
+| SC-9 | anyone | see which supplements food or habits could replace | I can simplify my stack | Food swaps for nutrients. Habit swaps when a "why" is given. Both evidence grades shown. No swap for "my doctor told me to" |
 | SC-5 | multivitamin user | see overlapping nutrients across products | I avoid accidentally doubling up | Totals summed per nutrient and compared to the tolerable upper intake level (UL) when one exists |
 | SC-6 | anyone | use it without an account | I can try it with no commitment | Stack is kept in local storage. Saving to an account is optional |
 | SC-7 | anyone | export or print a summary | I can bring it to my doctor or pharmacist | One-page PDF/print view with sources |
@@ -115,3 +190,6 @@ Source:       id, type (pubmed|ods|cochrane|guideline), citation, url, accessed_
 1. Can we license a professional interaction database for v1, or start with a public-source dataset that we curate ourselves? (See D-004.)
 2. Which regulatory frameworks apply to an interaction checker that includes drug classes? This needs a legal review (FDA clinical decision support guidance, FTC health-claim rules, and equivalents in non-US markets).
 3. Should dose entry be required to make upper-limit checks useful, or does it add too much friction?
+4. How good is DSLD coverage and freshness for the 50 best-selling multivitamins? (Measure before committing to it.)
+5. Photo scanning: on-device text recognition plus a rule-based parser, or a vision model? Compare accuracy on 20 real labels.
+6. Daily schedule: what happens when the constraints can't all be met (e.g. 3 minerals and 2 medications that all need separating)? The proposal is to show the best schedule and flag what's left for the pharmacist.
