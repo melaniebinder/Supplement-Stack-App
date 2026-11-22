@@ -56,6 +56,10 @@ effect_groups:
         severity: moderate
         evidence_grade: B
         recommendation: Take them at different times. The right gap depends on the drug (often the drug 2 hours before or 4 to 6 hours after the mineral), so ask your pharmacist for your exact timing.
-    sources: [ods-calcium, ods-iron, ods-magnesium, ods-zinc]
+        management_by_drug_class:
+          quinolone-antibiotics:    {type: separate, drug_before_hours: 2, drug_after_hours: 6, basis: label, label_source: dailymed-ciprofloxacin}
+          tetracycline-antibiotics: {type: separate, drug_before_hours: 2, drug_after_hours: 4, basis: draft_default, label_source: dailymed-doxycycline}
+          bisphosphonates:          {type: separate, hours: 2, order: drug_first, basis: source, label_source: dailymed-alendronate}
+    sources: [ods-calcium, ods-iron, ods-magnesium, ods-zinc, dailymed-ciprofloxacin, dailymed-doxycycline, dailymed-alendronate]
     status: draft
     reviewed_by: null

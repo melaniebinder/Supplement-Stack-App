@@ -8,6 +8,11 @@ food_sources: [organ meats, beef, chicken, fatty fish, soybean oil, peanuts (sma
 effect_groups: []
 recommendable: false
 recommendable_note: Evidence for the most common reason people take it (statin muscle symptoms) is mixed.
+timing:
+  best_slot: with_meal
+  take_with: food_with_fat
+  note: "Fat-soluble: absorbed best with a meal that contains some fat."
+  sources: [nccih-coq10]
 claims:
   - id: CLM-COQ-01
     outcome: Statin-associated muscle symptoms

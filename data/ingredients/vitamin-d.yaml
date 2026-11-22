@@ -16,6 +16,11 @@ lifestyle_sources: [sensible sun exposure (varies with latitude, season, and ski
 effect_groups: []
 recommendable: true
 recommend_only_if: Sun exposure and food sources are limited (e.g. older adults, darker skin, northern latitudes in winter, mostly indoors).
+timing:
+  best_slot: with_meal
+  take_with: food_with_fat
+  note: "Fat-soluble: absorbed best with a meal that contains some fat."
+  sources: [ods-vitamin-d]
 claims:
   - id: CLM-VITD-01
     outcome: Maintaining adequate vitamin D status

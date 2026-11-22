@@ -13,6 +13,11 @@ food_sources: [oysters, beef, crab, pork, pumpkin seeds, chickpeas, cashews, for
 effect_groups: [mineral-chelators]
 recommendable: false
 recommendable_note: Most people meet needs from food. Excess is common when a standalone zinc product is stacked with a multivitamin.
+timing:
+  best_slot: with_meal
+  take_with: food
+  note: "Zinc on an empty stomach often causes nausea."
+  sources: [ods-zinc]
 claims:
   - id: CLM-ZINC-01
     outcome: Duration of the common cold (lozenges started early)

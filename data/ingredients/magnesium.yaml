@@ -16,6 +16,11 @@ food_sources: [pumpkin seeds, chia seeds, almonds, spinach, cashews, black beans
 effect_groups: [mineral-chelators]
 recommendable: true
 recommend_only_if: Estimated food intake is low after diet changes (nuts, seeds, legumes, whole grains).
+timing:
+  best_slot: any
+  take_with: either
+  note: "No strong timing evidence. Splitting the dose or taking it with food can reduce loose stools."
+  sources: [ods-magnesium]
 claims:
   - id: CLM-MAG-00
     outcome: Meeting magnesium needs

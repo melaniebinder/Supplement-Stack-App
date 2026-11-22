@@ -8,6 +8,11 @@ food_sources: []
 effect_groups: []
 recommendable: false
 recommendable_note: Evidence for colds is weak, and products vary widely.
+timing:
+  best_slot: any
+  take_with: either
+  note: "No meaningful timing effect."
+  sources: [nccih-echinacea]
 claims:
   - id: CLM-ECH-01
     outcome: Preventing or treating the common cold

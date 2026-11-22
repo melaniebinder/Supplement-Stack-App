@@ -91,6 +91,14 @@ Short entries: what we chose, what we didn't, and why. Newest at the bottom. Sta
 **Chose** to ship photo scanning in the MVP alongside templates and DSLD search, **over** treating it as a fast follow (D-017).
 **Why:** Competitors (Suvo, Nutrient Wise, SuppCo, StackSnap) already offer it, so users expect it, and its existence shows it's buildable. **Guardrails stay:** the user confirms every parsed row, unknowns are shown as "not checked", and photos are never stored. **Risk control:** the 20-label accuracy spike is now a launch gate, not optional.
 
+### D-021 · Timing as structured rules with a stated basis ✅
+**Chose** machine-readable timing (`best_slot`, `take_with`, and `management` with hours, order, and `basis`) **over** timing written only in recommendation text.
+**Why:** The daily schedule (D-013) has to compute against these rules, and recording the basis (`label`, `source`, or `draft_default`) shows exactly which numbers still rest on convention. The validator lists those for the reviewer.
+
+### D-022 · When to show a habit swap: only when the habit's evidence is stronger ✅
+**Chose** to show a habit swap only when the habit's grade is *higher* than the supplement's best benefit grade for the user's stated goal, **over** always suggesting habits.
+**Why:** It keeps "you probably don't need this" honest. Creatine for workouts isn't swapped (A-grade benefit, and training *complements* it). Melatonin for chronic insomnia is (CBT-I is graded A). Where a deficiency is plausible (iron or B12 for tiredness), the app says "get checked" instead.
+
 ---
 
 _Template for new entries:_

@@ -15,6 +15,11 @@ food_sources: [beef liver, spinach, black-eyed peas, asparagus, Brussels sprouts
 effect_groups: []
 recommendable: false
 recommendable_note: The strongest evidence concerns pregnancy planning, which is routed to a clinician (D-008). Shown as information only.
+timing:
+  best_slot: any
+  take_with: either
+  note: "Folic acid is absorbed best on an empty stomach, but taking it with food is fine and common."
+  sources: [ods-folate]
 claims:
   - id: CLM-FOL-01
     outcome: Neural tube defect risk

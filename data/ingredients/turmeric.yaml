@@ -8,6 +8,11 @@ food_sources: [turmeric used as a cooking spice (not associated with the safety 
 effect_groups: [bleeding-risk, hepatotoxicity-reports]
 recommendable: false
 recommendable_note: Evidence is limited, and there are case reports of liver injury with concentrated supplements.
+timing:
+  best_slot: with_meal
+  take_with: food
+  note: "Take with food to reduce stomach upset."
+  sources: [nccih-turmeric]
 claims:
   - id: CLM-TUR-01
     outcome: Knee osteoarthritis pain

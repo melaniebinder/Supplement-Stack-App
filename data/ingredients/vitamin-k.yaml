@@ -13,6 +13,11 @@ food_sources: [collard greens, turnip greens, spinach, kale, broccoli, soybean o
 effect_groups: []
 recommendable: false
 recommendable_note: Leafy greens provide plenty. The main issue is the interaction with warfarin.
+timing:
+  best_slot: with_meal
+  take_with: food_with_fat
+  note: "Fat-soluble: absorbed best with a meal that contains some fat."
+  sources: [ods-vitamin-k]
 claims:
   - id: CLM-VITK-01
     outcome: Bone mineral density and fracture risk

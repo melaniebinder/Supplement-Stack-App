@@ -12,6 +12,11 @@ food_sources: [iodized salt, cod, seaweed, milk, yogurt, eggs]
 effect_groups: []
 recommendable: false
 recommendable_note: Iodized salt and dairy usually cover needs. Pregnancy-related needs are routed to a clinician (D-008).
+timing:
+  best_slot: any
+  take_with: either
+  note: "No meaningful timing effect."
+  sources: [ods-iodine]
 claims:
   - id: CLM-IOD-01
     outcome: Thyroid function with excess iodine intake

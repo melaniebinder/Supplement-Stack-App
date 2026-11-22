@@ -14,6 +14,11 @@ food_sources: [red bell peppers, oranges, kiwifruit, broccoli, strawberries, Bru
 effect_groups: []
 recommendable: false
 recommendable_note: Easily met through fruit and vegetables.
+timing:
+  best_slot: any
+  take_with: either
+  note: "No meaningful timing effect. Taking it with an iron supplement increases iron absorption."
+  sources: [ods-vitamin-c]
 claims:
   - id: CLM-VITC-01
     outcome: How often people catch colds
