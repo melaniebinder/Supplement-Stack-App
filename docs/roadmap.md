@@ -4,7 +4,9 @@ Organized by confidence, not dates. Items move left only once the step before th
 
 ## Now: validate the problem and the evidence model
 - [ ] Run 8–10 user interviews ([guide](research/interview-guide.md))
-- [ ] Finish the competitor scan
+- [x] Competitor scan (desk research) → [findings](research/competitor-scan.md)
+- [ ] Hands-on competitor test with Maya's and Priya's stacks
+- [ ] Decide positioning (D-018)
 - [x] Draft a 30-ingredient pilot knowledge base using the [evidence model](evidence-model.md) ([`data/`](../data/))
 - [ ] Verify all citations against live sources
 - [x] Validator that enforces the evidence rules in CI

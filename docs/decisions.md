@@ -73,6 +73,10 @@ Short entries: what we chose, what we didn't, and why. Newest at the bottom. Sta
 **Chose (proposed)** generic multivitamin templates and NIH DSLD name/barcode search for the MVP, with photo scanning of the Supplement Facts panel as a fast follow, **over** launching with photo scanning only.
 **Why:** Templates always work, and DSLD is free, public-domain label data. Photo scanning is the best experience but the riskiest to build, so we prototype it early on 20 real labels and ship it once accuracy is proven. All automatic entry needs user confirmation, and photos are never stored.
 
+### D-018 · Lead with "Do you actually need this?", not with the stack check 🟡
+**Chose (proposed)** to position the product around evidence transparency and lifestyle/food alternatives ("you probably don't need this, and here's why"), with the stack check and daily schedule as the entry point, **over** positioning it as a supplement interaction checker.
+**Why:** The [competitor scan](research/competitor-scan.md) found stack checking, timing slots, and label scanning already offered free (e.g. Suvo) and in several freemium apps. Almost no one tells users which supplements food or habits could replace, with graded evidence and no commercial interest. **Implications:** the north star stays "safer or simpler stack". Consider adding "estimated monthly savings" as a companion metric, and moving photo scan into the MVP because it's now expected.
+
 ---
 
 _Template for new entries:_
