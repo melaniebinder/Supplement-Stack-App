@@ -6,7 +6,7 @@ Organized by confidence, not dates. Items move left only once the step before th
 - [ ] Run 8–10 user interviews ([guide](research/interview-guide.md))
 - [x] Competitor scan (desk research) → [findings](research/competitor-scan.md)
 - [ ] Hands-on competitor test with Maya's and Priya's stacks
-- [ ] Decide positioning (D-018)
+- [x] Decide positioning (D-018) and borrowed ideas (D-019)
 - [x] Draft a 30-ingredient pilot knowledge base using the [evidence model](evidence-model.md) ([`data/`](../data/))
 - [ ] Verify all citations against live sources
 - [x] Validator that enforces the evidence rules in CI
@@ -14,7 +14,7 @@ Organized by confidence, not dates. Items move left only once the step before th
 - [ ] Add structured timing fields (`separate_by_hours`, `take_with`, best time of day) to the data
 - [ ] Add a lifestyle-alternatives dataset (goal → supplement → habit, each graded)
 - [ ] Measure DSLD coverage for the top 50 multivitamins
-- [ ] Spike: photo-scan accuracy on 20 real Supplement Facts panels
+- [ ] Spike: photo-scan accuracy on 20 real Supplement Facts panels (**launch gate**, D-020)
 - [ ] Clickable prototype of Stack Check, tested with 5 users
 - [ ] Copy review against health-claim guidelines
 
@@ -22,7 +22,10 @@ Organized by confidence, not dates. Items move left only once the step before th
 
 ## Next: ship Stack Check v1
 - [ ] Web app: product-based stack entry (single items, multivitamin templates, DSLD search), medication pick-list, results grouped by action
-- [ ] Daily schedule generator
+- [ ] Photo scan of the Supplement Facts panel with a confirm screen (D-020)
+- [ ] Daily schedule generator, with calendar (.ics) export
+- [ ] Estimated monthly savings on "you probably don't need this"
+- [ ] Public source library page
 - [ ] Lifestyle and food swaps
 - [ ] Evidence View for each ingredient
 - [ ] Printable summary to take to a clinician
@@ -31,7 +34,6 @@ Organized by confidence, not dates. Items move left only once the step before th
 - [ ] Automated tests for the product invariants (citation coverage, lifestyle-first ordering)
 
 ## Later: guidance and growth
-- Photo scan of the Supplement Facts panel (once the spike proves accuracy)
 - Free-text medication search
 - Goal-based Guidance with the lifestyle-first ladder (5 goals)
 - Optional accounts and saved stacks

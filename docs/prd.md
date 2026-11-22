@@ -64,10 +64,10 @@ One page with three input sections, then results grouped by **what to do**.
 | 1 | 🔴 **Talk to a pharmacist first** | Major interactions and all supplement–drug flags |
 | 2 | 🕐 **Your daily schedule** | **Core feature (D-013).** All timing rules combined into one wake → breakfast → lunch → dinner → bedtime plan, with each separation explained (e.g. "iron 4h after thyroid medication") |
 | 3 | 📉 **You may be getting too much** | Upper-limit totals across products, and the same ingredient in several products |
-| 4 | 🌱 **You might not need this** | Lifestyle and food swaps, plus supplements with weak evidence for the user's stated reason |
+| 4 | 🌱 **You probably don't need this** | Lifestyle and food swaps, plus supplements with weak evidence for the user's stated reason, with **estimated monthly savings** (D-019). This is the headline section of the product (D-018) |
 | 5 | ✅ **Checked, no issues** | Everything else, so users see the whole stack was reviewed |
 
-Every results view has the not-medical-advice notice and a **print / save** button. The schedule plus the flags is the one-page summary to take to a pharmacist.
+Interaction flags show evidence in plain words (**probable / possible / theoretical**), mapped from the A–D grades in the data (D-019). Every results view has the not-medical-advice notice and a **print / save** button, and the schedule has **export to calendar**. The schedule plus the flags is the one-page summary to take to a pharmacist.
 
 ### Lifestyle swaps
 There are two kinds, and both are shown in a **direct tone** (D-015):
@@ -78,12 +78,12 @@ Rules:
 - Show both evidence grades side by side. Never claim "same effect" unless a direct comparison exists. The standard wording is "addresses the same goal, with stronger evidence."
 - Be direct about *evidence*, but never tell users to stop a supplement. Wording is "probably isn't doing much" or "you likely don't need this", not "stop taking". If the user picked "my doctor told me to", no swap is shown.
 
-### Entering multivitamins and other multi-ingredient products (D-017, proposed)
+### Entering multivitamins and other multi-ingredient products (D-017, D-020)
 | Method | MVP? | Notes |
 |---|---|---|
 | **Generic templates:** "Typical women's / men's / 50+ multivitamin", with editable amounts | ✅ MVP | Always works. Approximate until edited |
 | **Search by name or barcode:** NIH Dietary Supplement Label Database (DSLD) | ✅ MVP | Public-domain label data with an API. Coverage and freshness to be measured |
-| **Photo of the Supplement Facts panel:** read and parse the label, then match ingredients | ⏭ Fast follow | Prototype early on 20 real labels |
+| **Photo of the Supplement Facts panel:** read and parse the label, then match ingredients | ✅ MVP (D-020) | Launch gate: accuracy spike on 20 real labels |
 
 Rules for any automatic entry:
 - **The user always confirms.** Parsed rows appear on an editable review screen, and nothing is checked until the user confirms.
@@ -99,13 +99,16 @@ Rules for any automatic entry:
 |---|---|---|---|---|
 | SC-1 | supplement user | add supplements by name or common synonym | I don't need to know the scientific name | Search matches name, synonyms, and common misspellings, e.g. "mag glycinate" → magnesium |
 | SC-1b | multivitamin user | add a multi-ingredient product from a template or by name/barcode search | I don't have to type 20 ingredients | Template and DSLD paths work. All rows are editable. Unknown ingredients are shown as "not checked" |
-| SC-1c | multivitamin user (fast follow) | photograph the Supplement Facts panel | entry takes seconds | Parsed rows go to a review screen. Servings per day and forms are handled. The photo is not stored |
+| SC-1c | multivitamin user | photograph the Supplement Facts panel | entry takes seconds | Parsed rows go to a review screen. Servings per day and forms are handled. The photo is not stored |
 | SC-2 | supplement user | enter dose and frequency (optional) | upper-limit checks are accurate | Works without a dose. Upper-limit checks run only when a dose is given, and the UI says so |
 | SC-3 | supplement user | see interactions between my supplements | I know about conflicts | Each flag shows severity, mechanism in plain language, evidence grade, and sources |
 | SC-4 | person on medication | pick my medications from a short list in everyday language | I learn about supplement–drug risks | Pick-list maps to drug classes (see Experience). "Other medication" says it can't be checked. Every hit routes to "talk to your pharmacist" |
 | SC-4b | anyone | confirm "I don't take any medications" | the check is complete | Results don't run until medications are added or this box is ticked |
 | SC-8 | anyone | get one daily schedule that resolves all timing conflicts | I know exactly when to take each thing | Every timing rule (separate by N hours, with food, empty stomach) is satisfied, or the conflict that can't be resolved is shown and routed to a pharmacist |
 | SC-9 | anyone | see which supplements food or habits could replace | I can simplify my stack | Food swaps for nutrients. Habit swaps when a "why" is given. Both evidence grades shown. No swap for "my doctor told me to" |
+| SC-10 | anyone | see roughly how much I'd save each month by dropping what I don't need | the trade-off is concrete | Uses the price I enter, or a typical price labeled "estimate" (D-019) |
+| SC-11 | anyone | export my daily schedule to my calendar or reminders app | I actually follow it | .ics export at minimum (D-019) |
+| SC-12 | skeptic | browse every source the app relies on | I can check the app's work | A public source library page generated from `data/sources.yaml`, linked from every flag (D-019) |
 | SC-5 | multivitamin user | see overlapping nutrients across products | I avoid accidentally doubling up | Totals summed per nutrient and compared to the tolerable upper intake level (UL) when one exists |
 | SC-6 | anyone | use it without an account | I can try it with no commitment | Stack is kept in local storage. Saving to an account is optional |
 | SC-7 | anyone | export or print a summary | I can bring it to my doctor or pharmacist | One-page PDF/print view with sources |
@@ -178,6 +181,7 @@ Source:       id, type (pubmed|ods|cochrane|guideline), citation, url, accessed_
 |---|---|---|---|
 | North star | **Safer/simpler stack rate** | % of completed checks where, at the 2-week follow-up, the user reports acting on a flag, removing a redundant item, or adopting a lifestyle step | 25% |
 | Activation | Stack completion | % of visitors who enter ≥2 items and view results | 40% |
+| Companion | Estimated savings | Median estimated monthly savings among users who act on a "don't need this" item | Track; no target yet |
 | Engagement | Evidence depth | % of results sessions where ≥1 source is opened | 20% |
 | Product invariant | Lifestyle-first adherence | % of guidance sessions where diet/lifestyle is shown before supplements | 100% (automated test) |
 | Trust | "Would show my doctor" | Post-session 1–5 rating, % scoring 4–5 | 60% |

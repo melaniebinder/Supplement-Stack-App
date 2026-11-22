@@ -1,6 +1,6 @@
 # Supplement Stack
 
-**Check your supplement stack for interactions, see what the evidence actually says, and get lifestyle and diet changes suggested before any new pill.**
+**Find out which supplements you actually need. See what the evidence says, what food or habits could replace, and how to take the rest safely together.**
 
 > 📐 _Mockup coming soon. Text wireframes are in [`design/wireframes.md`](design/wireframes.md)._
 
@@ -22,7 +22,7 @@ More detail is in [`docs/problem.md`](docs/problem.md).
 
 | Bet | What it means in the product |
 |---|---|
-| **Interaction checking is the entry point** | The first job is "is what I'm already taking OK together?" It's high value, needs no account, and is easy to explain. |
+| **"Do you actually need this?" is the headline** | Competitors already check stacks and schedule doses ([competitor scan](docs/research/competitor-scan.md)). We lead with which supplements food or habits could replace, plus estimated savings, and use the stack check, daily schedule, and label scan as the entry point (D-018). |
 | **Lifestyle first, supplement second** | Every recommendation walks a ladder: diet → sleep, activity, sun → supplement. A supplement is suggested only when the lifestyle steps can't plausibly close the gap or the evidence supports it on its own. |
 | **Every claim shows its evidence** | Each interaction and recommendation carries an evidence grade (A–D) and links to its sources. If there's no citation, the claim doesn't ship. |
 | **A curated knowledge base, not a generative one** | Facts come from a structured, reviewed dataset. An LLM may be used later to *explain* facts it retrieved, never to *produce* them. |
@@ -46,7 +46,7 @@ The reasoning behind each choice is in [`docs/decisions.md`](docs/decisions.md).
 | Problem definition | ✅ Draft |
 | PRD and user stories | ✅ Draft |
 | Evidence model | ✅ Draft |
-| Competitor scan | 🟡 In progress |
+| Competitor scan | ✅ Desk research done; hands-on test pending |
 | User interviews | ⏳ Guide written, interviews not started |
 | Knowledge base (30 ingredients, 31 interactions) | 🟡 Draft: sources need verifying, records need expert review |
 | Clickable prototype | ⏳ Not started |

@@ -69,13 +69,27 @@ Short entries: what we chose, what we didn't, and why. Newest at the bottom. Sta
 **Chose** a ~20-item list in everyday language mapped to drug classes **over** free-text drug search.
 **Why:** Matching to drug classes is guaranteed, there's no drug database to license, and "Other medication" is honest about what we can't check. **Revisit** after launch: free-text search with matching to the drug-class examples.
 
-### D-017 · Multivitamin entry: templates and DSLD first, photo scan as fast follow 🟡
+### D-017 · Multivitamin entry: templates and DSLD first, photo scan as fast follow 🔁 (superseded by D-020)
 **Chose (proposed)** generic multivitamin templates and NIH DSLD name/barcode search for the MVP, with photo scanning of the Supplement Facts panel as a fast follow, **over** launching with photo scanning only.
 **Why:** Templates always work, and DSLD is free, public-domain label data. Photo scanning is the best experience but the riskiest to build, so we prototype it early on 20 real labels and ship it once accuracy is proven. All automatic entry needs user confirmation, and photos are never stored.
 
-### D-018 · Lead with "Do you actually need this?", not with the stack check 🟡
-**Chose (proposed)** to position the product around evidence transparency and lifestyle/food alternatives ("you probably don't need this, and here's why"), with the stack check and daily schedule as the entry point, **over** positioning it as a supplement interaction checker.
+### D-018 · Lead with "Do you actually need this?", not with the stack check ✅
+**Chose** to position the product around evidence transparency and lifestyle/food alternatives ("you probably don't need this, and here's why"), with the stack check and daily schedule as the entry point, **over** positioning it as a supplement interaction checker.
 **Why:** The [competitor scan](research/competitor-scan.md) found stack checking, timing slots, and label scanning already offered free (e.g. Suvo) and in several freemium apps. Almost no one tells users which supplements food or habits could replace, with graded evidence and no commercial interest. **Implications:** the north star stays "safer or simpler stack". Consider adding "estimated monthly savings" as a companion metric, and moving photo scan into the MVP because it's now expected.
+
+### D-019 · Borrow five proven patterns from competitors ✅
+**Chose** to adopt five ideas from the [competitor scan](research/competitor-scan.md):
+1. **A public source library page** (from Suvo): `data/sources.yaml` rendered as a browsable page.
+2. **Plain-word evidence labels for interactions** (from Examine): "probable / possible / theoretical" in the UI, with letter grades kept in the data.
+3. **Product lookup through NIH DSLD that checks every ingredient** (from Hello Pharmacist).
+4. **Estimated monthly savings** (from Atlix): shown next to "you probably don't need this", based on a user-entered or typical price, and tracked as a companion metric.
+5. **Schedule export to calendar or reminders** (from Medisafe and Suvo), instead of building a reminder app.
+
+**Why:** Each is cheap and already proven, and each strengthens trust or the "do you need it" positioning (D-018).
+
+### D-020 · Photo scan of the Supplement Facts panel is in the MVP ✅
+**Chose** to ship photo scanning in the MVP alongside templates and DSLD search, **over** treating it as a fast follow (D-017).
+**Why:** Competitors (Suvo, Nutrient Wise, SuppCo, StackSnap) already offer it, so users expect it, and its existence shows it's buildable. **Guardrails stay:** the user confirms every parsed row, unknowns are shown as "not checked", and photos are never stored. **Risk control:** the 20-label accuracy spike is now a launch gate, not optional.
 
 ---
 
