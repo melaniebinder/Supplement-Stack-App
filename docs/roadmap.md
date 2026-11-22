@@ -1,6 +1,6 @@
 # Roadmap
 
-Organized by confidence, not dates. Items move left only once the step before them is validated.
+Organized by confidence, not dates. Items move left only once the step before them is validated. Tasks that need a person (a reviewer, credentials, interviews) are tracked in [manual-tasks.md](manual-tasks.md).
 
 ## Now: validate the problem and the evidence model
 - [ ] Run 8–10 user interviews ([guide](research/interview-guide.md))

@@ -83,6 +83,7 @@ npm run validate
 │   ├── evidence-model.md   how claims are graded and sourced
 │   ├── decisions.md        decision log
 │   ├── roadmap.md          now / next / later
+│   ├── manual-tasks.md     things that need a person (reviewer, API key, interviews)
 │   └── research/
 │       ├── competitor-scan.md
 │       └── interview-guide.md
