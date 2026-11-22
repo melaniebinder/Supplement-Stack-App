@@ -1,0 +1,32 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Research privacy: never commit raw interview recordings or transcripts
+docs/research/interviews/raw/
+*.m4a
+*.mp3
+*.wav
