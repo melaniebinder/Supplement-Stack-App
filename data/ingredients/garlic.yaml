@@ -5,7 +5,7 @@ synonyms: [Allium sativum, aged garlic extract, allicin, garlic oil]
 forms: [garlic powder, aged garlic extract, garlic oil]
 reference_intakes: null
 food_sources: [garlic used in cooking]
-effect_groups: [bleeding-risk]
+effect_groups: [bleeding-risk, botanical-warfarin]
 recommendable: false
 recommendable_note: Effects are small. Cooking with garlic comes first.
 timing:
@@ -22,11 +22,11 @@ claims:
     summary: Some studies suggest a small blood pressure reduction. Results are inconsistent.
     sources: [nccih-garlic]
   - id: CLM-GAR-02
-    outcome: Blood cholesterol
-    population: Adults
-    direction: mixed
+    outcome: Total and LDL cholesterol
+    population: Adults with high cholesterol
+    direction: benefit
     evidence_grade: C
-    summary: Effects on cholesterol are small and inconsistent.
+    summary: Garlic supplements may lower total and LDL cholesterol to a small extent in people with high cholesterol.
     sources: [nccih-garlic]
 safety_notes:
   - level: info

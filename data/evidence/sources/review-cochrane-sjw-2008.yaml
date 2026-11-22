@@ -1,0 +1,19 @@
+source_id: review-cochrane-sjw-2008
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '18843608'
+excerpts:
+- supports:
+  - CLM-SJW-01
+  quote: are superior to placebo in patients with major depression; b) are similarly effective as standard antidepressants
+  locator: Abstract, Authors' conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/18843608/
+  sha256: 88d370cbba3ffa54dc58d63b90696b612131dd32b81288f140c96a9e51f81688
+  title: St John's wort for major depression.
+  journal: The Cochrane database of systematic reviews
+  year: '2008'
+  doi: 10.1002/14651858.CD000448.pub3
+  pmid: '18843608'

@@ -20,7 +20,7 @@ claims:
     direction: mixed
     evidence_grade: C
     summary: The large GAIT trial found no overall benefit over placebo. Some other studies suggest small effects.
-    sources: [trial-gait-2006, nccih-glucosamine]
+    sources: [nccih-glucosamine, trial-gait-2006]
 safety_notes:
   - level: caution
     text: Often made from shellfish shells. People with shellfish allergy should check the source.

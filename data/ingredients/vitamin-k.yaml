@@ -25,7 +25,7 @@ claims:
     direction: mixed
     evidence_grade: C
     summary: Trial results on bone outcomes are inconsistent.
-    sources: [ods-vitamin-k]
+    sources: [review-mott-vitk-2019]
 safety_notes: []
 sources: [ods-vitamin-k]
 status: draft

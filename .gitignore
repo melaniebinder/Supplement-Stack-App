@@ -30,3 +30,6 @@ docs/research/interviews/raw/
 *.m4a
 *.mp3
 *.wav
+
+# Evidence cache for copyrighted source text (re-fetched by scripts/evidence.mjs)
+.cache/

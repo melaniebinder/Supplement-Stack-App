@@ -1,0 +1,20 @@
+source_id: review-cochrane-zinc-cold-2024
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '38719213'
+excerpts:
+- supports:
+  - CLM-ZINC-01
+  quote: The findings suggest that zinc supplementation may have little or no effect on the prevention of colds but may reduce
+    the duration of ongoing colds, with an increase in non-serious adverse events.
+  locator: Abstract, Authors' conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/38719213/
+  sha256: 881ec758edf9e5381edb5cc5bd70923ccc1decccf8cf939c69d1f4f30f2b6b12
+  title: Zinc for prevention and treatment of the common cold.
+  journal: The Cochrane database of systematic reviews
+  year: '2024'
+  doi: 10.1002/14651858.CD014914.pub2
+  pmid: '38719213'

@@ -1,0 +1,19 @@
+source_id: review-rosanoff-mg-2012
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '22364157'
+excerpts:
+- supports:
+  - CLM-MAG-00
+  quote: Almost half (48%) of the US population consumed less than the required amount of magnesium from food in 2005-2006
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/22364157/
+  sha256: 54daea3dcd1c0ded81cfed549d79fbf0fcc69aab9cf6d5ae2853c85518d8096d
+  title: 'Suboptimal magnesium status in the United States: are the health consequences underestimated?'
+  journal: Nutrition reviews
+  year: '2012'
+  doi: 10.1111/j.1753-4887.2011.00465.x
+  pmid: '22364157'

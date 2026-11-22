@@ -1,0 +1,21 @@
+source_id: uspstf-folic-acid-2023
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/folic-acid-for-the-prevention-of-neural-tube-defects-preventive-medication
+excerpts:
+- supports:
+  - CLM-FOL-01
+  quote: The USPSTF recommends that all persons planning to or who could become pregnant take a daily supplement containing
+    0.4 to 0.8 mg (400 to 800 mcg) of folic acid.
+  locator: Recommendation summary (Grade A)
+- supports:
+  - CLM-FOL-01
+  quote: 'Grade: A'
+  locator: Recommendation summary table
+retrieved:
+  at: '2026-11-22'
+  url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/folic-acid-for-the-prevention-of-neural-tube-defects-preventive-medication
+  sha256: 6bcb8fa0df71a0e153f3684371bd7af09b0fda3a9513099444e6763daabac418
+  title: 'Recommendation: Folic Acid Supplementation to Prevent Neural Tube Defects: Preventive Medication | United States
+    Preventive Services Taskforce'

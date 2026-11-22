@@ -1,0 +1,24 @@
+source_id: review-magnesium-insomnia-2021
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '33865376'
+excerpts:
+- supports:
+  - CLM-MAG-01
+  quote: Pooled analysis showed that post-intervention sleep onset latency time was 17.36 min less after magnesium supplementation
+    compared to placebo
+  locator: Abstract, Results
+- supports:
+  - CLM-MAG-01
+  quote: outcomes were supported by low to very low quality of evidence.
+  locator: Abstract, Results
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/33865376/
+  sha256: 5b03265706497b02205d3474b5a37fd17875b995c30625ca467a8b7f80fc88f3
+  title: 'Oral magnesium supplementation for insomnia in older adults: a Systematic Review & Meta-Analysis.'
+  journal: BMC complementary medicine and therapies
+  year: '2021'
+  doi: 10.1186/s12906-021-03297-z
+  pmid: '33865376'

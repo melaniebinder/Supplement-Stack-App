@@ -22,12 +22,12 @@ timing:
   sources: [ods-vitamin-b6]
 claims:
   - id: CLM-B6-01
-    outcome: Cardiovascular events from B-vitamin supplementation (B6 with folic acid and B12)
+    outcome: Heart attack and death from B-vitamin supplementation (B6, folic acid, B12)
     population: Adults, including those with existing cardiovascular disease
     direction: no_effect
     evidence_grade: A
-    summary: Large trials found that B vitamins lowered homocysteine but did not reduce cardiovascular events.
-    sources: [ods-vitamin-b6]
+    summary: A Cochrane review of 15 trials (71,422 people) found no effect on heart attacks or death (high-quality evidence). It found a small reduction in stroke.
+    sources: [review-cochrane-homocysteine-2017]
 safety_notes:
   - level: caution
     text: Long-term high-dose B6 can cause peripheral neuropathy (numbness, tingling). Reports at doses well below the US UL led EFSA to lower its UL to 12 mg/day.

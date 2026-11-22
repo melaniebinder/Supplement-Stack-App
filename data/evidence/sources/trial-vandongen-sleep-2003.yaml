@@ -1,0 +1,25 @@
+source_id: trial-vandongen-sleep-2003
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '12683469'
+excerpts:
+- supports:
+  - HAB-ENERGY-02
+  quote: it appears that even relatively moderate sleep restriction can seriously impair waking neurobehavioral functions
+    in healthy adults.
+  locator: Abstract, Conclusions
+- supports:
+  - HAB-ENERGY-02
+  quote: Sleepiness ratings suggest that subjects were largely unaware of these increasing cognitive deficits
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/12683469/
+  sha256: eafd0eaa487f7f044bcb9b166619c2641d2dc4ec2950a334c5d5ab329c1d3a51
+  title: 'The cumulative cost of additional wakefulness: dose-response effects on neurobehavioral functions and sleep physiology
+    from chronic sleep restriction and total sleep deprivation.'
+  journal: Sleep
+  year: '2003'
+  doi: 10.1093/sleep/26.2.117
+  pmid: '12683469'

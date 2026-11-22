@@ -1,0 +1,39 @@
+source_id: nccih-ashwagandha
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/ashwagandha
+excerpts:
+- supports:
+  - CLM-ASH-01
+  - CLM-ASH-02
+  quote: Research shows that some ashwagandha preparations may be effective for insomnia and stress. However, evidence is
+    unclear about its effects on anxiety.
+  locator: Effectiveness
+- supports:
+  - CLM-ASH-01
+  - CLM-ASH-02
+  quote: many of the studies have had small sample sizes and have used a variety of ashwagandha preparations.
+  locator: Effectiveness
+- supports:
+  - SAFETY:ashwagandha
+  - GROUP:hepatotoxicity-reports
+  quote: there have been a number of cases that link liver injury to ashwagandha supplements.
+  locator: Safety
+- supports:
+  - SAFETY:ashwagandha
+  quote: Ashwagandha should be avoided during pregnancy and should not be used while breastfeeding.
+  locator: Safety
+- supports:
+  - INT-035
+  - INT-039
+  - GROUP:sedative
+  quote: There is evidence that ashwagandha might interact with some medications, including those for diabetes and high blood
+    pressure, medicines that decrease the immune system response (immunosuppressants), sedatives, anti-seizure medications
+    (anticonvulsants), and thyroid hormone medications.
+  locator: Safety
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/ashwagandha
+  sha256: 11fdb0edda1b9b1187edb8352db37ba9a69017fdde4d11e35f09b496cd90cb0b
+  title: National Center for Complementary and Integrative Health

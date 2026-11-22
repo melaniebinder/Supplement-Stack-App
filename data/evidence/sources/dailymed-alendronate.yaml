@@ -1,0 +1,27 @@
+source_id: dailymed-alendronate
+license: excerpt_only
+retrieve:
+  method: dailymed
+  setid: 69f9c6f8-a8df-4ddf-8fb1-2768eb099ada
+excerpts:
+- supports:
+  - GROUP:mineral-chelators
+  - TIMING:drug_class/bisphosphonates
+  quote: Swallow tablets whole with 6-8 ounces plain water at least 30 minutes before the first food, drink, or medication
+    of the day.
+  locator: 2 Dosage and Administration
+- supports:
+  - GROUP:mineral-chelators
+  quote: Waiting less than 30 minutes, or taking alendronate sodium tablets with food, beverages (other than plain water)
+    or other medications will lessen the effect of alendronate sodium tablets by decreasing its absorption into the body.
+  locator: Patient Information
+retrieved:
+  at: '2026-11-22'
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=69f9c6f8-a8df-4ddf-8fb1-2768eb099ada
+  sha256: 69219c5696f0be88045e345d400b19cebf2fe0e7df2e29bb3d298912557f4dd7
+  title: "These highlights do not include all the information needed to use Alendronate Sodium Tablets safely and effectively.\
+    \ See full prescribing information for alendronate sodium tablets, USP. \n\n Alendronate Sodium Tablets USP, for oral\
+    \ use \n\n Initial U.S. Approval: 1995"
+  setid: 69f9c6f8-a8df-4ddf-8fb1-2768eb099ada
+  label_version: '1'
+  label_effective: '20261030'

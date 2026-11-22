@@ -20,7 +20,7 @@ claims:
     direction: benefit
     evidence_grade: B
     summary: Taken close to the target bedtime at the destination, melatonin reduced jet lag symptoms in most trials.
-    sources: [review-cochrane-melatonin-jetlag-2002]
+    sources: [nccih-melatonin, review-cochrane-melatonin-jetlag-2002]
   - id: CLM-MEL-02
     outcome: Time to fall asleep
     population: Adults with chronic insomnia
@@ -31,7 +31,7 @@ claims:
 safety_notes:
   - level: caution
     text: Product content varies widely. A 2023 analysis of US gummies found actual melatonin ranging from about 74% to 347% of the labeled amount.
-    sources: [study-melatonin-gummies-2023]
+    sources: [nccih-melatonin, study-melatonin-gummies-2023]
   - level: caution
     text: It can cause next-day drowsiness. Keep it away from children, because pediatric ingestions have risen.
     sources: [nccih-melatonin]

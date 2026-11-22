@@ -48,7 +48,7 @@ The reasoning behind each choice is in [`docs/decisions.md`](docs/decisions.md).
 | Evidence model | ✅ Draft |
 | Competitor scan | ✅ Desk research done; hands-on test pending |
 | User interviews | ⏳ Guide written, interviews not started |
-| Knowledge base (30 ingredients, 31 interactions) | 🟡 Draft: sources need verifying, records need expert review |
+| Knowledge base (30 ingredients, 33 interactions) | 🟡 Evidence-verified (99/99 claims, interactions, habits and groups backed by stored quotes); needs expert review |
 | Clickable prototype | ⏳ Not started |
 | Demo | — |
 
@@ -83,6 +83,7 @@ npm run validate
 │   ├── evidence-model.md   how claims are graded and sourced
 │   ├── decisions.md        decision log
 │   ├── roadmap.md          now / next / later
+│   ├── manual-tasks.md     things that need a person (reviewer, API key, interviews)
 │   └── research/
 │       ├── competitor-scan.md
 │       └── interview-guide.md

@@ -1,0 +1,21 @@
+source_id: review-exercise-mental-health-2023
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '36796860'
+excerpts:
+- supports:
+  - HAB-STRESS-01
+  quote: Physical activity is highly beneficial for improving symptoms of depression, anxiety and distress across a wide range
+    of adult populations
+  locator: Abstract, Conclusion
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/36796860/
+  sha256: 4c44f8bee918b7b58bf56c1353597c5f6a3ab492cd947e397d7a371f23999fcd
+  title: 'Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of
+    systematic reviews.'
+  journal: British journal of sports medicine
+  year: '2023'
+  doi: 10.1136/bjsports-2022-106195
+  pmid: '36796860'

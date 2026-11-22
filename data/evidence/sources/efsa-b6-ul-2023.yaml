@@ -1,0 +1,25 @@
+source_id: efsa-b6-ul-2023
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '37207271'
+excerpts:
+- supports:
+  - SAFETY:vitamin-b6
+  quote: The relationship between excess vitamin B6 intakes and the development of peripheral neuropathy is well established
+    and is the critical effect on which the UL is based.
+  locator: Abstract
+- supports:
+  - SAFETY:vitamin-b6
+  - RI:vitamin-b6
+  quote: a UL of 12 mg/day is established by the Panel for vitamin B6 for adults (including pregnant and lactating women).
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/37207271/
+  sha256: f91c4288b7186d2910972ef72d7cac252ee899f6eae59458901f596134de997b
+  title: Scientific opinion on the tolerable upper intake level for vitamin B6.
+  journal: EFSA journal. European Food Safety Authority
+  year: '2023'
+  doi: 10.2903/j.efsa.2023.8006
+  pmid: '37207271'

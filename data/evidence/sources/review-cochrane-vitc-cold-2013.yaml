@@ -1,0 +1,28 @@
+source_id: review-cochrane-vitc-cold-2013
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '23440782'
+excerpts:
+- supports:
+  - CLM-VITC-01
+  quote: The failure of vitamin C supplementation to reduce the incidence of colds in the general population indicates that
+    routine vitamin C supplementation is not justified
+  locator: Abstract, Authors' conclusions
+- supports:
+  - CLM-VITC-02
+  quote: In adults the duration of colds was reduced by 8% (3% to 12%) and in children by 14% (7% to 21%).
+  locator: Abstract, Main results
+- supports:
+  - CLM-VITC-02
+  quote: No consistent effect of vitamin C was seen on the duration or severity of colds in the therapeutic trials.
+  locator: Abstract, Main results
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/23440782/
+  sha256: 2024d8b361a14c2a232525288358d2b161251167cc97aebbc8a07afa5c33cb90
+  title: Vitamin C for preventing and treating the common cold.
+  journal: The Cochrane database of systematic reviews
+  year: '2013'
+  doi: 10.1002/14651858.CD000980.pub4
+  pmid: '23440782'

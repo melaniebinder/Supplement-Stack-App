@@ -1,0 +1,25 @@
+source_id: trial-gait-2006
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '16495392'
+excerpts:
+- supports:
+  - CLM-GLU-01
+  quote: Glucosamine and chondroitin sulfate alone or in combination did not reduce pain effectively in the overall group
+    of patients with osteoarthritis of the knee.
+  locator: Abstract, Conclusions
+- supports:
+  - CLM-GLU-01
+  quote: Exploratory analyses suggest that the combination of glucosamine and chondroitin sulfate may be effective in the
+    subgroup of patients with moderate-to-severe knee pain.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/16495392/
+  sha256: 9cdddb8a17758fa2485591b633e5cf6514f678b75b0725ef7107965bab81a894
+  title: Glucosamine, chondroitin sulfate, and the two in combination for painful knee osteoarthritis.
+  journal: The New England journal of medicine
+  year: '2006'
+  doi: 10.1056/NEJMoa052771
+  pmid: '16495392'

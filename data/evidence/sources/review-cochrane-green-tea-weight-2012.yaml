@@ -1,0 +1,20 @@
+source_id: review-cochrane-green-tea-weight-2012
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '23235664'
+excerpts:
+- supports:
+  - CLM-GTE-01
+  quote: Green tea preparations appear to induce a small, statistically non-significant weight loss in overweight or obese
+    adults. Because the amount of weight loss is small, it is not likely to be clinically important.
+  locator: Abstract, Authors' conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/23235664/
+  sha256: 4bf3f0bdc4e641773d135335eb78effab1211fccb5f802bfc386c3c503325c1e
+  title: Green tea for weight loss and weight maintenance in overweight or obese adults.
+  journal: The Cochrane database of systematic reviews
+  year: '2012'
+  doi: 10.1002/14651858.CD008650.pub2
+  pmid: '23235664'

@@ -1,0 +1,20 @@
+source_id: guideline-issn-protein-2017
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '28642676'
+excerpts:
+- supports:
+  - HAB-WORK-02
+  quote: an overall daily protein intake in the range of 1.4-2.0 g protein/kg body weight/day (g/kg/d) is sufficient for most
+    exercising individuals
+  locator: Abstract, position statement
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/28642676/
+  sha256: f29ce07b349d2378e2070a974c6f0aed5cd24bff09c7bfd648bea3f00e6aeef3
+  title: 'International Society of Sports Nutrition Position Stand: protein and exercise.'
+  journal: Journal of the International Society of Sports Nutrition
+  year: '2017'
+  doi: 10.1186/s12970-017-0177-8
+  pmid: '28642676'

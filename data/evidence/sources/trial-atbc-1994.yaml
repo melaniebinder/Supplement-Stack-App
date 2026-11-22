@@ -1,0 +1,25 @@
+source_id: trial-atbc-1994
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '8127329'
+excerpts:
+- supports:
+  - CLM-VITA-01
+  quote: Unexpectedly, we observed a higher incidence of lung cancer among the men who received beta carotene than among those
+    who did not (change in incidence, 18 percent; 95 percent confidence interval, 3 to 36 percent).
+  locator: Abstract, Results
+- supports:
+  - SAFETY:vitamin-e
+  quote: more deaths from hemorrhagic stroke were observed among the men who received this supplement than among those who
+    did not
+  locator: Abstract, Results
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/8127329/
+  sha256: 3da33be619e25ad18fa993aacfd89f71cc6e61c892956c62c6aaa3f5181b060f
+  title: The effect of vitamin E and beta carotene on the incidence of lung cancer and other cancers in male smokers.
+  journal: The New England journal of medicine
+  year: '1994'
+  doi: 10.1056/NEJM199404143301501
+  pmid: '8127329'

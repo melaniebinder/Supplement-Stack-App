@@ -7,7 +7,9 @@
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate-data.mjs",
-    "validate:strict": "node scripts/validate-data.mjs --strict"
+    "validate:strict": "node scripts/validate-data.mjs --strict",
+    "evidence:fetch": "NODE_USE_ENV_PROXY=1 node scripts/evidence.mjs fetch",
+    "evidence:verify": "NODE_USE_ENV_PROXY=1 node scripts/evidence.mjs verify"
   },
   "devDependencies": {
     "js-yaml": "^4.1.0"

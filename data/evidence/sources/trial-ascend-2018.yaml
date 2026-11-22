@@ -1,0 +1,20 @@
+source_id: trial-ascend-2018
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '30146932'
+excerpts:
+- supports:
+  - CLM-O3-01
+  quote: there was no significant difference in the risk of serious vascular events between those who were assigned to receive
+    n-3 fatty acid supplementation and those who were assigned to receive placebo
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/30146932/
+  sha256: 343fead076738572ea92e92a16e7258eece3430ac02cda95f3c3e5bd5c44a83b
+  title: Effects of n-3 Fatty Acid Supplements in Diabetes Mellitus.
+  journal: The New England journal of medicine
+  year: '2018'
+  doi: 10.1056/NEJMoa1804989
+  pmid: '30146932'

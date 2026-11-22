@@ -1,0 +1,23 @@
+source_id: review-mbsr-2014
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '24395196'
+excerpts:
+- supports:
+  - HAB-STRESS-02
+  quote: Mindfulness meditation programs had moderate evidence of improved anxiety
+  locator: Abstract, Findings
+- supports:
+  - HAB-STRESS-02
+  quote: meditation programs can result in small to moderate reductions of multiple negative dimensions of psychological stress.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/24395196/
+  sha256: 25b0dcc64647693b138c3b4efd09059be0259119e4ed91b9884c3e90c15a80e7
+  title: 'Meditation programs for psychological stress and well-being: a systematic review and meta-analysis.'
+  journal: JAMA internal medicine
+  year: '2014'
+  doi: 10.1001/jamainternmed.2013.13018
+  pmid: '24395196'

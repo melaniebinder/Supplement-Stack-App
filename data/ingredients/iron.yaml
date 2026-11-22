@@ -23,11 +23,11 @@ timing:
 claims:
   - id: CLM-IRON-01
     outcome: Iron status and hemoglobin
-    population: People with laboratory-confirmed iron deficiency
+    population: Menstruating women, and people with confirmed iron deficiency
     direction: benefit
     evidence_grade: A
-    summary: Oral iron reliably improves iron status in people who are deficient.
-    sources: [ods-iron]
+    summary: A Cochrane review of 67 trials in menstruating women found daily iron reduced anemia and iron deficiency, raised hemoglobin, and reduced fatigue, with more stomach side effects.
+    sources: [review-cochrane-iron-women-2016]
 safety_notes:
   - level: warning
     text: Accidental iron overdose is dangerous for young children. Keep iron-containing products out of reach.

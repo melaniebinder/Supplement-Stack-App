@@ -27,7 +27,7 @@ claims:
     direction: benefit
     evidence_grade: A
     summary: The USPSTF recommends daily folic acid (0.4 to 0.8 mg) for people planning or capable of pregnancy to reduce neural tube defect risk.
-    sources: [uspstf-folic-acid-2023, ods-folate]
+    sources: [uspstf-folic-acid-2023]
 safety_notes:
   - level: caution
     text: High folic acid intake can mask the anemia of vitamin B12 deficiency while nerve damage continues. Check B12 status, especially in older adults.

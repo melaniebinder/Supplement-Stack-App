@@ -32,8 +32,8 @@ claims:
     population: Adults whose diet doesn't provide the RDA (e.g. dairy-free diets)
     direction: benefit
     evidence_grade: A
-    summary: Supplements reliably close a calcium intake gap. Food sources are preferred, with supplements covering only the shortfall.
-    sources: [ods-calcium]
+    summary: Calcium has a cause-and-effect role in bone health, with adult RDAs of 1,000–1,200 mg/day. Food sources come first, and a supplement should only cover the shortfall.
+    sources: [review-ross-dri-2011]
   - id: CLM-CAL-01
     outcome: Fracture prevention with low-dose calcium plus vitamin D
     population: Community-dwelling postmenopausal women
@@ -47,7 +47,7 @@ claims:
     direction: mixed
     evidence_grade: C
     summary: Some analyses suggest that calcium supplements (not dietary calcium) may raise cardiovascular risk, while others don't. This is unresolved.
-    sources: [ods-calcium]
+    sources: [review-bolland-calcium-mi-2010, review-chung-calcium-cvd-2016]
 safety_notes:
   - level: caution
     text: Supplements, especially combined with vitamin D, have been associated with kidney stones. Constipation is common with calcium carbonate.

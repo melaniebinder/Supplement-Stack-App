@@ -1,0 +1,20 @@
+source_id: review-patel-biotin-2017
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '28879195'
+excerpts:
+- supports:
+  - CLM-BIO-01
+  quote: we propose these cases are uncommon and that there is lack of sufficient evidence for supplementation in healthy
+    individuals.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/28879195/
+  sha256: 8b2972daf1f49fd3ecc4f08f878a1c18246b80105dbb3fa2a8541ef5f7721537
+  title: A Review of the Use of Biotin for Hair Loss.
+  journal: Skin appendage disorders
+  year: '2017'
+  doi: 10.1159/000462981
+  pmid: '28879195'

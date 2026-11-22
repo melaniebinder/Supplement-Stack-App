@@ -1,0 +1,33 @@
+source_id: nccih-melatonin
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know
+excerpts:
+- supports:
+  - CLM-MEL-01
+  quote: Research suggests that melatonin supplements may help with jet lag.
+  locator: Jet lag
+- supports:
+  - CLM-MEL-02
+  quote: there’s not enough strong evidence on the effectiveness or safety of melatonin supplementation for chronic insomnia
+    to recommend its use.
+  locator: Insomnia
+- supports:
+  - SAFETY:melatonin
+  quote: In the remaining products, the melatonin levels ranged from 74 to 347 percent of the labeled quantity
+  locator: Products may not contain what's listed on the label
+- supports:
+  - SAFETY:melatonin
+  quote: 11,000 emergency department visits were for unsupervised melatonin ingestion by children 5 years and younger.
+  locator: 'Safety: children'
+- supports:
+  - SAFETY:melatonin
+  - GROUP:sedative
+  quote: Melatonin may stay active in older people longer than in younger people and cause daytime drowsiness.
+  locator: Safety
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know
+  sha256: 58fb4e1070aff23ae69b0c50a1a36d8448246f3367455ef296e4ed9bca2294c5
+  title: National Center for Complementary and Integrative Health

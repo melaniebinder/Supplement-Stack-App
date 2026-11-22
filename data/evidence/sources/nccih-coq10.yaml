@@ -1,0 +1,20 @@
+source_id: nccih-coq10
+license: public_domain
+retrieve:
+  method: html
+  url: https://www.nccih.nih.gov/health/coenzyme-q10
+excerpts:
+- supports:
+  - CLM-COQ-01
+  quote: the overall scientific evidence does not support the idea that CoQ10 can reduce muscle pain caused by the cholesterol-lowering
+    drugs known as statins.
+  locator: What do we know about the effectiveness
+- supports:
+  - INT-018
+  quote: CoQ10 may interact with the anticoagulant (blood thinner) warfarin
+  locator: What do we know about safety
+retrieved:
+  at: '2026-11-22'
+  url: https://www.nccih.nih.gov/health/coenzyme-q10
+  sha256: 4b03ae0516c64d0711635c793c65440446ed1b8781fb5d42b6cbf1f5453b55be
+  title: National Center for Complementary and Integrative Health

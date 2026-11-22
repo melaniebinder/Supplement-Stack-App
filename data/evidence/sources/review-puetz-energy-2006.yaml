@@ -1,0 +1,25 @@
+source_id: review-puetz-energy-2006
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '17073524'
+excerpts:
+- supports:
+  - HAB-ENERGY-01
+  quote: Chronic exercise increased feelings of energy and lessened feelings of fatigue compared with control conditions by
+    a mean effect delta of 0.37.
+  locator: Abstract
+- supports:
+  - HAB-ENERGY-01
+  quote: Investigations that used a placebo control and examined chronic exercise alone found no effect of chronic exercise
+    on feelings of energy and fatigue.
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/17073524/
+  sha256: fb4703864725b77c41c90cdf55d585ed65236335193d7085d0c9e0d06a199603
+  title: 'Effects of chronic exercise on feelings of energy and fatigue: a quantitative synthesis.'
+  journal: Psychological bulletin
+  year: '2006'
+  doi: 10.1037/0033-2909.132.6.866
+  pmid: '17073524'

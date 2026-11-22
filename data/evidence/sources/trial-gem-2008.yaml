@@ -1,0 +1,20 @@
+source_id: trial-gem-2008
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '19017911'
+excerpts:
+- supports:
+  - CLM-GIN-01
+  quote: G. biloba at 120 mg twice a day was not effective in reducing either the overall incidence rate of dementia or AD
+    incidence in elderly individuals with normal cognition or those with MCI.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/19017911/
+  sha256: 119e7efe87fd963883f99b882dc1c7e4959b200051b2d4482a700664c7c83aef
+  title: 'Ginkgo biloba for prevention of dementia: a randomized controlled trial.'
+  journal: JAMA
+  year: '2008'
+  doi: 10.1001/jama.2008.683
+  pmid: '19017911'

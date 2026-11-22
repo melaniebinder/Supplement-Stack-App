@@ -1,0 +1,21 @@
+source_id: guideline-aasm-insomnia-2017
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '27998379'
+excerpts:
+- supports:
+  - CLM-MEL-02
+  quote: We suggest that clinicians not use melatonin as a treatment for sleep onset or sleep maintenance insomnia (versus
+    no treatment) in adults. (WEAK).
+  locator: Abstract, Recommendations
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/27998379/
+  sha256: a9600be6b6b637ebc2ff718f462c5d15c7904b74952f583fcccef15c5f1ebe43
+  title: 'Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults: An American Academy of
+    Sleep Medicine Clinical Practice Guideline.'
+  journal: 'Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine'
+  year: '2017'
+  doi: 10.5664/jcsm.6470
+  pmid: '27998379'

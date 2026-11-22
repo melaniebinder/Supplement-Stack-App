@@ -1,0 +1,23 @@
+source_id: trial-booth-vite-vitk-2004
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '15213041'
+excerpts:
+- supports:
+  - INT-004
+  quote: High-dose vitamin E supplementation increased PIVKA-II in adults not receiving oral anticoagulant therapy.
+  locator: Abstract, Conclusions
+- supports:
+  - INT-004
+  quote: high doses of vitamin E may antagonize vitamin K
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/15213041/
+  sha256: f15cfd779feac684af3bc43d163f662fb462c5e3911dcbb57b766e44f0011fe6
+  title: Effect of vitamin E supplementation on vitamin K status in adults with normal coagulation status.
+  journal: The American journal of clinical nutrition
+  year: '2004'
+  doi: 10.1093/ajcn/80.1.143
+  pmid: '15213041'

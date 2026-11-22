@@ -72,6 +72,12 @@ interaction:
   status: draft
 ```
 
+## Verification and the evidence store
+
+A record isn't "sourced" just because it lists a citation. It's **verified** when a verbatim quote from the retrieved source, which the record cites, is stored in [`data/evidence/`](../data/evidence/) and the validator confirms it. Each source stores its retrieval date and a fingerprint (sha256), so a later change to the source is detected. Full text is stored only for US government (public-domain) pages. For journals and drug labels only short quotes are kept, and `npm run evidence:verify` re-checks them online.
+
+When verification contradicts a record, the record changes, not the evidence. Grades go down when the source is weaker than assumed, and records with no supporting source are removed (see D-025).
+
 ## Use of AI
 
 - **Allowed:** helping reviewers triage literature, and turning a *retrieved, reviewed* record into plain-language explanation.

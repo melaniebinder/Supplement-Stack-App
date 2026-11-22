@@ -1,0 +1,20 @@
+source_id: review-chung-calcium-cvd-2016
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '27776363'
+excerpts:
+- supports:
+  - CLM-CAL-02
+  quote: Calcium intake within tolerable upper intake levels (2000 to 2500 mg/d) is not associated with CVD risk in generally
+    healthy adults.
+  locator: Abstract, Conclusion
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/27776363/
+  sha256: d0c00983a0931083fc26d594f3f11947dc2d5d6a49fa4fe5bbf808ab884fd1e5
+  title: 'Calcium Intake and Cardiovascular Disease Risk: An Updated Systematic Review and Meta-analysis.'
+  journal: Annals of internal medicine
+  year: '2016'
+  doi: 10.7326/M16-1165
+  pmid: '27776363'

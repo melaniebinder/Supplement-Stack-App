@@ -1,0 +1,20 @@
+source_id: study-piscitelli-garlic-saquinavir-2002
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '11740713'
+excerpts:
+- supports:
+  - INT-022
+  quote: In the presence of garlic, the mean saquinavir area under the curve (AUC) during the 8-h dosing interval decreased
+    by 51%
+  locator: Abstract
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/11740713/
+  sha256: e118cc5e9c29137a3b08c3e25e2334932583c35ee649fcb7fac40813e473bb47
+  title: The effect of garlic supplements on the pharmacokinetics of saquinavir.
+  journal: 'Clinical infectious diseases : an official publication of the Infectious Diseases Society of America'
+  year: '2002'
+  doi: 10.1086/324351
+  pmid: '11740713'

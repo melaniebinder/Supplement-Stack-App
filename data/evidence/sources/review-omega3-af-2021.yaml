@@ -1,0 +1,25 @@
+source_id: review-omega3-af-2021
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '34612056'
+excerpts:
+- supports:
+  - CLM-O3-03
+  quote: the use of marine ɷ-3 fatty acid supplements was associated with an increased risk of AF (n=2905; HR, 1.25 [95% CI,
+    1.07-1.46]; P =0.013).
+  locator: Abstract, Results
+- supports:
+  - CLM-O3-03
+  quote: The risk appeared to be greater in trials testing >1 g/d.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/34612056/
+  sha256: b19f0486720f5eadc6b1c6f1063de0aab46549c25fafa1c5eca79b6f896d7537
+  title: 'Effect of Long-Term Marine ɷ-3 Fatty Acids Supplementation on the Risk of Atrial Fibrillation in Randomized Controlled
+    Trials of Cardiovascular Outcomes: A Systematic Review and Meta-Analysis.'
+  journal: Circulation
+  year: '2021'
+  doi: 10.1161/CIRCULATIONAHA.121.055654
+  pmid: '34612056'

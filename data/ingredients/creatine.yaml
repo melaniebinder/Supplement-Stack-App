@@ -20,7 +20,7 @@ claims:
     direction: benefit
     evidence_grade: A
     summary: Creatine monohydrate combined with resistance training consistently increases strength and lean mass compared with training alone.
-    sources: [guideline-issn-creatine-2017, ods-exercise]
+    sources: [guideline-issn-creatine-2017]
 safety_notes:
   - level: caution
     text: Creatine can raise blood creatinine, which may look like reduced kidney function on lab tests. Tell your clinician. People with kidney disease should consult a clinician first.

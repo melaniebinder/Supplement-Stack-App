@@ -1,0 +1,24 @@
+source_id: trial-vital-omega3-2019
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '30415637'
+excerpts:
+- supports:
+  - CLM-O3-01
+  quote: Supplementation with n-3 fatty acids did not result in a lower incidence of major cardiovascular events or cancer
+    than placebo.
+  locator: Abstract, Conclusions
+- supports:
+  - EXCLUSION:omega-3:bleeding-risk
+  quote: No excess risks of bleeding or other serious adverse events were observed.
+  locator: Abstract, Results
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/30415637/
+  sha256: a7a988814eb84828b5ab4f12eb9e528d65b17a919ce8bb73b54cfca4b7bf6786
+  title: Marine n-3 Fatty Acids and Prevention of Cardiovascular Disease and Cancer.
+  journal: The New England journal of medicine
+  year: '2019'
+  doi: 10.1056/NEJMoa1811403
+  pmid: '30415637'

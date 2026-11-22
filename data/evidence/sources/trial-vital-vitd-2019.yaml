@@ -1,0 +1,20 @@
+source_id: trial-vital-vitd-2019
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '30415629'
+excerpts:
+- supports:
+  - CLM-VITD-03
+  quote: Supplementation with vitamin D did not result in a lower incidence of invasive cancer or cardiovascular events than
+    placebo.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/30415629/
+  sha256: 9641ee624044330df5cc195b155c0ca5528affcd6656e14331d6f0792158da12
+  title: Vitamin D Supplements and Prevention of Cancer and Cardiovascular Disease.
+  journal: The New England journal of medicine
+  year: '2019'
+  doi: 10.1056/NEJMoa1809944
+  pmid: '30415629'

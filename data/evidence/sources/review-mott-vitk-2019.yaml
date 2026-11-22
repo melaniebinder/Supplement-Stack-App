@@ -1,0 +1,22 @@
+source_id: review-mott-vitk-2019
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '31076817'
+excerpts:
+- supports:
+  - CLM-VITK-01
+  quote: For post-menopausal or osteoporotic patients, there is no evidence that vitamin K affects bone mineral density or
+    vertebral fractures; it may reduce clinical fractures; however, the evidence is insufficient to confirm this.
+  locator: Abstract, Conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/31076817/
+  sha256: 00bb2b6b8d24e5042a9c7d0944ecd5b85af204ef4a1faf877adfd304945afdf6
+  title: 'Effect of vitamin K on bone mineral density and fractures in adults: an updated systematic review and meta-analysis
+    of randomised controlled trials.'
+  journal: 'Osteoporosis international : a journal established as result of cooperation between the European Foundation for
+    Osteoporosis and the National Osteoporosis Foundation of the USA'
+  year: '2019'
+  doi: 10.1007/s00198-019-04949-0
+  pmid: '31076817'

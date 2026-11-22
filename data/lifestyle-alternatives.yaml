@@ -187,12 +187,12 @@ goals:
         relation: replaces
         text: "CBT-I (cognitive behavioral therapy for insomnia): a fixed wake time, limiting time awake in bed, and getting out of bed when you can't sleep. Available through clinicians and validated digital programs."
         evidence_grade: A
-        sources: [guideline-acp-insomnia-2016, guideline-aasm-behavioral-2021]
+        sources: [guideline-aasm-behavioral-2021, guideline-acp-insomnia-2016]
       - id: HAB-SLEEP-02
         rung: lifestyle
         relation: replaces
         text: "Stop caffeine at least 6 hours before bedtime."
-        evidence_grade: B
+        evidence_grade: C
         sources: [study-caffeine-sleep-2013]
     routing_note: "Ongoing insomnia (3+ nights a week for 3+ months) is worth raising with a clinician. Guidelines recommend CBT-I as the first treatment."
 
@@ -206,8 +206,8 @@ goals:
         rung: lifestyle
         relation: replaces
         text: "Regular physical activity. Even walking most days reduces symptoms of anxiety, distress, and depression."
-        evidence_grade: A
-        sources: [review-exercise-mental-health-2023, guideline-pag-2018]
+        evidence_grade: B
+        sources: [review-exercise-mental-health-2023]
       - id: HAB-STRESS-02
         rung: lifestyle
         relation: replaces
@@ -235,20 +235,20 @@ goals:
         rung: diet
         relation: replaces
         text: "A Mediterranean-style eating pattern: vegetables, legumes, whole grains, nuts, olive oil, and fish."
-        evidence_grade: A
-        sources: [trial-predimed-2018, guideline-dga-2020]
+        evidence_grade: B
+        sources: [trial-predimed-2018]
       - id: HAB-HEART-03
         rung: diet
         relation: replaces
         text: "Get soluble fiber from oats, barley, beans, and lentils to help lower LDL."
         evidence_grade: A
-        sources: [cfr-101-81]
+        sources: [review-brown-fiber-1999]
       - id: HAB-HEART-04
         rung: lifestyle
         relation: replaces
         text: "At least 150 minutes a week of moderate activity (e.g. brisk walking)."
         evidence_grade: A
-        sources: [guideline-pag-2018]
+        sources: [guideline-pag-jama-2018]
     routing_note: "Know your blood pressure and cholesterol numbers. Treatment decisions belong with a clinician."
 
   - id: bones
@@ -262,14 +262,14 @@ goals:
         rung: diet
         relation: replaces
         text: "Get calcium from food first: dairy, fortified plant milks, calcium-set tofu, canned fish with bones."
-        evidence_grade: A
-        sources: [ods-calcium, guideline-dga-2020]
+        evidence_grade: B
+        sources: [review-bolland-calcium-mi-2010]
       - id: HAB-BONE-02
         rung: lifestyle
         relation: replaces
         text: "Weight-bearing and muscle-strengthening activity at least 2 days a week."
         evidence_grade: B
-        sources: [guideline-pag-2018]
+        sources: [guideline-pag-jama-2018, review-cochrane-exercise-bone-2011]
     routing_note: "If you've had a fracture as an adult, or have risk factors for osteoporosis, ask about bone density screening."
 
   - id: immunity
@@ -284,7 +284,7 @@ goals:
         relation: replaces
         text: "Stay up to date on recommended vaccines, such as the annual flu shot. Your pharmacist can tell you which ones apply."
         evidence_grade: A
-        sources: [cdc-flu-vaccine]
+        sources: [guideline-acip-flu-2024, review-cochrane-flu-vaccine-2018]
       - id: HAB-IMM-02
         rung: lifestyle
         relation: replaces
@@ -313,13 +313,13 @@ goals:
         relation: replaces
         text: "Regular physical activity. Active adults report less fatigue and better energy."
         evidence_grade: C
-        sources: [guideline-pag-2018]
+        sources: [guideline-pag-jama-2018, review-puetz-energy-2006]
       - id: HAB-ENERGY-02
         rung: lifestyle
         relation: replaces
-        text: "Consistent sleep (7+ hours) with a fixed wake time."
+        text: "Get enough sleep (7+ hours). Chronic short sleep impairs daytime function, often without people noticing."
         evidence_grade: C
-        sources: [guideline-aasm-behavioral-2021]
+        sources: [trial-vandongen-sleep-2003]
     routing_note: "Persistent tiredness has many medical causes (e.g. anemia, thyroid problems, sleep apnea). Get checked rather than adding supplements."
 
   - id: workout
@@ -332,7 +332,7 @@ goals:
         relation: complements
         text: "Progressive resistance training at least 2 days a week. This is the main driver of strength, and creatine only adds to it."
         evidence_grade: A
-        sources: [guideline-pag-2018, guideline-issn-creatine-2017]
+        sources: [guideline-pag-jama-2018]
       - id: HAB-WORK-02
         rung: diet
         relation: complements

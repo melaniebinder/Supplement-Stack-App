@@ -1,6 +1,6 @@
 # Roadmap
 
-Organized by confidence, not dates. Items move left only once the step before them is validated.
+Organized by confidence, not dates. Items move left only once the step before them is validated. Tasks that need a person (a reviewer, credentials, interviews) are tracked in [manual-tasks.md](manual-tasks.md).
 
 ## Now: validate the problem and the evidence model
 - [ ] Run 8–10 user interviews ([guide](research/interview-guide.md))
@@ -8,7 +8,8 @@ Organized by confidence, not dates. Items move left only once the step before th
 - [ ] Hands-on competitor test with Maya's and Priya's stacks
 - [x] Decide positioning (D-018) and borrowed ideas (D-019)
 - [x] Draft a 30-ingredient pilot knowledge base using the [evidence model](evidence-model.md) ([`data/`](../data/))
-- [ ] Verify all citations against live sources
+- [x] Verify every claim, interaction, habit and effect group against retrieved sources, with stored quotes (D-023)
+- [ ] Verify safety notes, reference intakes, timing notes and food amounts (food needs a USDA API key)
 - [x] Validator that enforces the evidence rules in CI
 - [ ] Get a credentialed reviewer (PharmD or RD) to audit 20 interaction records
 - [x] Add structured timing fields (`best_slot`, `take_with`, interaction `management`) to the data (D-021)

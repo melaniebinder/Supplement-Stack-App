@@ -1,0 +1,20 @@
+source_id: review-cochrane-exercise-bone-2011
+license: excerpt_only
+retrieve:
+  method: pubmed
+  pmid: '21735380'
+excerpts:
+- supports:
+  - HAB-BONE-02
+  quote: Our results suggest a relatively small statistically significant, but possibly important, effect of exercise on bone
+    density compared with control groups.
+  locator: Abstract, Authors' conclusions
+retrieved:
+  at: '2026-11-22'
+  url: https://pubmed.ncbi.nlm.nih.gov/21735380/
+  sha256: 9c84ff756b3413164bcb9b2361d2067d3ff901b32f720678f404804c02a1bf0b
+  title: Exercise for preventing and treating osteoporosis in postmenopausal women.
+  journal: The Cochrane database of systematic reviews
+  year: '2011'
+  doi: 10.1002/14651858.CD000333.pub2
+  pmid: '21735380'

@@ -11,7 +11,7 @@ recommendable_note: Effects depend on the strain and the condition. The v1 goals
 timing:
   best_slot: any
   take_with: either
-  note: "Follow the product label, since this varies by strain. Keep bacterial strains at least 2 hours from antibiotics."
+  note: "Follow the product label, since this varies by strain."
   sources: [ods-probiotics]
 claims:
   - id: CLM-PRO-01
@@ -20,7 +20,7 @@ claims:
     direction: benefit
     evidence_grade: B
     summary: Certain strains (e.g. LGG, S. boulardii) reduced antibiotic-associated diarrhea in children. Results depend on the strain.
-    sources: [review-cochrane-probiotics-aad-2019, ods-probiotics]
+    sources: [nccih-probiotics, review-cochrane-probiotics-aad-2019]
 safety_notes:
   - level: warning
     text: Serious infections have been reported in people who are critically ill, have weakened immune systems, or are premature infants.
