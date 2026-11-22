@@ -1,77 +1,117 @@
 # Wireframes (low-fi)
 
-Text wireframes for the v1 flows. All data shown is synthetic. Replace with Figma exports or screenshots as the design firms up.
+Text wireframes for the v1 single-page flow. All data is synthetic. Values are illustrative and must come from the reviewed knowledge base in a real build. Flow decisions: D-013 to D-017 in [`docs/decisions.md`](../docs/decisions.md).
 
-## 1. Stack entry
-
-```
-┌─────────────────────────────────────────────┐
-│  What's in your stack?                      │
-│  ┌───────────────────────────────────────┐  │
-│  │ 🔍 Search supplements or medications   │  │
-│  └───────────────────────────────────────┘  │
-│                                             │
-│  Your stack (4)                             │
-│   • Vitamin D3        2000 IU · daily   ✕   │
-│   • Magnesium         (dose optional)   ✕   │
-│   • Fish oil          1 g · daily       ✕   │
-│   • Zinc              50 mg · daily     ✕   │
-│                                             │
-│  + Add a medication type (e.g. blood thinner)│
-│                                             │
-│        [ Check my stack ]                   │
-│  ⓘ Not medical advice. No account needed.   │
-└─────────────────────────────────────────────┘
-```
-
-## 2. Results
+## 1. Input: one page, three sections
 
 ```
-┌─────────────────────────────────────────────┐
-│  Stack check · 4 items                      │
-│                                             │
-│  🟠 1 moderate interaction                  │
-│  ⚪ 1 minor note                            │
-│  🔺 1 upper-limit warning                   │
-│                                             │
-│  🔺 Zinc: 50 mg/day is above the adult       │
-│     upper limit (40 mg/day).                │
-│     Long-term high zinc may lower copper.   │
-│     Evidence: A · Sources (2) ›             │
-│                                             │
-│  🟠 Zinc + Magnesium                         │
-│     High-dose zinc may reduce magnesium     │
-│     absorption. Consider separating doses.  │
-│     Evidence: C · Sources (1) ›             │
-│                                             │
-│  [ Print for my doctor ]  [ Why I take these › ]
-│  ⓘ Not medical advice. Talk to a pharmacist. │
-└─────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────┐
+│  Check your stack                                │
+│  ⓘ Not medical advice. No account needed.        │
+│                                                  │
+│  ① YOUR SUPPLEMENTS                              │
+│  ┌────────────────────────────────────────────┐  │
+│  │ 🔍 Search supplements…          [📷 Scan]  │  │
+│  └────────────────────────────────────────────┘  │
+│  [+ Add a multivitamin]                          │
+│                                                  │
+│  • Vitamin D3 · 2000 IU/day        Why? (sleep ▾)│
+│  • Zinc · 50 mg/day                Why? (immunity)│
+│  • Melatonin · 5 mg               Why? (sleep)   │
+│  • Women's multivitamin · 20 ingredients  [edit] │
+│                                                  │
+│  ② YOUR MEDICATIONS                              │
+│  Medications can interact with supplements.      │
+│  Don't forget birth control, thyroid meds, and   │
+│  acid reducers.                                  │
+│  [+ Add medication ▾]                            │
+│  • Thyroid medication (levothyroxine)        ✕   │
+│  ☐ I don't take any medications                  │
+│                                                  │
+│  ③ ABOUT YOU (optional)                          │
+│  Age [30–49 ▾]  Sex [F ▾]                        │
+│  ☐ Pregnant/breastfeeding ☐ Kidney/liver disease │
+│                                                  │
+│            [ Check my stack ]                    │
+│  (disabled until ② has a medication or ☑ none)   │
+└──────────────────────────────────────────────────┘
 ```
-_(Values are illustrative placeholders. Verify every figure against the source before using it in a real design.)_
 
-## 3. Goal-based guidance (P1)
+## 2. Add a multivitamin (MVP: template or search; photo scan is the fast follow)
 
 ```
-┌─────────────────────────────────────────────┐
-│  Goal: Better sleep                         │
-│                                             │
-│  ① Start with food & routine                │
-│     • Keep caffeine to before ~2pm  (B)  ›   │
-│     • Consistent wake time          (A)  ›   │
-│     • Limit alcohol near bedtime    (B)  ›   │
-│                                             │
-│  ② Lifestyle                                │
-│     • Morning daylight exposure     (B)  ›   │
-│     • Regular physical activity     (B)  ›   │
-│                                             │
-│  ③ If that isn't enough                     │
-│     • Melatonin (short-term, for    (B)  ›   │
-│       sleep onset)                          │
-│       ✓ No conflicts with your stack        │
-│                                             │
-│  Studied, but evidence is weak:             │
-│     • Ashwagandha (C) · Valerian (C/D)  ›    │
-└─────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────┐
+│  Add a multivitamin                              │
+│                                                  │
+│  🔍 Search by name or scan barcode   [|||| scan]│
+│     (from the NIH Dietary Supplement Label DB)  │
+│                                                  │
+│  — or start from a typical one —                 │
+│  ( ) Women's multi  ( ) Men's multi  ( ) 50+     │
+│                                                  │
+│  — coming soon —                                 │
+│  [📷 Photograph the Supplement Facts panel]       │
+└──────────────────────────────────────────────────┘
 ```
-_(Grades are placeholders until records are reviewed per the evidence model.)_
+
+**Review screen** (after search, template, or scan; the user must confirm):
+
+```
+┌──────────────────────────────────────────────────┐
+│  Check what we found                             │
+│  Serving: 2 gummies · Servings per day: [1 ▾]    │
+│                                                  │
+│  ✓ Vitamin A   900 mcg RAE (50% beta-carotene)   │
+│  ✓ Vitamin D   25 mcg                            │
+│  ✓ Zinc        8 mg                              │
+│  ✓ Iron        18 mg                             │
+│  …                                               │
+│  ⚠ Not checked: Lutein 250 mcg, "Energy Blend"   │
+│    120 mg (proprietary blend: amounts not listed)│
+│                                                  │
+│  Tap any value to fix it.   [ Looks right ✓ ]    │
+└──────────────────────────────────────────────────┘
+```
+
+## 3. Results: grouped by what to do
+
+```
+┌──────────────────────────────────────────────────┐
+│  Your stack: 4 products, 1 medication            │
+│                                                  │
+│  🔴 TALK TO A PHARMACIST FIRST                    │
+│  (none)                                          │
+│                                                  │
+│  🕐 YOUR DAILY SCHEDULE                           │
+│  Wake       Thyroid medication (empty stomach)   │
+│  Breakfast  Vitamin D                            │
+│  Lunch      Multivitamin (has iron)              │
+│             ↳ 4h+ after thyroid med: iron blocks │
+│               its absorption                     │
+│  Dinner     Zinc                                 │
+│             ↳ away from the multi's iron         │
+│  Bedtime    Melatonin                            │
+│  [ Print / save for my pharmacist ]              │
+│                                                  │
+│  📉 YOU'RE GETTING TOO MUCH                       │
+│  Zinc: 58 mg/day from 2 products.                │
+│  The adult upper limit is 40 mg. Long-term this  │
+│  can drain your copper.    Evidence: strong (A) ›│
+│                                                  │
+│  🌱 YOU PROBABLY DON'T NEED THIS                  │
+│  Zinc (standalone)                               │
+│   Your multi already covers your daily 8 mg.     │
+│   Food covers it too: 3 oz beef + a handful of   │
+│   pumpkin seeds.                                 │
+│  Melatonin for sleep                             │
+│   It's not doing much for ongoing sleep problems │
+│   (weak evidence). Stronger: fixed wake time +   │
+│   morning daylight (strong evidence) ›           │
+│                                                  │
+│  ✅ CHECKED, NO ISSUES                            │
+│  Vitamin D · 17 other multivitamin ingredients   │
+│                                                  │
+│  ⓘ Not medical advice. Don't stop a medication   │
+│    or supplement without talking to a clinician. │
+└──────────────────────────────────────────────────┘
+```

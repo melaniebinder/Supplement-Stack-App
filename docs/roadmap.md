@@ -5,15 +5,23 @@ Organized by confidence, not dates. Items move left only once the step before th
 ## Now: validate the problem and the evidence model
 - [ ] Run 8–10 user interviews ([guide](research/interview-guide.md))
 - [ ] Finish the competitor scan
-- [ ] Build a 30-ingredient pilot knowledge base (the most commonly used supplements) using the [evidence model](evidence-model.md)
+- [x] Draft a 30-ingredient pilot knowledge base using the [evidence model](evidence-model.md) ([`data/`](../data/))
+- [ ] Verify all citations against live sources
+- [x] Validator that enforces the evidence rules in CI
 - [ ] Get a credentialed reviewer (PharmD or RD) to audit 20 interaction records
+- [ ] Add structured timing fields (`separate_by_hours`, `take_with`, best time of day) to the data
+- [ ] Add a lifestyle-alternatives dataset (goal → supplement → habit, each graded)
+- [ ] Measure DSLD coverage for the top 50 multivitamins
+- [ ] Spike: photo-scan accuracy on 20 real Supplement Facts panels
 - [ ] Clickable prototype of Stack Check, tested with 5 users
 - [ ] Copy review against health-claim guidelines
 
 **Exit criteria:** users can describe the value in their own words, the reviewer error rate is under 5%, and ≥3 of 5 prototype testers say they'd use it again.
 
 ## Next: ship Stack Check v1
-- [ ] Web app: stack entry, interaction flags, overlap and upper-limit warnings
+- [ ] Web app: product-based stack entry (single items, multivitamin templates, DSLD search), medication pick-list, results grouped by action
+- [ ] Daily schedule generator
+- [ ] Lifestyle and food swaps
 - [ ] Evidence View for each ingredient
 - [ ] Printable summary to take to a clinician
 - [ ] Drug-class flags (curated, routed to a pharmacist)
@@ -21,6 +29,8 @@ Organized by confidence, not dates. Items move left only once the step before th
 - [ ] Automated tests for the product invariants (citation coverage, lifestyle-first ordering)
 
 ## Later: guidance and growth
+- Photo scan of the Supplement Facts panel (once the spike proves accuracy)
+- Free-text medication search
 - Goal-based Guidance with the lifestyle-first ladder (5 goals)
 - Optional accounts and saved stacks
 - Food-intake estimate (short diet questionnaire) to personalize "do you need this?"

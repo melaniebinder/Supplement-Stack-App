@@ -1,0 +1,33 @@
+id: garlic
+name: Garlic
+type: botanical
+synonyms: [Allium sativum, aged garlic extract, allicin, garlic oil]
+forms: [garlic powder, aged garlic extract, garlic oil]
+reference_intakes: null
+food_sources: [garlic used in cooking]
+effect_groups: [bleeding-risk]
+recommendable: false
+recommendable_note: Effects are small. Cooking with garlic comes first.
+claims:
+  - id: CLM-GAR-01
+    outcome: Blood pressure
+    population: Adults, including those with high blood pressure
+    direction: benefit
+    evidence_grade: C
+    summary: Some studies suggest a small blood pressure reduction. Results are inconsistent.
+    sources: [nccih-garlic]
+  - id: CLM-GAR-02
+    outcome: Blood cholesterol
+    population: Adults
+    direction: mixed
+    evidence_grade: C
+    summary: Effects on cholesterol are small and inconsistent.
+    sources: [nccih-garlic]
+safety_notes:
+  - level: info
+    text: Common side effects include breath and body odor, heartburn, and stomach upset.
+    sources: [nccih-garlic]
+sources: [nccih-garlic]
+status: draft
+reviewed_by: null
+reviewed_at: null

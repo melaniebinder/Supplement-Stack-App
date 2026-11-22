@@ -1,0 +1,381 @@
+# Pairwise interactions. a/b reference ingredient ids (ingredients/*.yaml) or drug class ids (drug-classes.yaml)
+# using the prefixes "ingredient/" and "drug_class/".
+#
+# severity:  major | moderate | minor | info     (see docs/evidence-model.md)
+# effect:    increases_risk | reduces_effect | reduces_absorption | enhances_absorption | lowers_nutrient | duplicate_therapy
+# Every record must have >= 1 source and stays `draft` until a credentialed reviewer signs off.
+
+interactions:
+  # ---------------- Supplement ↔ supplement ----------------
+  - id: INT-001
+    a: ingredient/calcium
+    b: ingredient/iron
+    severity: moderate
+    effect: reduces_absorption
+    mechanism: Calcium can reduce iron absorption when taken at the same time.
+    recommendation: If you take both, take them at different times of day.
+    evidence_grade: B
+    sources: [ods-iron, ods-calcium]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-002
+    a: ingredient/zinc
+    b: ingredient/iron
+    severity: minor
+    effect: reduces_absorption
+    mechanism: High-dose iron supplements taken without food may reduce zinc absorption.
+    recommendation: If you take both, consider taking them at different times or with meals.
+    evidence_grade: C
+    sources: [ods-zinc]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-003
+    a: ingredient/vitamin-c
+    b: ingredient/iron
+    severity: info
+    effect: enhances_absorption
+    mechanism: Vitamin C increases absorption of iron from plant foods and supplements.
+    recommendation: Usually helpful. People with hemochromatosis should talk to their clinician.
+    evidence_grade: B
+    sources: [ods-iron]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-004
+    a: ingredient/vitamin-e
+    b: ingredient/vitamin-k
+    severity: minor
+    effect: reduces_effect
+    mechanism: High-dose vitamin E may interfere with vitamin K's role in blood clotting.
+    recommendation: Avoid high-dose vitamin E unless a clinician recommends it, especially if you take a blood thinner.
+    evidence_grade: C
+    sources: [ods-vitamin-e, ods-vitamin-k]
+    status: draft
+    reviewed_by: null
+
+  # ---------------- Supplement ↔ drug class ----------------
+  - id: INT-010
+    a: ingredient/st-johns-wort
+    b: drug_class/hormonal-contraceptives
+    severity: major
+    effect: reduces_effect
+    mechanism: St. John's wort speeds up hormone metabolism, which can cause breakthrough bleeding and unintended pregnancy.
+    recommendation: Talk to your pharmacist or doctor before combining. You may need a different contraceptive method.
+    evidence_grade: A
+    sources: [nccih-st-johns-wort]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-011
+    a: ingredient/st-johns-wort
+    b: drug_class/warfarin
+    severity: major
+    effect: reduces_effect
+    mechanism: St. John's wort can lower warfarin levels and reduce its anticlotting effect.
+    recommendation: Do not combine without talking to your prescriber or pharmacist.
+    evidence_grade: B
+    sources: [nccih-st-johns-wort]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-012
+    a: ingredient/st-johns-wort
+    b: drug_class/doacs
+    severity: major
+    effect: reduces_effect
+    mechanism: St. John's wort induces CYP3A4 and P-glycoprotein, which clear several direct oral anticoagulants, and may lower their levels.
+    recommendation: Do not combine without talking to your prescriber or pharmacist.
+    evidence_grade: B
+    sources: [nccih-st-johns-wort]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-013
+    a: ingredient/st-johns-wort
+    b: drug_class/immunosuppressants
+    severity: major
+    effect: reduces_effect
+    mechanism: St. John's wort lowers levels of drugs like cyclosporine, and transplant rejection has been reported.
+    recommendation: Do not combine. Talk to your transplant team or pharmacist.
+    evidence_grade: A
+    sources: [nccih-st-johns-wort]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-014
+    a: ingredient/st-johns-wort
+    b: drug_class/hiv-antiretrovirals
+    severity: major
+    effect: reduces_effect
+    mechanism: St. John's wort can substantially lower levels of some HIV medicines, risking treatment failure.
+    recommendation: Do not combine. Talk to your HIV care team or pharmacist.
+    evidence_grade: A
+    sources: [nccih-st-johns-wort]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-015
+    a: ingredient/st-johns-wort
+    b: drug_class/serotonergic-drugs
+    severity: major
+    effect: increases_risk
+    mechanism: Combining serotonergic substances can cause serotonin syndrome.
+    recommendation: Do not combine without talking to your prescriber or pharmacist.
+    evidence_grade: B
+    sources: [nccih-st-johns-wort]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-016
+    a: ingredient/st-johns-wort
+    b: drug_class/digoxin
+    severity: major
+    effect: reduces_effect
+    mechanism: St. John's wort can lower digoxin levels through P-glycoprotein induction.
+    recommendation: Do not combine without talking to your prescriber or pharmacist.
+    evidence_grade: B
+    sources: [nccih-st-johns-wort]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-017
+    a: ingredient/vitamin-k
+    b: drug_class/warfarin
+    severity: major
+    effect: reduces_effect
+    mechanism: Vitamin K directly counteracts warfarin. Changes in vitamin K intake shift warfarin's effect (INR).
+    recommendation: Don't start, stop, or change vitamin K supplements (including multivitamins that contain K) without talking to your prescriber. Keeping intake consistent is what matters.
+    evidence_grade: A
+    sources: [ods-vitamin-k]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-018
+    a: ingredient/coq10
+    b: drug_class/warfarin
+    severity: moderate
+    effect: reduces_effect
+    mechanism: CoQ10 is structurally similar to vitamin K and may reduce warfarin's effect (case reports).
+    recommendation: Talk to your prescriber or pharmacist before combining. INR monitoring may be needed.
+    evidence_grade: C
+    sources: [nccih-coq10]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-019
+    a: ingredient/glucosamine
+    b: drug_class/warfarin
+    severity: moderate
+    effect: increases_risk
+    mechanism: Case reports describe increased INR and bleeding when glucosamine, with or without chondroitin, was combined with warfarin.
+    recommendation: Talk to your prescriber or pharmacist before combining.
+    evidence_grade: C
+    sources: [nccih-glucosamine]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-020
+    a: ingredient/red-yeast-rice
+    b: drug_class/statins
+    severity: major
+    effect: duplicate_therapy
+    mechanism: Monacolin K in red yeast rice is chemically identical to lovastatin, so combining it with a statin is like taking two statins.
+    recommendation: Do not combine. Talk to your prescriber.
+    evidence_grade: B
+    sources: [nccih-red-yeast-rice]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-021
+    a: ingredient/green-tea-extract
+    b: drug_class/beta-blockers
+    severity: moderate
+    effect: reduces_effect
+    mechanism: Green tea substantially lowered blood levels of nadolol in a clinical study. Other beta-blockers are less studied.
+    recommendation: If you take nadolol, talk to your pharmacist before using green tea extract.
+    evidence_grade: C
+    sources: [nccih-green-tea]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-022
+    a: ingredient/garlic
+    b: drug_class/hiv-antiretrovirals
+    severity: moderate
+    effect: reduces_effect
+    mechanism: Garlic supplements lowered blood levels of saquinavir in a clinical study.
+    recommendation: Talk to your HIV care team or pharmacist before using garlic supplements.
+    evidence_grade: B
+    sources: [nccih-garlic]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-023
+    a: ingredient/iron
+    b: drug_class/levothyroxine
+    severity: moderate
+    effect: reduces_absorption
+    mechanism: Iron binds levothyroxine in the gut and reduces its absorption.
+    recommendation: Take them at least 4 hours apart, and confirm the timing with your pharmacist.
+    evidence_grade: B
+    sources: [ods-iron]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-024
+    a: ingredient/calcium
+    b: drug_class/levothyroxine
+    severity: moderate
+    effect: reduces_absorption
+    mechanism: Calcium reduces levothyroxine absorption when taken at the same time.
+    recommendation: Take them at least 4 hours apart, and confirm the timing with your pharmacist.
+    evidence_grade: B
+    sources: [ods-calcium]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-025
+    a: ingredient/calcium
+    b: drug_class/thiazide-diuretics
+    severity: moderate
+    effect: increases_risk
+    mechanism: Thiazides reduce calcium excretion in urine. Combined with calcium supplements, this can raise blood calcium.
+    recommendation: Talk to your prescriber about whether you need calcium supplements and how much.
+    evidence_grade: C
+    sources: [ods-calcium]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-026
+    a: ingredient/vitamin-d
+    b: drug_class/thiazide-diuretics
+    severity: minor
+    effect: increases_risk
+    mechanism: Thiazides reduce calcium excretion, and vitamin D increases calcium absorption. Together they may raise blood calcium, mostly in older adults.
+    recommendation: Mention the combination to your prescriber.
+    evidence_grade: C
+    sources: [ods-vitamin-d]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-027
+    a: ingredient/vitamin-b12
+    b: drug_class/metformin
+    severity: moderate
+    effect: lowers_nutrient
+    mechanism: Long-term metformin use reduces B12 absorption and can lead to deficiency.
+    recommendation: Ask your clinician whether your B12 level should be checked. This is a reason to consider B12, not a reason to avoid it.
+    evidence_grade: B
+    sources: [ods-vitamin-b12]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-028
+    a: ingredient/vitamin-b12
+    b: drug_class/ppis
+    severity: minor
+    effect: lowers_nutrient
+    mechanism: Long-term acid suppression reduces absorption of B12 from food.
+    recommendation: Ask your clinician whether your B12 level should be checked.
+    evidence_grade: B
+    sources: [ods-vitamin-b12]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-029
+    a: ingredient/magnesium
+    b: drug_class/ppis
+    severity: moderate
+    effect: lowers_nutrient
+    mechanism: Long-term proton pump inhibitor use (usually more than a year) has been associated with low blood magnesium.
+    recommendation: Ask your clinician whether your magnesium level should be checked.
+    evidence_grade: B
+    sources: [fda-ppi-magnesium-2011, ods-magnesium]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-030
+    a: ingredient/iron
+    b: drug_class/ppis
+    severity: minor
+    effect: reduces_absorption
+    mechanism: Reduced stomach acid lowers absorption of nonheme iron.
+    recommendation: Mention this to your clinician if you take iron for low iron levels.
+    evidence_grade: C
+    sources: [ods-iron]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-031
+    a: ingredient/vitamin-a
+    b: drug_class/oral-retinoids
+    severity: major
+    effect: increases_risk
+    mechanism: Oral retinoids are vitamin A derivatives, so adding vitamin A supplements raises the risk of vitamin A toxicity.
+    recommendation: Avoid vitamin A supplements, including high-A multivitamins and cod liver oil, unless your prescriber approves.
+    evidence_grade: B
+    sources: [ods-vitamin-a]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-032
+    a: ingredient/probiotics
+    b: drug_class/antibiotics-general
+    severity: minor
+    effect: reduces_effect
+    mechanism: Antibiotics can kill bacterial probiotic strains (yeast-based S. boulardii is not affected).
+    recommendation: Take bacterial probiotics at least 2 hours apart from the antibiotic.
+    evidence_grade: C
+    sources: [ods-probiotics]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-033
+    a: ingredient/probiotics
+    b: drug_class/immunosuppressants
+    severity: moderate
+    effect: increases_risk
+    mechanism: People with weakened immune systems have a rare but serious risk of infection from probiotic organisms.
+    recommendation: Talk to your care team before taking probiotics.
+    evidence_grade: C
+    sources: [ods-probiotics]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-034
+    a: ingredient/echinacea
+    b: drug_class/immunosuppressants
+    severity: minor
+    effect: reduces_effect
+    mechanism: In theory, echinacea's immune-stimulating effects could counteract immunosuppressants. This is not well studied in people.
+    recommendation: Talk to your care team before using echinacea.
+    evidence_grade: D
+    sources: [nccih-echinacea]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-035
+    a: ingredient/ashwagandha
+    b: drug_class/levothyroxine
+    severity: moderate
+    effect: increases_risk
+    mechanism: Ashwagandha may raise thyroid hormone levels, adding to the effect of thyroid medication.
+    recommendation: Talk to your prescriber. Thyroid levels may need monitoring.
+    evidence_grade: D
+    sources: [ods-ashwagandha]
+    status: draft
+    reviewed_by: null
+
+  - id: INT-036
+    a: ingredient/iodine
+    b: drug_class/antithyroid-drugs
+    severity: moderate
+    effect: increases_risk
+    mechanism: Extra iodine can change how these drugs affect thyroid function.
+    recommendation: Avoid iodine and kelp supplements unless your prescriber approves.
+    evidence_grade: C
+    sources: [ods-iodine]
+    status: draft
+    reviewed_by: null

@@ -1,0 +1,39 @@
+id: vitamin-a
+name: Vitamin A
+type: vitamin
+synonyms: [retinol, retinyl palmitate, retinyl acetate, beta-carotene, provitamin A, preformed vitamin A]
+forms:
+  - preformed vitamin A (retinol, retinyl esters)
+  - provitamin A carotenoids (beta-carotene)
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: men, amount: 900, unit: mcg RAE}
+    - {group: women, amount: 700, unit: mcg RAE}
+  ul: {amount: 3000, unit: mcg, applies_to: "preformed vitamin A (retinol/retinyl esters) only; does not apply to beta-carotene"}
+unit_conversions:
+  - {from: IU (retinol), to: mcg RAE, factor: 0.3}
+  - {from: IU (supplemental beta-carotene), to: mcg RAE, factor: 0.15}
+food_sources: [beef liver, sweet potato, carrots, spinach, cantaloupe, eggs, fortified milk]
+effect_groups: []
+recommendable: false
+recommendable_note: Deficiency is uncommon in the US, and high-dose preformed vitamin A carries real risks. Food sources come first.
+claims:
+  - id: CLM-VITA-01
+    outcome: Lung cancer risk with high-dose beta-carotene supplements
+    population: Current smokers and people with asbestos exposure
+    direction: harm
+    evidence_grade: A
+    summary: Two large randomized trials found higher lung cancer incidence among smokers and asbestos-exposed workers who took high-dose beta-carotene.
+    sources: [trial-atbc-1994, trial-caret-1996, ods-vitamin-a]
+safety_notes:
+  - level: warning
+    text: Preformed vitamin A above the upper limit during pregnancy is associated with birth defects. Pregnant users are routed to a clinician (D-008).
+    sources: [ods-vitamin-a]
+  - level: caution
+    text: Chronic high intake of preformed vitamin A can cause liver toxicity and may reduce bone mineral density. Cod liver oil and multivitamins both add to the total.
+    sources: [ods-vitamin-a]
+sources: [ods-vitamin-a]
+status: draft
+reviewed_by: null
+reviewed_at: null

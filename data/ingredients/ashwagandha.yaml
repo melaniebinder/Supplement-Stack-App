@@ -1,0 +1,36 @@
+id: ashwagandha
+name: Ashwagandha
+type: botanical
+synonyms: [Withania somnifera, Indian ginseng, winter cherry]
+forms: [root extract, root and leaf extract]
+reference_intakes: null
+food_sources: []
+effect_groups: [sedative, hepatotoxicity-reports]
+recommendable: false
+recommendable_note: Evidence comes from small, short trials, and long-term safety isn't established.
+claims:
+  - id: CLM-ASH-01
+    outcome: Perceived stress
+    population: Adults reporting stress
+    direction: benefit
+    evidence_grade: C
+    summary: Small trials, mostly 8 weeks or shorter, report reductions in self-rated stress. Many were small or industry-funded.
+    sources: [ods-ashwagandha]
+  - id: CLM-ASH-02
+    outcome: Sleep quality
+    population: Adults
+    direction: benefit
+    evidence_grade: C
+    summary: A few small trials suggest modest improvements in sleep measures.
+    sources: [ods-ashwagandha]
+safety_notes:
+  - level: caution
+    text: Liver injury has been reported. Safety beyond about 3 months is not well established.
+    sources: [ods-ashwagandha, livertox]
+  - level: caution
+    text: May raise thyroid hormone levels. Pregnant users are routed to a clinician (D-008).
+    sources: [ods-ashwagandha]
+sources: [ods-ashwagandha]
+status: draft
+reviewed_by: null
+reviewed_at: null

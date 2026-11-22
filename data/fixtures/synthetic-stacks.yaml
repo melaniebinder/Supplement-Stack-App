@@ -1,0 +1,103 @@
+# SYNTHETIC test stacks. Personas and products are made up. Product names are generic.
+# `expected` is the hand-written spec for what the stack-check engine should return.
+# These become automated tests once the engine exists (roadmap: "Next").
+#
+# Amounts use each ingredient's canonical unit (elemental mg for minerals, mcg for vitamin D, etc.).
+# Engine rules these fixtures encode:
+#   - A specific pairwise interaction overrides an effect-group rule for the same pair.
+#   - Interactions between two ingredients inside the SAME product are suppressed (the product is already formulated together),
+#     but they still count toward upper-limit totals.
+#   - Any supplement–drug flag sets route_to_pharmacist: true.
+
+fixtures:
+  - id: FX-001
+    persona: Maya, 34, "the Optimizer"
+    profile: {age: 34, sex: female, screening: {pregnant_or_breastfeeding: false, under_18: false, kidney_disease: false, liver_disease: false}}
+    drug_classes: []
+    products:
+      - name: Vitamin D3 2000 IU
+        ingredients:
+          - {ingredient: vitamin-d, amount: 50, unit: mcg}
+      - name: Magnesium glycinate (400 mg elemental)
+        ingredients:
+          - {ingredient: magnesium, amount: 400, unit: mg}
+      - name: Fish oil 1 g
+        ingredients:
+          - {ingredient: omega-3, amount: 1000, unit: mg EPA+DHA}
+      - name: Ashwagandha root extract
+        ingredients:
+          - {ingredient: ashwagandha, amount: 600, unit: mg}
+      - name: Zinc 50 mg
+        ingredients:
+          - {ingredient: zinc, amount: 50, unit: mg}
+      - name: Women's daily multivitamin (synthetic formula)
+        ingredients:
+          - {ingredient: vitamin-a, amount: 450, unit: mcg RAE, form: preformed}
+          - {ingredient: vitamin-a, amount: 450, unit: mcg RAE, form: beta-carotene}
+          - {ingredient: vitamin-c, amount: 90, unit: mg}
+          - {ingredient: vitamin-d, amount: 25, unit: mcg}
+          - {ingredient: vitamin-e, amount: 15, unit: mg}
+          - {ingredient: vitamin-k, amount: 90, unit: mcg}
+          - {ingredient: vitamin-b6, amount: 2, unit: mg}
+          - {ingredient: folate, amount: 400, unit: mcg DFE}
+          - {ingredient: vitamin-b12, amount: 6, unit: mcg}
+          - {ingredient: calcium, amount: 200, unit: mg}
+          - {ingredient: iron, amount: 18, unit: mg}
+          - {ingredient: magnesium, amount: 50, unit: mg}
+          - {ingredient: zinc, amount: 8, unit: mg}
+          - {ingredient: selenium, amount: 55, unit: mcg}
+          - {ingredient: iodine, amount: 150, unit: mcg}
+    expected:
+      interactions: [INT-002]                         # standalone zinc + multivitamin iron
+      suppressed_within_product: [INT-001, INT-003]  # calcium+iron, vitamin C+iron are both in the multi
+      group_flags: []                                 # vitamin E 15 mg is below the bleeding-risk dose threshold
+      ul_flags:
+        - {ingredient: zinc, total: 58, ul: 40, unit: mg}
+        - {ingredient: magnesium, total: 450, ul: 350, unit: mg, note: "supplemental only"}
+      within_ul: [vitamin-d]                          # 75 mcg vs UL 100
+      overlaps: [vitamin-d, magnesium, zinc]
+      route_to_pharmacist: false
+
+  - id: FX-002
+    persona: Robert, 61, "the Medicated Adult"
+    profile: {age: 61, sex: male, screening: {pregnant_or_breastfeeding: false, under_18: false, kidney_disease: false, liver_disease: false}}
+    drug_classes: [warfarin, statins]
+    products:
+      - name: CoQ10 100 mg
+        ingredients:
+          - {ingredient: coq10, amount: 100, unit: mg}
+      - name: Turmeric curcumin 500 mg (considering)
+        ingredients:
+          - {ingredient: turmeric, amount: 500, unit: mg}
+      - name: Fish oil 1 g (considering)
+        ingredients:
+          - {ingredient: omega-3, amount: 1000, unit: mg EPA+DHA}
+    expected:
+      interactions: [INT-018]                         # CoQ10 + warfarin
+      group_flags:
+        - {group: bleeding-risk, rule: member_plus_drug_class, members: [turmeric, omega-3], drug_class: warfarin, severity: moderate}
+        - {group: bleeding-risk, rule: min_members, members: [turmeric, omega-3], severity: minor}
+      ul_flags: []
+      overlaps: []
+      route_to_pharmacist: true
+
+  - id: FX-003
+    persona: Priya, 45, takes thyroid medication and an SSRI
+    profile: {age: 45, sex: female, screening: {pregnant_or_breastfeeding: false, under_18: false, kidney_disease: false, liver_disease: false}}
+    drug_classes: [levothyroxine, serotonergic-drugs]
+    products:
+      - name: St. John's wort extract
+        ingredients:
+          - {ingredient: st-johns-wort, amount: 900, unit: mg}
+      - name: Calcium citrate 600 mg
+        ingredients:
+          - {ingredient: calcium, amount: 600, unit: mg}
+      - name: Iron bisglycinate 18 mg
+        ingredients:
+          - {ingredient: iron, amount: 18, unit: mg}
+    expected:
+      interactions: [INT-015, INT-024, INT-023, INT-001]   # major first
+      group_flags: []
+      ul_flags: []
+      overlaps: []
+      route_to_pharmacist: true

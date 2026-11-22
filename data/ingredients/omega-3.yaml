@@ -1,0 +1,46 @@
+id: omega-3
+name: Omega-3 fatty acids (fish oil)
+type: fatty_acid
+synonyms: [fish oil, EPA, DHA, eicosapentaenoic acid, docosahexaenoic acid, krill oil, algal oil, algae oil, cod liver oil, ALA, alpha-linolenic acid, flaxseed oil]
+forms: [fish oil (EPA+DHA), krill oil, algal oil (vegan EPA/DHA), cod liver oil (also contains vitamins A and D), flaxseed oil (ALA)]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  ai:
+    - {group: men, amount: 1.6, unit: g ALA}
+    - {group: women, amount: 1.1, unit: g ALA}
+  ul: null
+  notes: No UL. US and EU regulators have published guidance on maximum EPA+DHA from supplements. Confirm the current figure from the ODS fact sheet before showing it.
+food_sources: [salmon, sardines, mackerel, herring, trout, anchovies, "ALA: flaxseed, chia seeds, walnuts"]
+effect_groups: [bleeding-risk]
+recommendable: false
+recommendable_note: For heart health, eating fatty fish about twice a week is the evidence-backed step. Supplement trials in the general population show no clear reduction in cardiovascular events.
+claims:
+  - id: CLM-O3-01
+    outcome: Major cardiovascular events (primary prevention)
+    population: Generally healthy adults and adults with diabetes without cardiovascular disease
+    direction: no_effect
+    evidence_grade: A
+    summary: The large VITAL and ASCEND trials found that about 1 g/day did not reduce major cardiovascular events.
+    sources: [trial-vital-omega3-2019, trial-ascend-2018]
+  - id: CLM-O3-02
+    outcome: Triglyceride levels
+    population: Adults with elevated triglycerides, at prescription-level doses
+    direction: benefit
+    evidence_grade: A
+    summary: High doses (about 2 to 4 g/day EPA+DHA) lower triglycerides. Doses this high are managed by a clinician.
+    sources: [ods-omega-3]
+  - id: CLM-O3-03
+    outcome: Atrial fibrillation risk
+    population: Adults in cardiovascular outcome trials
+    direction: harm
+    evidence_grade: B
+    summary: A meta-analysis of randomized trials found a higher risk of atrial fibrillation, mainly at doses above 1 g/day.
+    sources: [review-omega3-af-2021]
+safety_notes:
+  - level: info
+    text: Cod liver oil also contains preformed vitamin A and vitamin D, which count toward those upper limits.
+    sources: [ods-vitamin-a, ods-omega-3]
+sources: [ods-omega-3]
+status: draft
+reviewed_by: null
+reviewed_at: null

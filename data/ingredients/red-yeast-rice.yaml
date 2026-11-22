@@ -1,0 +1,29 @@
+id: red-yeast-rice
+name: Red yeast rice
+type: botanical
+synonyms: [Monascus purpureus, monacolin K, beni-koji, red yeast rice extract]
+forms: [fermented rice products with variable monacolin content]
+reference_intakes: null
+food_sources: []
+effect_groups: []
+recommendable: false
+recommendable_note: Monacolin K is chemically identical to the statin drug lovastatin, and content varies by product. Cholesterol lowering belongs with a clinician.
+claims:
+  - id: CLM-RYR-01
+    outcome: LDL cholesterol
+    population: Adults with elevated LDL
+    direction: benefit
+    evidence_grade: B
+    summary: Products containing meaningful amounts of monacolin K lower LDL cholesterol, because they work like a statin. Monacolin content ranges from almost none to drug-level amounts.
+    sources: [nccih-red-yeast-rice]
+safety_notes:
+  - level: warning
+    text: It can cause the same side effects as statins (muscle and liver problems). Some products contain citrinin, a contaminant that can harm the kidneys.
+    sources: [nccih-red-yeast-rice]
+  - level: warning
+    text: In 2024, red yeast rice (beni-koji) supplements in Japan were recalled after reports of kidney illness and deaths.
+    sources: [regulatory-japan-beni-koji-2024]
+sources: [nccih-red-yeast-rice]
+status: draft
+reviewed_by: null
+reviewed_at: null

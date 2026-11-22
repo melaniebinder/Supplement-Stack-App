@@ -1,0 +1,51 @@
+id: magnesium
+name: Magnesium
+type: mineral
+synonyms: [magnesium glycinate, magnesium bisglycinate, magnesium citrate, magnesium oxide, magnesium malate, magnesium L-threonate, magnesium chloride, magnesium taurate, mag glycinate]
+forms: [glycinate, citrate, oxide, malate, L-threonate, chloride]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: men 19-30, amount: 400, unit: mg}
+    - {group: men 31+, amount: 420, unit: mg}
+    - {group: women 19-30, amount: 310, unit: mg}
+    - {group: women 31+, amount: 320, unit: mg}
+  ul: {amount: 350, unit: mg, applies_to: "supplements and medications only; magnesium from food does not count"}
+  notes: Labels may list the weight of the whole compound (e.g. magnesium glycinate) rather than elemental magnesium. The UL check needs elemental mg.
+food_sources: [pumpkin seeds, chia seeds, almonds, spinach, cashews, black beans, edamame, whole grains, dark chocolate]
+effect_groups: [mineral-chelators]
+recommendable: true
+recommend_only_if: Estimated food intake is low after diet changes (nuts, seeds, legumes, whole grains).
+claims:
+  - id: CLM-MAG-00
+    outcome: Meeting magnesium needs
+    population: Adults whose usual food intake is below the RDA
+    direction: benefit
+    evidence_grade: B
+    summary: Many US adults eat less magnesium than recommended. Supplements raise intake, but the health benefit of correcting a marginal shortfall is less established.
+    sources: [ods-magnesium]
+  - id: CLM-MAG-01
+    outcome: Sleep quality and time to fall asleep
+    population: Older adults with insomnia
+    direction: mixed
+    evidence_grade: C
+    summary: A meta-analysis of small trials found low-quality evidence of a possible small improvement in time to fall asleep.
+    sources: [review-magnesium-insomnia-2021]
+  - id: CLM-MAG-02
+    outcome: Blood pressure
+    population: Adults
+    direction: benefit
+    evidence_grade: C
+    summary: Meta-analyses suggest a small reduction in blood pressure, and results vary across studies.
+    sources: [ods-magnesium]
+safety_notes:
+  - level: info
+    text: Supplemental magnesium above the UL commonly causes diarrhea, nausea, and cramping, especially citrate, oxide, and chloride forms.
+    sources: [ods-magnesium]
+  - level: caution
+    text: People with kidney disease are at risk of magnesium buildup and should talk to their clinician.
+    sources: [ods-magnesium]
+sources: [ods-magnesium]
+status: draft
+reviewed_by: null
+reviewed_at: null

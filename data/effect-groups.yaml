@@ -1,0 +1,61 @@
+# Effect groups flag ADDITIVE risks that pairwise records alone would miss
+# (e.g. three "mildly blood-thinning" supplements plus a blood thinner).
+# Each ingredient lists its groups in `effect_groups`.
+# Precedence: a specific pairwise interaction (interactions.yaml) overrides a group rule for the same pair.
+
+effect_groups:
+  - id: bleeding-risk
+    name: May increase bleeding risk
+    description: These supplements have antiplatelet or anticoagulant-like effects, mostly from lab studies and case reports. Individually the effect is small, but it can add up.
+    rules:
+      - when: {member_plus_drug_class: [warfarin, doacs, antiplatelets]}
+        severity: moderate
+        evidence_grade: C
+        recommendation: Talk to your pharmacist or prescriber before combining this with a blood thinner, and before any surgery or dental procedure.
+      - when: {min_members: 2}
+        severity: minor
+        evidence_grade: D
+        recommendation: Several supplements in your stack may each slightly affect clotting. Mention them all before surgery or procedures.
+    sources: [ods-vitamin-e, ods-omega-3, nccih-ginkgo, nccih-garlic, nccih-turmeric]
+    status: draft
+    reviewed_by: null
+
+  - id: sedative
+    name: May cause drowsiness
+    description: These supplements can cause sleepiness, and the effect may add to sedating medications.
+    rules:
+      - when: {member_plus_drug_class: [sedatives]}
+        severity: moderate
+        evidence_grade: C
+        recommendation: The combination may increase drowsiness. Talk to your pharmacist, and avoid driving until you know how it affects you.
+      - when: {min_members: 2}
+        severity: minor
+        evidence_grade: D
+        recommendation: More than one supplement in your stack may cause drowsiness.
+    sources: [nccih-melatonin, ods-ashwagandha]
+    status: draft
+    reviewed_by: null
+
+  - id: hepatotoxicity-reports
+    name: Liver injury has been reported
+    description: Case reports link these concentrated supplements to liver injury. Combining several may add to the risk, which can't be quantified.
+    rules:
+      - when: {min_members: 2}
+        severity: moderate
+        evidence_grade: D
+        recommendation: More than one supplement in your stack has been linked to liver injury reports. Consider whether you need each one, and stop and seek care if you notice dark urine, yellowing skin or eyes, or abdominal pain.
+    sources: [livertox]
+    status: draft
+    reviewed_by: null
+
+  - id: mineral-chelators
+    name: Minerals that bind certain medications
+    description: Calcium, iron, magnesium, and zinc can bind some drugs in the gut and reduce how much is absorbed.
+    rules:
+      - when: {member_plus_drug_class: [quinolone-antibiotics, tetracycline-antibiotics, bisphosphonates]}
+        severity: moderate
+        evidence_grade: B
+        recommendation: Take them at different times. The right gap depends on the drug (often the drug 2 hours before or 4 to 6 hours after the mineral), so ask your pharmacist for your exact timing.
+    sources: [ods-calcium, ods-iron, ods-magnesium, ods-zinc]
+    status: draft
+    reviewed_by: null

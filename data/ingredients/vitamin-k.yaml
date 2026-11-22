@@ -1,0 +1,28 @@
+id: vitamin-k
+name: Vitamin K
+type: vitamin
+synonyms: [phylloquinone, vitamin K1, menaquinone, vitamin K2, MK-4, MK-7]
+forms: [K1 (phylloquinone), K2 (menaquinones, e.g. MK-4, MK-7)]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  ai:
+    - {group: men, amount: 120, unit: mcg}
+    - {group: women, amount: 90, unit: mcg}
+  ul: null
+food_sources: [collard greens, turnip greens, spinach, kale, broccoli, soybean oil, natto]
+effect_groups: []
+recommendable: false
+recommendable_note: Leafy greens provide plenty. The main issue is the interaction with warfarin.
+claims:
+  - id: CLM-VITK-01
+    outcome: Bone mineral density and fracture risk
+    population: Adults
+    direction: mixed
+    evidence_grade: C
+    summary: Trial results on bone outcomes are inconsistent.
+    sources: [ods-vitamin-k]
+safety_notes: []
+sources: [ods-vitamin-k]
+status: draft
+reviewed_by: null
+reviewed_at: null

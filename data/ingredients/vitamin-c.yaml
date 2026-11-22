@@ -1,0 +1,42 @@
+id: vitamin-c
+name: Vitamin C
+type: vitamin
+synonyms: [ascorbic acid, ascorbate, sodium ascorbate, calcium ascorbate, L-ascorbic acid]
+forms: [ascorbic acid, mineral ascorbates]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: men, amount: 90, unit: mg}
+    - {group: women, amount: 75, unit: mg}
+  ul: {amount: 2000, unit: mg, applies_to: total intake}
+  notes: Smokers need 35 mg/day more than nonsmokers.
+food_sources: [red bell peppers, oranges, kiwifruit, broccoli, strawberries, Brussels sprouts]
+effect_groups: []
+recommendable: false
+recommendable_note: Easily met through fruit and vegetables.
+claims:
+  - id: CLM-VITC-01
+    outcome: How often people catch colds
+    population: General population
+    direction: no_effect
+    evidence_grade: B
+    summary: Regular supplementation did not reduce how often people in the general population caught colds.
+    sources: [review-cochrane-vitc-cold-2013]
+  - id: CLM-VITC-02
+    outcome: Duration of colds
+    population: Adults taking it regularly (not started after symptoms begin)
+    direction: benefit
+    evidence_grade: B
+    summary: Regular use was associated with a modest reduction in cold duration (around 8% in adults). Starting after symptoms begin showed no consistent effect.
+    sources: [review-cochrane-vitc-cold-2013]
+safety_notes:
+  - level: info
+    text: Intakes above the UL can cause diarrhea and stomach upset. High doses may raise kidney stone risk in some people.
+    sources: [ods-vitamin-c]
+  - level: caution
+    text: Vitamin C increases iron absorption, which may matter for people with hemochromatosis.
+    sources: [ods-vitamin-c]
+sources: [ods-vitamin-c]
+status: draft
+reviewed_by: null
+reviewed_at: null

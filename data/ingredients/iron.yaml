@@ -1,0 +1,36 @@
+id: iron
+name: Iron
+type: mineral
+synonyms: [ferrous sulfate, ferrous gluconate, ferrous fumarate, iron bisglycinate, ferrous bisglycinate, carbonyl iron, heme iron polypeptide, polysaccharide-iron complex]
+forms: [ferrous salts, iron bisglycinate, carbonyl iron, heme iron]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: men, amount: 8, unit: mg}
+    - {group: women 19-50, amount: 18, unit: mg}
+    - {group: women 51+, amount: 8, unit: mg}
+  ul: {amount: 45, unit: mg, applies_to: total intake (elemental iron)}
+food_sources: [fortified breakfast cereals, oysters, white beans, lentils, beef, spinach, tofu, dark chocolate]
+food_tips: [Pair plant (nonheme) iron with a vitamin C source to boost absorption, Avoid tea or coffee with iron-rich meals]
+effect_groups: [mineral-chelators]
+recommendable: false
+recommendable_note: Iron should be supplemented only after testing confirms low iron. Excess iron is harmful, and some people have iron overload (hemochromatosis).
+claims:
+  - id: CLM-IRON-01
+    outcome: Iron status and hemoglobin
+    population: People with laboratory-confirmed iron deficiency
+    direction: benefit
+    evidence_grade: A
+    summary: Oral iron reliably improves iron status in people who are deficient.
+    sources: [ods-iron]
+safety_notes:
+  - level: warning
+    text: Accidental iron overdose is dangerous for young children. Keep iron-containing products out of reach.
+    sources: [ods-iron]
+  - level: caution
+    text: Common side effects include constipation, nausea, and stomach pain. People with hemochromatosis should not take iron unless a clinician directs it.
+    sources: [ods-iron]
+sources: [ods-iron]
+status: draft
+reviewed_by: null
+reviewed_at: null

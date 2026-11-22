@@ -1,0 +1,43 @@
+id: vitamin-e
+name: Vitamin E
+type: vitamin
+synonyms: [alpha-tocopherol, d-alpha-tocopherol, dl-alpha-tocopherol, tocopherols, mixed tocopherols, tocotrienols]
+forms: [d-alpha-tocopherol (natural), dl-alpha-tocopherol (synthetic)]
+reference_intakes:
+  population: US adults 19+ (NASEM Dietary Reference Intakes)
+  rda:
+    - {group: adults, amount: 15, unit: mg alpha-tocopherol}
+  ul: {amount: 1000, unit: mg, applies_to: "supplemental alpha-tocopherol (any form); roughly 1,500 IU natural or 1,100 IU synthetic"}
+unit_conversions:
+  - {from: IU (natural d-alpha), to: mg, factor: 0.67}
+  - {from: IU (synthetic dl-alpha), to: mg, factor: 0.45}
+food_sources: [wheat germ oil, sunflower seeds, almonds, sunflower oil, hazelnuts, peanut butter, spinach]
+effect_groups:
+  # Bleeding concern applies to high-dose supplements, not the ~15 mg in a typical multivitamin.
+  # Threshold is a DRAFT (≈400 IU synthetic) and must be confirmed by the reviewer.
+  - {id: bleeding-risk, min_daily_dose: {amount: 180, unit: mg}}
+recommendable: false
+recommendable_note: Large trials show no cardiovascular benefit and some signals of harm. Food sources come first.
+claims:
+  - id: CLM-VITE-01
+    outcome: Prostate cancer risk
+    population: Healthy men 50+
+    direction: harm
+    evidence_grade: B
+    summary: In SELECT, men taking 400 IU/day of vitamin E had a statistically significant increase in prostate cancer risk compared with placebo.
+    sources: [trial-select-2011]
+  - id: CLM-VITE-02
+    outcome: Cardiovascular disease prevention
+    population: Adults
+    direction: no_effect
+    evidence_grade: A
+    summary: Multiple large randomized trials found no reduction in cardiovascular events from vitamin E supplements.
+    sources: [ods-vitamin-e]
+safety_notes:
+  - level: caution
+    text: High-dose vitamin E may increase bleeding risk, especially with blood thinners.
+    sources: [ods-vitamin-e]
+sources: [ods-vitamin-e]
+status: draft
+reviewed_by: null
+reviewed_at: null

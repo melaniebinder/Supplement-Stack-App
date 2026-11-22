@@ -1,0 +1,15 @@
+{
+  "name": "supplement-stack-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Evidence-graded supplement stack checker (prototype).",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.mjs",
+    "validate:strict": "node scripts/validate-data.mjs --strict"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

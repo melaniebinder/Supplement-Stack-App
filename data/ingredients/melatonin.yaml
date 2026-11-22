@@ -1,0 +1,36 @@
+id: melatonin
+name: Melatonin
+type: hormone
+synonyms: [N-acetyl-5-methoxytryptamine, melatonin gummies]
+forms: [immediate-release, extended-release, gummies]
+reference_intakes: null
+food_sources: []
+effect_groups: [sedative]
+recommendable: true
+recommend_only_if: The goal is sleep timing (jet lag, shifted schedule), use is short-term, and sleep-habit steps have been tried first.
+claims:
+  - id: CLM-MEL-01
+    outcome: Jet lag symptoms
+    population: Adults flying across 5 or more time zones
+    direction: benefit
+    evidence_grade: B
+    summary: Taken close to the target bedtime at the destination, melatonin reduced jet lag symptoms in most trials.
+    sources: [review-cochrane-melatonin-jetlag-2002]
+  - id: CLM-MEL-02
+    outcome: Time to fall asleep
+    population: Adults with chronic insomnia
+    direction: mixed
+    evidence_grade: B
+    summary: Trials show only a small reduction (minutes) in time to fall asleep. The AASM guideline suggests against melatonin for chronic insomnia in adults (weak recommendation).
+    sources: [guideline-aasm-insomnia-2017, nccih-melatonin]
+safety_notes:
+  - level: caution
+    text: Product content varies widely. A 2023 analysis of US gummies found actual melatonin ranging from about 74% to 347% of the labeled amount.
+    sources: [study-melatonin-gummies-2023]
+  - level: caution
+    text: It can cause next-day drowsiness. Keep it away from children, because pediatric ingestions have risen.
+    sources: [nccih-melatonin]
+sources: [nccih-melatonin]
+status: draft
+reviewed_by: null
+reviewed_at: null

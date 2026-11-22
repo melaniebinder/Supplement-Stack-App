@@ -1,0 +1,26 @@
+id: ginkgo
+name: Ginkgo
+type: botanical
+synonyms: [Ginkgo biloba, ginkgo leaf extract]
+forms: [standardized leaf extract]
+reference_intakes: null
+food_sources: []
+effect_groups: [bleeding-risk]
+recommendable: false
+recommendable_note: Large trials found no cognitive benefit.
+claims:
+  - id: CLM-GIN-01
+    outcome: Dementia and cognitive decline
+    population: Older adults
+    direction: no_effect
+    evidence_grade: B
+    summary: The GEM trial (about 3,000 adults 75+) found that ginkgo did not reduce dementia incidence or cognitive decline.
+    sources: [trial-gem-2008, nccih-ginkgo]
+safety_notes:
+  - level: caution
+    text: Bleeding has been reported, especially with blood thinners. Raw or roasted ginkgo seeds are toxic.
+    sources: [nccih-ginkgo]
+sources: [nccih-ginkgo]
+status: draft
+reviewed_by: null
+reviewed_at: null

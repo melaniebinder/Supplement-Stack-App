@@ -1,0 +1,26 @@
+id: probiotics
+name: Probiotics
+type: probiotic
+synonyms: [Lactobacillus, Lacticaseibacillus rhamnosus, LGG, Bifidobacterium, Saccharomyces boulardii, live cultures]
+forms: [bacterial strains (e.g. Lactobacillus, Bifidobacterium), yeast (Saccharomyces boulardii)]
+reference_intakes: null
+food_sources: [yogurt with live cultures, kefir, unpasteurized sauerkraut, kimchi, miso, tempeh]
+effect_groups: []
+recommendable: false
+recommendable_note: Effects depend on the strain and the condition. The v1 goals have no strain-level evidence mapping.
+claims:
+  - id: CLM-PRO-01
+    outcome: Antibiotic-associated diarrhea
+    population: Children taking antibiotics (some evidence in adults)
+    direction: benefit
+    evidence_grade: B
+    summary: Certain strains (e.g. LGG, S. boulardii) reduced antibiotic-associated diarrhea in children. Results depend on the strain.
+    sources: [review-cochrane-probiotics-aad-2019, ods-probiotics]
+safety_notes:
+  - level: warning
+    text: Serious infections have been reported in people who are critically ill, have weakened immune systems, or are premature infants.
+    sources: [ods-probiotics]
+sources: [ods-probiotics]
+status: draft
+reviewed_by: null
+reviewed_at: null
