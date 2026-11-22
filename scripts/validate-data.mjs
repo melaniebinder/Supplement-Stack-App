@@ -349,7 +349,7 @@ for (const rid of supportedBy.keys())
   if (/^(CLM|INT|HAB)-/.test(rid) && !needsEvidence.has(rid)) err(`evidence`, `excerpt supports unknown record "${rid}"`);
 if (unsupported.length) {
   const msg = `${unsupported.length}/${needsEvidence.size} claims, interactions, habits and effect groups have no verified evidence yet: ${unsupported.join(", ")}`;
-  if (STRICT || process.env.REQUIRE_EVIDENCE) err("evidence", msg); else warnings.push(msg);
+  err("evidence", msg); // ratchet: coverage reached 99/99 in Nov 2026, so any gap is now an error
 }
 
 // ---------- Report ----------
