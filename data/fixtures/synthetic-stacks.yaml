@@ -56,7 +56,7 @@ fixtures:
           - {ingredient: iodine, amount: 150, unit: mcg}
     expected:
       interactions: [INT-002]                         # standalone zinc + multivitamin iron
-      suppressed_within_product: [INT-001, INT-003]  # calcium+iron, vitamin C+iron are both in the multi
+      suppressed_within_product: [INT-001, INT-003, INT-004]  # calcium+iron, vitamin C+iron, vitamin E+K are all in the multi
       group_flags: []                                 # vitamin E 15 mg is below the bleeding-risk dose threshold
       ul_flags:
         - {ingredient: zinc, total: 58, ul: 40, unit: mg}
@@ -69,6 +69,8 @@ fixtures:
         - {slot_of: omega-3, take_with: food_with_fat}
         - {slot_of: vitamin-d, take_with: food_with_fat}
       swaps:
+        - {product: "Vitamin D3 2000 IU", kind: food, ingredient: vitamin-d}   # the multi already covers the RDA
+        - {product: "Fish oil 1 g", kind: food, ingredient: omega-3}           # omega-3 isn't recommendable: eat fatty fish
         - {product: "Zinc 50 mg", kind: food, ingredient: zinc}
         - {product: "Zinc 50 mg", kind: habit, goal: immunity, habits: [HAB-IMM-01, HAB-IMM-02, HAB-IMM-03]}
         - {product: "Fish oil 1 g", kind: habit, goal: heart, habits: [HAB-HEART-01, HAB-HEART-02, HAB-HEART-03, HAB-HEART-04]}
@@ -97,6 +99,8 @@ fixtures:
       ul_flags: []
       overlaps: []
       route_to_pharmacist: true
+      swaps:
+        - {product: "Fish oil 1 g (considering)", kind: food, ingredient: omega-3}
 
   - id: FX-003
     persona: Priya, 45, takes thyroid medication and an SSRI
@@ -118,10 +122,12 @@ fixtures:
       ul_flags: []
       overlaps: []
       route_to_pharmacist: true
+      swaps:
+        - {product: "Iron bisglycinate 18 mg", kind: route, ingredient: iron}  # iron: get tested, never "you don't need it"
       schedule_constraints:
         - {slot_of: drug_class/levothyroxine, slot: wake, take_with: empty_stomach}
         - {before: drug_class/levothyroxine, after: iron, min_gap_hours: 4, from: INT-023}
         - {before: drug_class/levothyroxine, after: calcium, min_gap_hours: 4, from: INT-024}
         - {apart: [calcium, iron], min_gap_hours: 2, from: INT-001}
       schedule_excludes: [st-johns-wort]   # "avoid" items aren't scheduled; they appear under "Talk to a pharmacist first"
-      swaps: []                            # no "why" given and no nutrient overdose
+

@@ -2,7 +2,7 @@
 
 **Find out which supplements you actually need. See what the evidence says, what food or habits could replace, and how to take the rest safely together.**
 
-> 📐 _Mockup coming soon. Text wireframes are in [`design/wireframes.md`](design/wireframes.md)._
+> 🧪 **[Try the prototype →](https://melaniebinder.github.io/Supplement-Stack-App/)** (draft data, not medical advice). Click an example stack to see results instantly.
 
 > ⚠️ **Not medical advice.** This project is a product concept and prototype for educational purposes. It does not diagnose, treat, cure, or prevent any disease. Always talk to a doctor or pharmacist before you start, stop, or combine supplements or medications.
 
@@ -49,8 +49,8 @@ The reasoning behind each choice is in [`docs/decisions.md`](docs/decisions.md).
 | Competitor scan | ✅ Desk research done; hands-on test pending |
 | User interviews | ⏳ Guide written, interviews not started |
 | Knowledge base (30 ingredients, 33 interactions) | 🟡 Evidence-verified (99/99 claims, interactions, habits and groups backed by stored quotes); needs expert review |
-| Clickable prototype | ⏳ Not started |
-| Demo | — |
+| Clickable prototype | 🟡 Live on GitHub Pages: stack check, daily schedule, swaps, evidence quotes, calendar export |
+| Demo | [melaniebinder.github.io/Supplement-Stack-App](https://melaniebinder.github.io/Supplement-Stack-App/) |
 
 ## 4. Metrics: how we'd know it's working
 
@@ -64,13 +64,15 @@ Full definitions are in [`docs/prd.md`](docs/prd.md#success-metrics).
 
 ## 5. Tech stack and how to run it
 
-The app isn't built yet. The proposed stack is TypeScript and Next.js, with the curated knowledge base as versioned YAML in the repo (see [decision D-007](docs/decisions.md)).
+The prototype is a static Vite + React + TypeScript app on GitHub Pages (D-027), with the curated knowledge base as versioned YAML in the repo (D-007). See [`src/README.md`](src/README.md).
 
 To validate the knowledge base (Node 18+):
 
 ```bash
 npm install
-npm run validate
+npm run validate   # knowledge-base rules and evidence coverage
+npm test           # engine tests against the synthetic stacks
+npm run dev        # run the app locally
 ```
 
 ## Repo map

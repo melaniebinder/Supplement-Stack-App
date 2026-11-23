@@ -7,7 +7,7 @@ reference_intakes:
   population: US adults 19+ (NASEM Dietary Reference Intakes)
   rda:
     - {group: adults, amount: 400, unit: mcg DFE}
-  ul: {amount: 1000, unit: mcg, applies_to: "folic acid from supplements and fortified foods only; does not apply to natural food folate"}
+  ul: {amount: 1000, unit: mcg, applies_to: "folic acid from supplements and fortified foods only; does not apply to natural food folate", scope: folic_acid_only}
 unit_conversions:
   - {from: mcg folic acid (taken with food), to: mcg DFE, factor: 1.7}
   - {from: mcg folic acid (empty stomach), to: mcg DFE, factor: 2.0}

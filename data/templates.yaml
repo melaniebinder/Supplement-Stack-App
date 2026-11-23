@@ -1,0 +1,62 @@
+# Generic multivitamin templates (PRD "Entering multivitamins", D-017/D-020).
+# SYNTHETIC "typical" formulas built from common label patterns (~100% Daily Value for most nutrients).
+# They are NOT any real brand. Users are told to edit amounts to match their own label.
+templates:
+  - id: multi-women
+    name: Typical women's multivitamin
+    note: Approximate. Edit the amounts to match your label.
+    ingredients:
+      - {ingredient: vitamin-a, amount: 375, unit: mcg RAE, form: preformed}
+      - {ingredient: vitamin-a, amount: 375, unit: mcg RAE, form: beta-carotene}
+      - {ingredient: vitamin-c, amount: 75, unit: mg}
+      - {ingredient: vitamin-d, amount: 25, unit: mcg}
+      - {ingredient: vitamin-e, amount: 15, unit: mg}
+      - {ingredient: vitamin-k, amount: 90, unit: mcg}
+      - {ingredient: vitamin-b6, amount: 2, unit: mg}
+      - {ingredient: folate, amount: 400, unit: mcg DFE}
+      - {ingredient: vitamin-b12, amount: 6, unit: mcg}
+      - {ingredient: biotin, amount: 30, unit: mcg}
+      - {ingredient: calcium, amount: 200, unit: mg}
+      - {ingredient: iron, amount: 18, unit: mg}
+      - {ingredient: magnesium, amount: 50, unit: mg}
+      - {ingredient: zinc, amount: 8, unit: mg}
+      - {ingredient: selenium, amount: 55, unit: mcg}
+      - {ingredient: iodine, amount: 150, unit: mcg}
+  - id: multi-men
+    name: Typical men's multivitamin
+    note: Approximate. Edit the amounts to match your label. Usually no iron.
+    ingredients:
+      - {ingredient: vitamin-a, amount: 450, unit: mcg RAE, form: preformed}
+      - {ingredient: vitamin-a, amount: 450, unit: mcg RAE, form: beta-carotene}
+      - {ingredient: vitamin-c, amount: 90, unit: mg}
+      - {ingredient: vitamin-d, amount: 25, unit: mcg}
+      - {ingredient: vitamin-e, amount: 15, unit: mg}
+      - {ingredient: vitamin-k, amount: 120, unit: mcg}
+      - {ingredient: vitamin-b6, amount: 2, unit: mg}
+      - {ingredient: folate, amount: 400, unit: mcg DFE}
+      - {ingredient: vitamin-b12, amount: 6, unit: mcg}
+      - {ingredient: biotin, amount: 30, unit: mcg}
+      - {ingredient: calcium, amount: 200, unit: mg}
+      - {ingredient: magnesium, amount: 50, unit: mg}
+      - {ingredient: zinc, amount: 11, unit: mg}
+      - {ingredient: selenium, amount: 55, unit: mcg}
+      - {ingredient: iodine, amount: 150, unit: mcg}
+  - id: multi-50plus
+    name: Typical 50+ multivitamin
+    note: Approximate. Edit the amounts to match your label. Usually no iron, more B12.
+    ingredients:
+      - {ingredient: vitamin-a, amount: 300, unit: mcg RAE, form: preformed}
+      - {ingredient: vitamin-a, amount: 450, unit: mcg RAE, form: beta-carotene}
+      - {ingredient: vitamin-c, amount: 90, unit: mg}
+      - {ingredient: vitamin-d, amount: 25, unit: mcg}
+      - {ingredient: vitamin-e, amount: 15, unit: mg}
+      - {ingredient: vitamin-k, amount: 30, unit: mcg}
+      - {ingredient: vitamin-b6, amount: 3, unit: mg}
+      - {ingredient: folate, amount: 400, unit: mcg DFE}
+      - {ingredient: vitamin-b12, amount: 25, unit: mcg}
+      - {ingredient: biotin, amount: 30, unit: mcg}
+      - {ingredient: calcium, amount: 300, unit: mg}
+      - {ingredient: magnesium, amount: 50, unit: mg}
+      - {ingredient: zinc, amount: 11, unit: mg}
+      - {ingredient: selenium, amount: 55, unit: mcg}
+      - {ingredient: iodine, amount: 150, unit: mcg}

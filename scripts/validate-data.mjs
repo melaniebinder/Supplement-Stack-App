@@ -298,6 +298,16 @@ if (fs.existsSync(fxFile)) {
   }
 }
 
+// ---------- App data: templates, medication pick-list, UL scope ----------
+for (const t of load("templates.yaml").templates)
+  for (const r of t.ingredients) if (!ingredients.has(r.ingredient)) err(`template ${t.id}`, `unknown ingredient "${r.ingredient}"`);
+for (const m of load("medication-picklist.yaml").picklist)
+  if (m.drug_class !== null && !drugClasses.has(m.drug_class)) err(`picklist "${m.label}"`, `unknown drug class "${m.drug_class}"`);
+for (const i of ingredients.values()) {
+  const ul = i.reference_intakes?.ul;
+  if (ul && !["total", "preformed_only", "folic_acid_only", "supplements_only"].includes(ul.scope)) err(`ingredient ${i.id}`, "ul.scope must be total|preformed_only|folic_acid_only|supplements_only");
+}
+
 // ---------- Evidence store (data/evidence) ----------
 // A record counts as verified only if a stored excerpt from a retrieved source supports it, and the
 // source is one the record cites. Quotes are checked against stored text where it's in the repo

@@ -1,0 +1,24 @@
+# MVP medication pick-list in everyday language (PRD "Experience", D-016). Each item maps to a drug class.
+picklist:
+  - {label: "Blood thinner: warfarin", drug_class: warfarin}
+  - {label: "Blood thinner: apixaban, rivaroxaban, dabigatran, edoxaban", drug_class: doacs}
+  - {label: "Clopidogrel, ticagrelor, or a daily aspirin", drug_class: antiplatelets}
+  - {label: "Antidepressant (SSRI/SNRI), tramadol, or a triptan", drug_class: serotonergic-drugs}
+  - {label: "Birth control (pill, patch, ring, implant)", drug_class: hormonal-contraceptives}
+  - {label: "Thyroid medication (levothyroxine)", drug_class: levothyroxine}
+  - {label: "Methimazole, PTU, amiodarone, or lithium", drug_class: antithyroid-drugs}
+  - {label: "Statin (cholesterol)", drug_class: statins}
+  - {label: "Acid reducer: omeprazole, pantoprazole… (PPI)", drug_class: ppis}
+  - {label: "Metformin", drug_class: metformin}
+  - {label: "Water pill: hydrochlorothiazide, chlorthalidone", drug_class: thiazide-diuretics}
+  - {label: "Antibiotic: ciprofloxacin, levofloxacin", drug_class: quinolone-antibiotics}
+  - {label: "Antibiotic: doxycycline, minocycline", drug_class: tetracycline-antibiotics}
+  - {label: "Any other antibiotic (taking now)", drug_class: antibiotics-general}
+  - {label: "Osteoporosis: alendronate, risedronate", drug_class: bisphosphonates}
+  - {label: "Transplant or immune-suppressing medication", drug_class: immunosuppressants}
+  - {label: "HIV medication", drug_class: hiv-antiretrovirals}
+  - {label: "Digoxin", drug_class: digoxin}
+  - {label: "Beta-blocker", drug_class: beta-blockers}
+  - {label: "Sleep medication or sedative", drug_class: sedatives}
+  - {label: "Isotretinoin or acitretin", drug_class: oral-retinoids}
+  - {label: "Other medication", drug_class: null}

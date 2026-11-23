@@ -10,7 +10,7 @@ reference_intakes:
   rda:
     - {group: men, amount: 900, unit: mcg RAE}
     - {group: women, amount: 700, unit: mcg RAE}
-  ul: {amount: 3000, unit: mcg, applies_to: "preformed vitamin A (retinol/retinyl esters) only; does not apply to beta-carotene"}
+  ul: {amount: 3000, unit: mcg, applies_to: "preformed vitamin A (retinol/retinyl esters) only; does not apply to beta-carotene", scope: preformed_only}
 unit_conversions:
   - {from: IU (retinol), to: mcg RAE, factor: 0.3}
   - {from: IU (supplemental beta-carotene), to: mcg RAE, factor: 0.15}

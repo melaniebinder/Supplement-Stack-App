@@ -8,7 +8,7 @@ reference_intakes:
   rda:
     - {group: men, amount: 90, unit: mg}
     - {group: women, amount: 75, unit: mg}
-  ul: {amount: 2000, unit: mg, applies_to: total intake}
+  ul: {amount: 2000, unit: mg, applies_to: total intake, scope: total}
   notes: Smokers need 35 mg/day more than nonsmokers.
 food_sources: [red bell peppers, oranges, kiwifruit, broccoli, strawberries, Brussels sprouts]
 effect_groups: []

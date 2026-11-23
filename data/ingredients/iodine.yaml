@@ -7,7 +7,7 @@ reference_intakes:
   population: US adults 19+ (NASEM Dietary Reference Intakes)
   rda:
     - {group: adults, amount: 150, unit: mcg}
-  ul: {amount: 1100, unit: mcg, applies_to: total intake}
+  ul: {amount: 1100, unit: mcg, applies_to: total intake, scope: total}
 food_sources: [iodized salt, cod, seaweed, milk, yogurt, eggs]
 effect_groups: []
 recommendable: false

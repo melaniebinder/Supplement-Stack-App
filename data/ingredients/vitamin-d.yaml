@@ -8,7 +8,7 @@ reference_intakes:
   rda:
     - {group: adults 19-70, amount: 15, unit: mcg}
     - {group: adults 71+, amount: 20, unit: mcg}
-  ul: {amount: 100, unit: mcg, applies_to: total intake}
+  ul: {amount: 100, unit: mcg, applies_to: total intake, scope: total}
 unit_conversions:
   - {from: IU, to: mcg, factor: 0.025}
 food_sources: [trout, salmon, sardines, UV-exposed mushrooms, fortified milk, fortified plant milks, egg yolks]

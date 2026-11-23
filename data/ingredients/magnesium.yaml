@@ -10,7 +10,7 @@ reference_intakes:
     - {group: men 31+, amount: 420, unit: mg}
     - {group: women 19-30, amount: 310, unit: mg}
     - {group: women 31+, amount: 320, unit: mg}
-  ul: {amount: 350, unit: mg, applies_to: "supplements and medications only; magnesium from food does not count"}
+  ul: {amount: 350, unit: mg, applies_to: "supplements and medications only; magnesium from food does not count", scope: supplements_only}
   notes: Labels may list the weight of the whole compound (e.g. magnesium glycinate) rather than elemental magnesium. The UL check needs elemental mg.
 food_sources: [pumpkin seeds, chia seeds, almonds, spinach, cashews, black beans, edamame, whole grains, dark chocolate]
 effect_groups: [mineral-chelators]
