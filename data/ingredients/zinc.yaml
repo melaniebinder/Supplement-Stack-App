@@ -8,7 +8,7 @@ reference_intakes:
   rda:
     - {group: men, amount: 11, unit: mg}
     - {group: women, amount: 8, unit: mg}
-  ul: {amount: 40, unit: mg, applies_to: total intake (elemental zinc)}
+  ul: {amount: 40, unit: mg, applies_to: total intake (elemental zinc), scope: total}
 food_sources: [oysters, beef, crab, pork, pumpkin seeds, chickpeas, cashews, fortified cereals]
 effect_groups: [mineral-chelators]
 recommendable: false

@@ -7,7 +7,7 @@ reference_intakes:
   population: US adults 19+ (NASEM Dietary Reference Intakes)
   rda:
     - {group: adults, amount: 55, unit: mcg}
-  ul: {amount: 400, unit: mcg, applies_to: total intake}
+  ul: {amount: 400, unit: mcg, applies_to: total intake, scope: total}
 food_sources: [Brazil nuts (very high; amount varies by nut), tuna, sardines, shrimp, ham, eggs, whole grains]
 effect_groups: []
 recommendable: false

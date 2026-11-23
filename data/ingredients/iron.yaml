@@ -9,7 +9,7 @@ reference_intakes:
     - {group: men, amount: 8, unit: mg}
     - {group: women 19-50, amount: 18, unit: mg}
     - {group: women 51+, amount: 8, unit: mg}
-  ul: {amount: 45, unit: mg, applies_to: total intake (elemental iron)}
+  ul: {amount: 45, unit: mg, applies_to: total intake (elemental iron), scope: total}
 food_sources: [fortified breakfast cereals, oysters, white beans, lentils, beef, spinach, tofu, dark chocolate]
 food_tips: [Pair plant (nonheme) iron with a vitamin C source to boost absorption, Avoid tea or coffee with iron-rich meals]
 effect_groups: [mineral-chelators]

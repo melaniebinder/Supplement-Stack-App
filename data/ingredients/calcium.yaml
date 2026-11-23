@@ -11,6 +11,7 @@ reference_intakes:
     - {group: women 51+, amount: 1200, unit: mg}
     - {group: men 71+, amount: 1200, unit: mg}
   ul:
+    scope: total
     amount: 2500
     unit: mg
     applies_to: total intake (food + supplements), adults 19-50

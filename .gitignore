@@ -33,3 +33,7 @@ docs/research/interviews/raw/
 
 # Evidence cache for copyrighted source text (re-fetched by scripts/evidence.mjs)
 .cache/
+
+# Generated at build time
+src/generated/
+dist/

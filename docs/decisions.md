@@ -115,6 +115,16 @@ Short entries: what we chose, what we didn't, and why. Newest at the bottom. Sta
 **Chose** a dedicated environment allowing exactly 20 source hosts (NIH, PubMed, DailyMed, FDA, USPSTF, and others) **over** unrestricted network access.
 **Why:** It's the least access that allows verification, and it records which hosts the project depends on.
 
+### D-027 · Prototype as a static Vite + React app on GitHub Pages ✅
+**Chose** a static single-page app (Vite, React, TypeScript) with the knowledge base compiled to JSON at build time, **over** Next.js (D-007's proposal) or a hosted backend.
+**Why:** Everything runs in the browser, so there's no server, no accounts, and no health data leaving the device (D-009), and GitHub Pages hosts it for free on the owner's profile. The engine is pure TypeScript and tested separately from the UI, so it can move to any framework later.
+
+### D-028 · Product-level rules discovered while building the engine ✅
+- **Iron never gets "you probably don't need this".** It shows "do you need it? get tested" instead, since a deficient user stopping iron is a real risk.
+- **Swaps fire when food covers it or another product already covers the daily need**, e.g. a separate D3 bottle when the multivitamin already meets the RDA.
+- **Weekly targets (fatty fish) don't show a daily-need number**, because the RDA/AI is for a different form (ALA vs EPA+DHA).
+- **Pairs inside one product are suppressed** but still count toward upper limits, and **"avoid" items are left out of the schedule** and sent to the pharmacist section.
+
 ---
 
 _Template for new entries:_

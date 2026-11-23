@@ -7,7 +7,7 @@ reference_intakes:
   population: US adults 19+ (NASEM Dietary Reference Intakes)
   rda:
     - {group: adults, amount: 15, unit: mg alpha-tocopherol}
-  ul: {amount: 1000, unit: mg, applies_to: "supplemental alpha-tocopherol (any form); roughly 1,500 IU natural or 1,100 IU synthetic"}
+  ul: {amount: 1000, unit: mg, applies_to: "supplemental alpha-tocopherol (any form); roughly 1,500 IU natural or 1,100 IU synthetic", scope: supplements_only}
 unit_conversions:
   - {from: IU (natural d-alpha), to: mg, factor: 0.67}
   - {from: IU (synthetic dl-alpha), to: mg, factor: 0.45}

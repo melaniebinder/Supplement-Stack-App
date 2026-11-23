@@ -70,6 +70,8 @@ food_swaps:
 
   - ingredient: iron
     target: rda
+    swap: route_to_clinician
+    routing_note: Iron should be taken only if a blood test shows you need it. Don't stop iron your clinician prescribed. Ask whether you should be tested.
     note: Iron should only be supplemented after testing. These foods help maintain intake. Pair plant sources with vitamin C.
     foods:
       - {food: "Breakfast cereal, fortified (100% DV)", serving: "1 serving", amount: 18, unit: mg}

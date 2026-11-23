@@ -17,7 +17,8 @@ Organized by confidence, not dates. Items move left only once the step before th
 - [ ] Reviewer to confirm the 4 `draft_default` timing gaps
 - [ ] Measure DSLD coverage for the top 50 multivitamins
 - [ ] Spike: photo-scan accuracy on 20 real Supplement Facts panels (**launch gate**, D-020)
-- [ ] Clickable prototype of Stack Check, tested with 5 users
+- [x] Clickable prototype of Stack Check on GitHub Pages (D-027)
+- [ ] Test the prototype with 5 users
 - [ ] Copy review against health-claim guidelines
 
 **Exit criteria:** users can describe the value in their own words, the reviewer error rate is under 5%, and ≥3 of 5 prototype testers say they'd use it again.
