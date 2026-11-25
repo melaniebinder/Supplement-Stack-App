@@ -124,7 +124,7 @@ export function StackForm({ state, setState, onCheck }: { state: FormState; setS
   return (
     <div className="form">
       <section className="card">
-        <h2><span className="step">1</span> Your supplements</h2>
+        <h2><span className="step">01</span> Your supplements</h2>
         <AddSupplement onAdd={add} />
         <AddMulti onAdd={add} />
         {state.products.length > 0 ? (
@@ -139,7 +139,7 @@ export function StackForm({ state, setState, onCheck }: { state: FormState; setS
       </section>
 
       <section className="card">
-        <h2><span className="step">2</span> Your medications</h2>
+        <h2><span className="step">02</span> Your medications</h2>
         <p className="muted">Medications can interact with supplements. Don't forget birth control, thyroid medication, and acid reducers.</p>
         <div className="add-row">
           <select aria-label="Add a medication" value="" onChange={(e) => {
@@ -165,7 +165,7 @@ export function StackForm({ state, setState, onCheck }: { state: FormState; setS
       </section>
 
       <section className="card">
-        <h2><span className="step">3</span> About you <span className="muted small">(optional)</span></h2>
+        <h2><span className="step">03</span> About you <span className="muted small">(optional)</span></h2>
         <div className="about">
           <label>Age <input inputMode="numeric" value={state.profile.age ?? ""} onChange={(e) => setState({ ...state, profile: { ...state.profile, age: e.target.value ? parseInt(e.target.value) : undefined } })} /></label>
           <label>Sex <select value={state.profile.sex ?? ""} onChange={(e) => setState({ ...state, profile: { ...state.profile, sex: (e.target.value || undefined) as Profile["sex"] } })}>

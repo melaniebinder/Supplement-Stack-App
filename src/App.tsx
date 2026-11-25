@@ -10,6 +10,11 @@ const load = (): FormState => {
   try { const s = localStorage.getItem(STORE); return s ? { ...EMPTY, ...JSON.parse(s) } : EMPTY; } catch { return EMPTY; }
 };
 
+// Design exploration: ?look=clinical|editorial|lab (default clinical). Remove once a direction is chosen.
+const LOOKS = ["clinical", "editorial", "lab"] as const;
+const look = (() => { const v = new URLSearchParams(location.search).get("look"); return (LOOKS as readonly string[]).includes(v ?? "") ? v! : "clinical"; })();
+document.documentElement.dataset.look = look;
+
 export default function App() {
   const [state, setState] = useState<FormState>(load);
   const [showResults, setShowResults] = useState(false);
@@ -28,15 +33,22 @@ export default function App() {
 
   return (
     <>
-      <div className="banner" role="note">
-        <strong>Prototype with draft data.</strong> Every claim is backed by verified sources, but nothing has been reviewed by a pharmacist yet. Not medical advice.
-      </div>
+      <nav className="topbar">
+        <span className="wordmark">Supplement Stack</span>
+        <span className="status" role="note">Prototype · draft data · not medical advice</span>
+      </nav>
       <header className="hero">
-        <h1>Supplement Stack</h1>
-        <p className="tagline">Find out which supplements you actually need. See what the evidence says, what food or habits could replace, and how to take the rest safely together.</p>
+        <p className="eyebrow">Evidence-graded supplement check</p>
+        <h1>Find out which supplements you actually need.</h1>
+        <p className="tagline">See what the evidence says, what food or habits could replace, and how to take the rest safely together. Every flag links to its source.</p>
         <div className="examples no-print">
-          <span className="muted">Try an example:</span>
-          {kb.examples.map((e) => <button key={e.id} className="chip" onClick={() => tryExample(e.id)}>{e.persona.split(",")[0]}<span className="muted"> · {e.persona.split(",").slice(1).join(",").trim()}</span></button>)}
+          <span className="examples-label">See an example</span>
+          {kb.examples.map((e) => (
+            <button key={e.id} className="example" onClick={() => tryExample(e.id)}>
+              <span className="example-name">{e.persona.split(",")[0]}</span>
+              <span className="example-desc">{e.persona.split(",").slice(1).join(",").trim().replace(/"/g, "")}</span>
+            </button>
+          ))}
         </div>
       </header>
       <main>

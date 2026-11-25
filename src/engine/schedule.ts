@@ -118,7 +118,7 @@ export function buildSchedule(kb: KB, products: Product[], drugClasses: string[]
     slot: s.id, label: s.label, time: clock(s.hour),
     items: items.filter((_, i) => final[i] === s.id).map((it) => ({
       name: it.name, kind: it.kind,
-      reasons: [...it.reasons, ...constraints.filter((c) => (items[c.a] === it || items[c.b] === it)).map((c) => c.label)],
+      reasons: [...it.reasons, ...constraints.filter((c) => items[c.b] === it).map((c) => c.label)], // each rule once, under the item it moves
     })),
   })).filter((e) => e.items.length);
   return { entries, excluded, unresolved, notes: [...new Set(notes)] };
