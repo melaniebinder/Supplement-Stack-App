@@ -125,6 +125,10 @@ Short entries: what we chose, what we didn't, and why. Newest at the bottom. Sta
 - **Weekly targets (fatty fish) don't show a daily-need number**, because the RDA/AI is for a different form (ALA vs EPA+DHA).
 - **Pairs inside one product are suppressed** but still count toward upper limits, and **"avoid" items are left out of the schedule** and sent to the pharmacist section.
 
+### D-029 · Visual direction: "editorial wellness" ✅
+**Chose** a warm, minimal editorial look (off-white paper, Newsreader serif headlines, Inter body, a sage accent, terracotta only for risk) **over** a clinical navy-and-white look or a monochrome lab-report look. All three were built on the real app and compared on the same data.
+**Why:** The first version read as AI-generated (emoji headings, colored pills, left-bordered cards, shadows). The structure is now numbered sections with counts, a summary row of numbers, and tables for upper limits, and the editorial look gives it a calm, human, premium feel suited to a health product. **Watch:** it sits closer to supplement-brand aesthetics, so the copy and the evidence quotes must keep it clearly independent (D-003, D-018). Fonts are bundled, not loaded from Google, so no data goes to third parties (D-009).
+
 ---
 
 _Template for new entries:_

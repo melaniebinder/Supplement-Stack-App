@@ -4,6 +4,8 @@
 
 > 🧪 **[Try the prototype →](https://melaniebinder.github.io/Supplement-Stack-App/)** (draft data, not medical advice). Click an example stack to see results instantly.
 
+![Supplement Stack results for an example stack: summary numbers, daily schedule, upper-limit table, and evidence-graded swaps](design/screenshot.png)
+
 > ⚠️ **Not medical advice.** This project is a product concept and prototype for educational purposes. It does not diagnose, treat, cure, or prevent any disease. Always talk to a doctor or pharmacist before you start, stop, or combine supplements or medications.
 
 ---

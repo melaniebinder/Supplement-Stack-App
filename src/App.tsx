@@ -10,11 +10,6 @@ const load = (): FormState => {
   try { const s = localStorage.getItem(STORE); return s ? { ...EMPTY, ...JSON.parse(s) } : EMPTY; } catch { return EMPTY; }
 };
 
-// Design exploration: ?look=clinical|editorial|lab (default clinical). Remove once a direction is chosen.
-const LOOKS = ["clinical", "editorial", "lab"] as const;
-const look = (() => { const v = new URLSearchParams(location.search).get("look"); return (LOOKS as readonly string[]).includes(v ?? "") ? v! : "clinical"; })();
-document.documentElement.dataset.look = look;
-
 export default function App() {
   const [state, setState] = useState<FormState>(load);
   const [showResults, setShowResults] = useState(false);
