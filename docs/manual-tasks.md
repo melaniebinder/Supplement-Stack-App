@@ -38,7 +38,7 @@ Things that need a person: a browser, a credential, a professional, a decision, 
 
 ## 🟢 Housekeeping
 
-- [ ] **Turn on GitHub Pages:** repo Settings → Pages → Build and deployment → Source: **GitHub Actions**. The deploy workflow runs on every push to `main`. Without this setting it fails at the deploy step. The repo must be public on a free plan.
+- [x] **Turn on GitHub Pages:** repo Settings → Pages → Build and deployment → Source: **GitHub Actions**. The deploy workflow runs on every push to `main`. Without this setting it fails at the deploy step. The repo must be public on a free plan.
 
 - [ ] Merge open PRs once CI is green.
 - [ ] When a reviewer is found, decide where their sign-off lives: commit trailer, `reviewed_by`, or a signed review log.
